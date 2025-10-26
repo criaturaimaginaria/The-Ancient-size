@@ -11,6 +11,24 @@
     "flag": "flags/europe/romeflag.svg"
   },
   {
+    "id": "romeKing2",
+    "name": "Rome (kingdom) 618-509 BC",
+    "era": "kingdom",
+    "continent": "Europe",
+    "keywords": ["kingdom", "king", "rey", "roma"],
+    "file": "maps/europe/romeKingdom2.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+    {
+    "id": "romeRepublic1",
+    "name": "Rome (Republic) 268-241 BC",
+    "era": "republic",
+    "continent": "Europe",
+    "keywords": ["republic", "roma", "senate", "roma"],
+    "file": "maps/europe/romeAppClaudius.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+  {
     "id": "rome2",
     "name": "Rome (Empire) 98-117 AD ",
     "era": "High Roman Empire",
@@ -27,6 +45,52 @@
 
 
 
+  {
+    "id": "florenceRepublic",
+    "name": "Republic of Florence 1115-1406 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
+    "file": "maps/europe/italy/florenceRepublic.json",
+    "flag": "flags/europe/italy/Flag_of_Florence.svg",
+    "description": "The Republic of Florence was a powerful city-state in Tuscany, governed by merchant oligarchs and later the Medici, known for banking wealth, republican institutions, and extraordinary cultural influence during the Renaissance."
+  },
+    {
+    "id": "florenceRepublic2",
+    "name": "Republic of Florence 1406-1569 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
+    "file": "maps/europe/italy/florenceRepublic2.json",
+    "flag": "flags/europe/italy/Flag_of_Florence.svg",
+    "description": "In this map we can see the annexation of the Republic of Pisa."
+  },
+
+
+
+
+  {
+    "id": "naplesKingdom",
+    "name": "kingdom of Naples 1282-1806 & 1815-1816 AD",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["kingdom", "naples", "1282-1806 & 1815-1816"],
+    "file": "maps/europe/italy/naplesKingdom.json",
+    "flag": "flags/europe/italy/naplesFlag-Trastámara.png",
+    "description": "The Kingdom of Naples, officially the Kingdom of Sicily, was a state that ruled the part of the Italian Peninsula south of the Papal States between 1282 and 1816."
+  },
+
+
+    {
+    "id": "massa",
+    "name": "Duchy of Massa 1473-1796 AD  ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic", "siena", "1125"],
+    "file": "maps/europe/italy/massaDuchy.json",
+    "flag": "flags/europe/italy/Flag_of_Siena.png",
+    "description": "The Republic of Siena (1125–1555) was an Italian city-state, governed as an oligarchic republic, with an economy based on banking and trade, renowned for its art, culture, and Gothic architecture."
+  },
 
 
 
@@ -132,6 +196,15 @@
     "keywords": ["Aegina",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/aegina.json"
   },
+
+
+
+
+
+
+
+
+
 
 
 
