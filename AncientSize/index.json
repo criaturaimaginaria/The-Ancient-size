@@ -1,0 +1,166 @@
+[
+
+
+{
+    "id": "rome",
+    "name": "Rome (kingdom) 753-630 BC",
+    "era": "Rpublic",
+    "continent": "Europe",
+    "keywords": ["republic", "coliseo", "senado", "roma"],
+    "file": "maps/europe/rome.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+  {
+    "id": "rome2",
+    "name": "Rome (Empire) 98-117 AD ",
+    "era": "High Roman Empire",
+    "continent": "Europe, Asia, Africa",
+    "keywords": ["imperio", "coliseo", "98-117 AD", "roma", "empire"],
+    "file": "maps/europe/romeTrajan.json",
+    "flag": "flags/europe/romeflag.svg",
+    "description": "roman empire y bla bla bla"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "sparts",
+    "name": "Sparta 900-146 BC",
+    "era": "classic",
+    "continent": "Europa",
+    "keywords": ["sparta", "greek", "500-400 BC", "greece", "900-146 BC"],
+    "file": "maps/europe/greece/sparta.json"
+  },
+  {
+    "id": "messene",
+    "name": "Messene 300 BC",
+    "era": "classic",
+    "continent": "Europa",
+    "keywords": ["Messene", "greek", "300 BC", "greece", "greece"],
+    "file": "maps/europe/greece/messene.json"
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth 700-146 BC",
+    "era": "classic",
+    "continent": "Europa",
+    "keywords": ["corinth", "corinto", "greek", "700-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+    {
+    "id": "argos",
+    "name": "Argos 1200-146 BC ",
+    "era": "classic",
+    "continent": "Europa",
+    "keywords": ["argos",  "greek", "1200-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+
+    {
+    "id": "arcadianLeague",
+    "name": "Arcadian league 370-230 BC ",
+    "era": "classic",
+    "continent": "Hellenic world",
+    "keywords": ["arcadian league",  "greek", "1200-146 BC ", "greece", "greece", "hellenic", "Hellenistic"],
+    "file": "maps/europe/greece/arcadianLeague.json"
+  },
+
+    {
+    "id": "Elis",
+    "name": "Elis  V-IV BC  ",
+    "era": "classic",
+    "continent": "classic",
+    "keywords": ["elis",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/Elis.json"
+  },
+
+
+      {
+    "id": "patras",
+    "name": "Patras 700-146 BC ",
+    "era": "classic",
+    "continent": "classic",
+    "keywords": ["patras",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/patras.json"
+  },
+
+        {
+    "id": "thebes",
+    "name": "Thebes 900-146 BC ",
+    "era": "classic",
+    "continent": "classic",
+    "keywords": ["thebes",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/thebes.json"
+  },
+
+          {
+    "id": "achaeanLeague",
+    "name": "Achaean league 280-192 BC ",
+    "era": "classic",
+    "continent": "hellenic",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague.json"
+  },
+
+
+  {
+    "id": "achaeanLeague2",
+    "name": "Achaean league 192-146 BC ",
+    "era": "hellenic",
+    "continent": "hellenic",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague2.json"
+  },
+
+
+    {
+    "id": "aegina",
+    "name": "Aegina V BC ",
+    "era": "classic",
+    "continent": "hellenic",
+    "keywords": ["Aegina",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/aegina.json"
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "egypt",
+    "name": "Egipto",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto"],
+    "file": "maps/africa/egypt.json",
+    "thumbnail": "thumbnails/egypt.png"
+  }
+
+
+
+
+
+
+
+
+
+
+
+]
