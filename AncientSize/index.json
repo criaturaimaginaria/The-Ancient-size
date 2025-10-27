@@ -529,17 +529,167 @@
 
 
   {
-    "id": "egypt",
-    "name": "Egipto",
+    "id": "egypt1",
+    "name": "Egypt old kingdom 2686-2181 BC",
     "era": "Antigüedad",
     "continent": "África",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto"],
-    "file": "maps/africa/egypt.json",
-    "thumbnail": "thumbnails/egypt.png"
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom"],
+    "file": "maps/africa/nordAfrica/egypt1.json"
+
+  },
+
+  {
+    "id": "egypt2",
+    "name": "Lower Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period"],
+    "file": "maps/africa/nordAfrica/egypt2.json"
+
+  },
+
+  
+  {
+    "id": "egypt3",
+    "name": "Upper Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto"],
+    "file": "maps/africa/nordAfrica/egypt3.json"
+
+  },
+
+  
+  
+  {
+    "id": "egypt4",
+    "name": "Egypt middle kingdom 2055-1650 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio"],
+    "file": "maps/africa/nordAfrica/egypt4.json"
+
+  },
+    
+  {
+    "id": "egypt5",
+    "name": "Egypt new kingdom 1549-1069 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo"],
+    "file": "maps/africa/nordAfrica/egypt5.json"
+
+  },
+
+
+  {
+    "id": "carthague1",
+    "name": "Carthage (kingdom) 814-649 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["nord",  "carthague", "cartago"],
+    "file": "maps/africa/nordAfrica/carthague1.json",
+    "description": "Carthague fi..."
+  },
+
+    {
+    "id": "carthague2",
+    "name": "Carthage (kingdom) 649-500 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["nord",  "carthague", "cartago"],
+    "file": "maps/africa/nordAfrica/carthague2.json",
+    "description": "Carthague fi..king."
+  },
+
+  {
+    "id": "carthague3",
+    "name": "Carthage (Kingdom & Republic) 399-261 BC ",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "file": "maps/africa/nordAfrica/carthague3.json",
+    "description": "Carthague fi..king and republic."
+  },
+
+    {
+    "id": "carthague4",
+    "name": "Carthage (Republic) 201-146 BC",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "file": "maps/africa/nordAfrica/carthague4.json",
+    "description": "Carthague republic, finally defeated by rome. cartago delenda est ;("
+  },
+
+
+
+  {
+    "id": "numidia",
+    "name": "Numidia 200 BC ",
+    "era": "Antigüedad",
+    "continent": "África",
+    "keywords": ["nord",  "nilo", "numidia"],
+    "file": "maps/africa/nordAfrica/numidia.json",
+    "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  {
+    "id": "palmyra",
+    "name": "Palmyrene kingdom 260-270 AD ",
+    "era": "Antigüedad",
+    "continent": "Middle East",
+    "keywords": ["palmyra", "middle", "Zenobia", "palmira"],
+    "file": "maps/africa/middleEast/palmyra.json"
+
+  },
+
+  {
+    "id": "palmyraEmpire",
+    "name": "Palmyrene empire 270-273 AD ",
+    "era": "Antigüedad",
+    "continent": "Middle East",
+    "keywords": ["palmyra", "middle", "Zenobia", "empire", "palmira"],
+    "file": "maps/africa/middleEast/palmyraEmpire.json"
+
   }
-
-
-
 
 
 
