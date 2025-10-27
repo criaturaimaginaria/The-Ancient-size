@@ -63,7 +63,29 @@
 
 
 
+            
+  {
+    "id": "venice1",
+    "name": "Republic of Venice 700-1095 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","venice", "839-1140", "venezia", "venecia"],
+    "file": "maps/europe/maritimeRepublics/venice1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
+    "description": "From 700 to 1095, the Republic of Venice evolved from a Byzantine dependency into a powerful maritime republic, expanding trade networks, securing independence, developing institutions, and emerging as a dominant Mediterranean commercial and naval force."
+  },
 
+
+    {
+    "id": "venice2",
+    "name": "Republic of Venice 1430-1570 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic","venice", "1430-1570 ", "venezia", "venecia"],
+    "file": "maps/europe/maritimeRepublics/venice2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
+    "description": "From 1430 to 1570, the Republic of Venice reached its zenith, dominating Mediterranean trade, flourishing in art and architecture, facing Ottoman expansion, losing eastern territories, yet remaining a powerful, wealthy, and culturally vibrant state."
+  },
 
 
   {
@@ -291,7 +313,7 @@
     "era": "medieval - renaissance",
     "continent": "Europe",
     "keywords": ["republic", "lucca", "1160"],
-    "file": "maps/europe/italy/siena.json",
+    "file": "maps/europe/italy/lucca.json",
     "flag": "flags/europe/italy/Flag_of_Lucca.png",
     "description": "The Republic of Lucca was a small independent state in Tuscany, thriving as a banking and silk center. Governed by oligarchic institutions, it preserved its autonomy until annexed by Napoleon in 1805."
   },
@@ -377,6 +399,14 @@
 
 
 
+  {
+    "id": "athens",
+    "name": "Athens 500-400 BC",
+    "era": "classic",
+    "continent": "Europa",
+    "keywords": ["athens", "greek", "500-400 BC", "greece", "500-400 ", "hellenic"],
+    "file": "maps/europe/greece/athens.json"
+  },
 
   {
     "id": "sparts",

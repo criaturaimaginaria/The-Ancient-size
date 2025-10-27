@@ -1,4 +1,8 @@
- subirlo a la web 
+
+-make an automatic surface calculator based on the 
+geojson data to put in the tooltip card.
+
+-subirlo a la web 
 
 
 
@@ -6,7 +10,6 @@
  revisar mapas:
 
  -athens
- -ancona
  -genova2
  -pisa1
  -pisa2
