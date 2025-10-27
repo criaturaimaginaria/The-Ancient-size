@@ -45,6 +45,186 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "amalfi",
+    "name": "Republica di Amalfi 839 AD - 1137 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","amalfi", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/amalfi.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Amalfi.svg",
+    "description": "The Republic of Amalfi, a maritime power in southern Italy (9th–11th centuries), dominated Mediterranean trade, developed early banking and naval innovations, and maintained independence until Norman conquest integrated it into the Kingdom of Sicily."
+  },
+
+    {
+    "id": "ancona",
+    "name": "Republica di Ancona 1000-1532 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","ancona", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/ancona.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Ancona.png",
+    "description": "The Republic of Ancona, a small maritime republic on Italy’s Adriatic coast (11th–16th centuries), thrived on trade and shipbuilding, maintaining political autonomy while navigating pressures from Venice, the Papal States, and other regional powers."
+  },
+
+
+      {
+    "id": "noli",
+    "name": "Republica di Noli 1192-1797 AD",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","noli", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/noli.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Noli.svg.png",
+    "description": "The Republic of Noli, a tiny maritime republic in Liguria, Italy (12th–18th centuries), maintained independence through alliances with Genoa, focused on trade and local defense, and was eventually absorbed into the Ligurian Republic under Napoleon."
+  },
+
+
+  
+      {
+    "id": "genova1",
+    "name": "Republica di Genoa 1005 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","genoa", "839", "1137 ", "genova"],
+    "file": "maps/europe/maritimeRepublics/genova1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
+  },
+
+
+    {
+    "id": "genova2",
+    "name": "Republic of Genoa 1566-1755 AD",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic","genoa", "839", "1137 ", "genova"],
+    "file": "maps/europe/maritimeRepublics/genova2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
+  },
+
+
+  
+  {
+    "id": "corsa",
+    "name": "Republica Corsa 1955-1969 AD ",
+    "era": "1700s",
+    "continent": "Europe",
+    "keywords": ["republic","corsica", "cora"],
+    "file": "maps/europe/maritimeRepublics/republicaCorsa.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Corsica.svg.png",
+    "description": "the republic of corsica was a republic in"
+  },
+
+
+    
+  {
+    "id": "pisa1",
+    "name": "Republic of Pisa 1005-1090 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+      
+  {
+    "id": "pisa2",
+    "name": "Republic of Pisa 1090-1115 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+        
+  {
+    "id": "pisa3",
+    "name": "Republic of Pisa 1115-1183 AD ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa3.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+
+          
+  {
+    "id": "ragusa",
+    "name": "Republic of Ragusa 1358-1808 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic","ragusa", "1358-1808"],
+    "file": "maps/europe/maritimeRepublics/ragusa.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Republic_of_Ragusa.svg",
+    "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
+  },
+
+
+
+            
+  {
+    "id": "gaeta",
+    "name": "Duchy of Gaeta 839-1140 AD  ",
+    "era": "medieval",
+    "continent": "Europe",
+    "keywords": ["republic","gaeta", "839-1140"],
+    "file": "maps/europe/maritimeRepublics/gaeta.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Gaeta.svg",
+    "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "id": "florenceRepublic",
     "name": "Republic of Florence 1115-1406 AD ",
@@ -86,11 +266,113 @@
     "name": "Duchy of Massa 1473-1796 AD  ",
     "era": "medieval - renaissance",
     "continent": "Europe",
-    "keywords": ["republic", "siena", "1125"],
+    "keywords": ["republic", "massa", "1473", "duchy", "ducado"],
     "file": "maps/europe/italy/massaDuchy.json",
+    "flag": "flags/europe/italy/Repubblica_di_Massa-Bandiera.svg.png",
+    "description": "massa republic"
+  },
+
+
+    {
+    "id": "siena",
+    "name": "Republic of Siena 1125 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic", "siena", "1125"],
+    "file": "maps/europe/italy/siena.json",
     "flag": "flags/europe/italy/Flag_of_Siena.png",
     "description": "The Republic of Siena (1125–1555) was an Italian city-state, governed as an oligarchic republic, with an economy based on banking and trade, renowned for its art, culture, and Gothic architecture."
   },
+
+
+    {
+    "id": "lucca",
+    "name": "Republic of Lucca 1160-1805 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic", "lucca", "1160"],
+    "file": "maps/europe/italy/siena.json",
+    "flag": "flags/europe/italy/Flag_of_Lucca.png",
+    "description": "The Republic of Lucca was a small independent state in Tuscany, thriving as a banking and silk center. Governed by oligarchic institutions, it preserved its autonomy until annexed by Napoleon in 1805."
+  },
+
+  {
+    "id": "KingdomSicilia",
+    "name": "Kingdom of Sicily 1282-1806 AD ",
+    "era": "medieval - renaissance",
+    "continent": "Europe",
+    "keywords": ["republic", "siena", "1125"],
+    "file": "maps/europe/italy/siciliaKingdom.json",
+    "flag": "flags/europe/italy/Bandiera_del_Regno_di_Sicilia_4.svg.png",
+    "description": "In 1282, the Kingdom of Sicily erupted during the Sicilian Vespers, expelling Angevin rule. It transformed into a vibrant Mediterranean power, blending Norman, Arab, and Byzantine influences under Aragonese protection and enduring legacy."
+  },
+
+
+    {
+    "id": "sanMarino4",
+    "name": "San Marino 1463 AD - Present",
+    "era": "medieval - renaissance - modern",
+    "continent": "Europe",
+    "keywords": ["republic", "san marino", "1463AD"],
+    "file": "maps/europe/italy/sanMarino4.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
+  },
+
+
+
+    {
+    "id": "papalStatesRisorgimento",
+    "name": "Papal States 1600-1859",
+    "era": "renaissance - modern",
+    "continent": "Europe",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/papalStatesRisorgimento.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "The Papal States were a conglomeration of territories on the Italian peninsula under the direct sovereign rule of the pope from 756 to 1870. They were among the major states of Italy from the 8th century until the unification of Italy, which took place between 1859 and 1870, culminating in their demise."
+  },
+
+      {
+    "id": "papalStatesRisorgimento2",
+    "name": "Papal States 1859-1870 AD",
+    "era": "risorgimento",
+    "continent": "Europe",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/papalStatesRisorgimento2.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "Papal states after losing some territory to the unification of Italy."
+  },
+
+    {
+    "id": "vaticanCity",
+    "name": "Vatican city 1929AD-today",
+    "era": "world war II - modern",
+    "continent": "Europe",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/vaticanCity.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "Vatican City is the smallest sovereign state in the world, an enclave within Rome ruled by the Pope as the head of the Catholic Church. Established in 1929, it is the center of the Catholic world, home to significant sites like St. Peter's Basilica and the Vatican Museums."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
