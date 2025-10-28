@@ -1,6 +1,5 @@
 *agregar?*
 -capital
--religion
 -población
 -forma de gobierno
 

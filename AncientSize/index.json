@@ -500,6 +500,29 @@
 
 
 
+    {
+    "id": "ViceroyaltyPlata1",
+    "name": "Viceroyalty of the Río de la Plata 1776 - 1810",
+    "era": "modern",
+    "religion": "Roman Catholicism",
+    "keywords": ["america", "argentina", "buenos aires", "spain","virreinato","uruguay"],
+    "file": "maps/america/sudAmerica/virreinatoRioDeLaPlata1.json",
+    "flag": "flags/america/sudAmerica/Flag_of_Cross_of_Burgundy.svg.png",
+    "description": "virreinato y bla"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
