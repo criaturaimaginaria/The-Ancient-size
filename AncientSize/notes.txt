@@ -6,11 +6,3 @@ geojson data to put in the tooltip card.
 
 
 
-
- revisar mapas:
-
- -athens
- -genova2
- -pisa1
- -pisa2
- -pisa3

@@ -329,6 +329,42 @@
     "description": "In 1282, the Kingdom of Sicily erupted during the Sicilian Vespers, expelling Angevin rule. It transformed into a vibrant Mediterranean power, blending Norman, Arab, and Byzantine influences under Aragonese protection and enduring legacy."
   },
 
+  
+  
+    {
+    "id": "sanMarino1",
+    "name": "San Marino IV - X",
+    "era": "medieval ",
+    "continent": "Europe",
+    "keywords": ["republic", "san marino", "300 AD", "900 AD"],
+    "file": "maps/europe/italy/sanMarino1.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, founded in 301 AD"
+  },
+
+
+    {
+    "id": "sanMarino2",
+    "name": "San Marino X - 1320 AD",
+    "era": "medieval ",
+    "continent": "Europe",
+    "keywords": ["republic", "san marino", "900 AD", "1300"],
+    "file": "maps/europe/italy/sanMarino2.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, annexation of Acquaviva and Domagnano."
+  },
+
+  
+    {
+    "id": "sanMarino3",
+    "name": "San Marino 1320 - 1463 AD",
+    "era": "medieval ",
+    "continent": "Europe",
+    "keywords": ["republic", "san marino", "1320"],
+    "file": "maps/europe/italy/sanMarino3.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, annexation of Chiesanuova. "
+  },
 
     {
     "id": "sanMarino4",
@@ -338,7 +374,7 @@
     "keywords": ["republic", "san marino", "1463AD"],
     "file": "maps/europe/italy/sanMarino4.json",
     "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
-    "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
+    "description": "The Republic of San Marino, annexation of Serravalle, Faetano and Montegiardino. Since then its territory remains unchanged."
   },
 
 

@@ -80,6 +80,7 @@ fetch('./index.json')
   .catch(error => console.error('Error cargando el índice:', error));
 
 // Función para cargar un mapa y actualizar el panel de capas
+
 function loadMap(file, name) {
   const existing = activeLayers.find(m => m.name === name);
   if (existing) {
@@ -92,19 +93,22 @@ function loadMap(file, name) {
     .then(data => {
       const layer = new L.trueSize(data, {
         color: data.properties.fillColor || "black",
-        fillColor: data.properties.fillColor || "#FF0000", 
+        fillColor: data.properties.fillColor || "#FF0000",
         weight: 1.3,
         opacity: 1.5,
       }).addTo(map);
-      // save list
-      activeLayers.push({ name, layer, visible: true });
+
+      activeLayers.push({ 
+        name, 
+        layer, 
+        visible: true,
+        geometry: data.geometry   
+      });
 
       renderLayersList();
-    //   console.log(`Mapa cargado: ${name}`);
     })
     .catch(error => console.error('Error cargando mapa:', error));
 }
-
 
 
 function renderLayersList() {
@@ -222,25 +226,34 @@ showAllBtn.addEventListener('click', () => {
 const tooltipBox = document.getElementById("layer-info-tooltip");
 
 function showLayerInfo(layerName) {
-  // search indexData by name
   const info = indexData.find(item => item.name === layerName);
-  
+  const layerObj = activeLayers.find(m => m.name === layerName);
+
+  let areaText = "";
+  if (layerObj && layerObj.geometry) {
+    const area = calculateGeoJSONArea(layerObj.geometry);
+    const areaKm2 = area / 1e6;
+    areaText = `<p><text>Area ≈</text> ${areaKm2.toFixed(2)} km²</p><br>`;
+  }
+
   if (!info) {
     tooltipBox.innerHTML = "<i>No data found</i>";
   } else {
     tooltipBox.innerHTML = `
       <b>${info.name}</b><br>
-      
-      ${info.flag ? ` <div class="flagContainer"> <img src="${info.flag}"></div>` : ""}
-
+      ${info.flag ? `<div class="flagContainer"><img src="${info.flag}"></div>` : ""}
       <p><text>Era:</text> ${info.era}</p><br>
       <p><text>Continent:</text> ${info.continent}</p><br>
-      <p><text>Description:</text> ${info.description ? ` ${info.description}` : ""}</p>
+      ${areaText}
+      <p><text>Description:</text> ${info.description || ""}</p>
     `;
   }
 
   tooltipBox.style.display = "block";
 }
+
+
+
 
 function hideLayerInfo() {
   tooltipBox.style.display = "none";
@@ -248,3 +261,33 @@ function hideLayerInfo() {
 
 
 
+// --------------superficie calculator---------------
+
+function calculateGeoJSONArea(geometry) {
+  // radio tierra en metros
+  const R = 6371000; 
+
+  function toRad(deg) { return deg * Math.PI / 180; }
+
+  function ringArea(coords) {
+    let area = 0;
+    for (let i = 0; i < coords.length; i++) {
+      const [lon1, lat1] = coords[i];
+      const [lon2, lat2] = coords[(i + 1) % coords.length];
+      area += (toRad(lon2) - toRad(lon1)) * (2 + Math.sin(toRad(lat1)) + Math.sin(toRad(lat2)));
+    }
+    return Math.abs(area * R * R / 2);
+  }
+
+  let total = 0;
+
+  if (geometry.type === "Polygon") {
+    geometry.coordinates.forEach(ring => { total += ringArea(ring); });
+  } else if (geometry.type === "MultiPolygon") {
+    geometry.coordinates.forEach(polygon => {
+      polygon.forEach(ring => { total += ringArea(ring); });
+    });
+  }
+  return total;
+}
+// --------------------------------------
