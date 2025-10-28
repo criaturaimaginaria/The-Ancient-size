@@ -323,16 +323,39 @@ input[type="checkbox"] {
 
 
 
-  @media screen and (min-width: 768px) {
-    /* header {
-      margin: 6em 0 6em 0;
-      position: relative
-    } */
+  @media screen and (max-width: 768px) {
 
-    /* .title {
-      font-size: 2.8em;
-    } */
+.mobileSign{
+  display: flex;
+  justify-content:center ;
+  /* align-items: center; */
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  background: #222222ac;
+  z-index: 1001;
+}
 
+.sign{
+  margin-top: 12vh;
+  background-color: #e1e1e1;
+  width: 65%;
+  padding: 1em;
+  border-radius: 10px;
+  height: fit-content;
+
+    font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sign b{
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 }
