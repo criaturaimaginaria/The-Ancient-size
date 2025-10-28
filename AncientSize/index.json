@@ -5,7 +5,7 @@
     "id": "rome",
     "name": "Rome (kingdom) 753-630 BC",
     "era": "Rpublic",
-    "continent": "Europe",
+    "religion": "Ancient Roman religion.",
     "keywords": ["republic", "coliseo", "senado", "roma"],
     "file": "maps/europe/rome.json",
     "flag": "flags/europe/romeflag.svg"
@@ -14,7 +14,7 @@
     "id": "romeKing2",
     "name": "Rome (kingdom) 618-509 BC",
     "era": "kingdom",
-    "continent": "Europe",
+    "religion": "Ancient Roman religion.",
     "keywords": ["kingdom", "king", "rey", "roma"],
     "file": "maps/europe/romeKingdom2.json",
     "flag": "flags/europe/romeflag.svg"
@@ -23,7 +23,7 @@
     "id": "romeRepublic1",
     "name": "Rome (Republic) 268-241 BC",
     "era": "republic",
-    "continent": "Europe",
+    "religion": "Ancient Roman religion.",
     "keywords": ["republic", "roma", "senate", "roma"],
     "file": "maps/europe/romeAppClaudius.json",
     "flag": "flags/europe/romeflag.svg"
@@ -32,7 +32,7 @@
     "id": "rome2",
     "name": "Rome (Empire) 98-117 AD ",
     "era": "High Roman Empire",
-    "continent": "Europe, Asia, Africa",
+    "religion": "Ancient Roman religion.",
     "keywords": ["imperio", "coliseo", "98-117 AD", "roma", "empire"],
     "file": "maps/europe/romeTrajan.json",
     "flag": "flags/europe/romeflag.svg",
@@ -68,7 +68,7 @@
     "id": "venice1",
     "name": "Republic of Venice 700-1095 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","venice", "839-1140", "venezia", "venecia"],
     "file": "maps/europe/maritimeRepublics/venice1.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
@@ -80,7 +80,7 @@
     "id": "venice2",
     "name": "Republic of Venice 1430-1570 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","venice", "1430-1570 ", "venezia", "venecia"],
     "file": "maps/europe/maritimeRepublics/venice2.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
@@ -92,7 +92,7 @@
     "id": "amalfi",
     "name": "Republica di Amalfi 839 AD - 1137 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","amalfi", "839", "1137 "],
     "file": "maps/europe/maritimeRepublics/amalfi.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Amalfi.svg",
@@ -103,7 +103,7 @@
     "id": "ancona",
     "name": "Republica di Ancona 1000-1532 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","ancona", "839", "1137 "],
     "file": "maps/europe/maritimeRepublics/ancona.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Ancona.png",
@@ -115,7 +115,7 @@
     "id": "noli",
     "name": "Republica di Noli 1192-1797 AD",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","noli", "839", "1137 "],
     "file": "maps/europe/maritimeRepublics/noli.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Noli.svg.png",
@@ -128,7 +128,7 @@
     "id": "genova1",
     "name": "Republica di Genoa 1005 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","genoa", "839", "1137 ", "genova"],
     "file": "maps/europe/maritimeRepublics/genova1.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
@@ -140,7 +140,7 @@
     "id": "genova2",
     "name": "Republic of Genoa 1566-1755 AD",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","genoa", "839", "1137 ", "genova"],
     "file": "maps/europe/maritimeRepublics/genova2.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
@@ -153,7 +153,7 @@
     "id": "corsa",
     "name": "Republica Corsa 1955-1969 AD ",
     "era": "1700s",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","corsica", "cora"],
     "file": "maps/europe/maritimeRepublics/republicaCorsa.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Corsica.svg.png",
@@ -166,7 +166,7 @@
     "id": "pisa1",
     "name": "Republic of Pisa 1005-1090 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower"],
     "file": "maps/europe/maritimeRepublics/pisa1.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
@@ -178,7 +178,7 @@
     "id": "pisa2",
     "name": "Republic of Pisa 1090-1115 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower"],
     "file": "maps/europe/maritimeRepublics/pisa2.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
@@ -190,7 +190,7 @@
     "id": "pisa3",
     "name": "Republic of Pisa 1115-1183 AD ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower"],
     "file": "maps/europe/maritimeRepublics/pisa3.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
@@ -203,7 +203,7 @@
     "id": "ragusa",
     "name": "Republic of Ragusa 1358-1808 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","ragusa", "1358-1808"],
     "file": "maps/europe/maritimeRepublics/ragusa.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Republic_of_Ragusa.svg",
@@ -217,7 +217,7 @@
     "id": "gaeta",
     "name": "Duchy of Gaeta 839-1140 AD  ",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","gaeta", "839-1140"],
     "file": "maps/europe/maritimeRepublics/gaeta.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Gaeta.svg",
@@ -251,7 +251,7 @@
     "id": "florenceRepublic",
     "name": "Republic of Florence 1115-1406 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
     "file": "maps/europe/italy/florenceRepublic.json",
     "flag": "flags/europe/italy/Flag_of_Florence.svg",
@@ -261,7 +261,7 @@
     "id": "florenceRepublic2",
     "name": "Republic of Florence 1406-1569 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
     "file": "maps/europe/italy/florenceRepublic2.json",
     "flag": "flags/europe/italy/Flag_of_Florence.svg",
@@ -275,7 +275,7 @@
     "id": "naplesKingdom",
     "name": "kingdom of Naples 1282-1806 & 1815-1816 AD",
     "era": "medieval",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["kingdom", "naples", "1282-1806 & 1815-1816"],
     "file": "maps/europe/italy/naplesKingdom.json",
     "flag": "flags/europe/italy/naplesFlag-Trastámara.png",
@@ -287,7 +287,7 @@
     "id": "massa",
     "name": "Duchy of Massa 1473-1796 AD  ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "massa", "1473", "duchy", "ducado"],
     "file": "maps/europe/italy/massaDuchy.json",
     "flag": "flags/europe/italy/Repubblica_di_Massa-Bandiera.svg.png",
@@ -299,7 +299,7 @@
     "id": "siena",
     "name": "Republic of Siena 1125 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "siena", "1125"],
     "file": "maps/europe/italy/siena.json",
     "flag": "flags/europe/italy/Flag_of_Siena.png",
@@ -311,7 +311,7 @@
     "id": "lucca",
     "name": "Republic of Lucca 1160-1805 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "lucca", "1160"],
     "file": "maps/europe/italy/lucca.json",
     "flag": "flags/europe/italy/Flag_of_Lucca.png",
@@ -322,7 +322,7 @@
     "id": "KingdomSicilia",
     "name": "Kingdom of Sicily 1282-1806 AD ",
     "era": "medieval - renaissance",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "siena", "1125"],
     "file": "maps/europe/italy/siciliaKingdom.json",
     "flag": "flags/europe/italy/Bandiera_del_Regno_di_Sicilia_4.svg.png",
@@ -335,7 +335,7 @@
     "id": "sanMarino1",
     "name": "San Marino IV - X",
     "era": "medieval ",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "san marino", "300 AD", "900 AD"],
     "file": "maps/europe/italy/sanMarino1.json",
     "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
@@ -347,7 +347,7 @@
     "id": "sanMarino2",
     "name": "San Marino X - 1320 AD",
     "era": "medieval ",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "san marino", "900 AD", "1300"],
     "file": "maps/europe/italy/sanMarino2.json",
     "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
@@ -359,7 +359,7 @@
     "id": "sanMarino3",
     "name": "San Marino 1320 - 1463 AD",
     "era": "medieval ",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "san marino", "1320"],
     "file": "maps/europe/italy/sanMarino3.json",
     "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
@@ -370,7 +370,7 @@
     "id": "sanMarino4",
     "name": "San Marino 1463 AD - Present",
     "era": "medieval - renaissance - modern",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["republic", "san marino", "1463AD"],
     "file": "maps/europe/italy/sanMarino4.json",
     "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
@@ -383,7 +383,7 @@
     "id": "papalStatesRisorgimento",
     "name": "Papal States 1600-1859",
     "era": "renaissance - modern",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
     "file": "maps/europe/italy/papalStatesRisorgimento.json",
     "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
@@ -394,7 +394,7 @@
     "id": "papalStatesRisorgimento2",
     "name": "Papal States 1859-1870 AD",
     "era": "risorgimento",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
     "file": "maps/europe/italy/papalStatesRisorgimento2.json",
     "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
@@ -405,12 +405,81 @@
     "id": "vaticanCity",
     "name": "Vatican city 1929AD-today",
     "era": "world war II - modern",
-    "continent": "Europe",
+    "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
     "file": "maps/europe/italy/vaticanCity.json",
     "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
     "description": "Vatican City is the smallest sovereign state in the world, an enclave within Rome ruled by the Pope as the head of the Catholic Church. Established in 1929, it is the center of the Catholic world, home to significant sites like St. Peter's Basilica and the Vatican Museums."
   },
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+    {
+    "id": "castilla2",
+    "name": "Kingom of Castile 1270 - 1492 AD",
+    "era": "medieval",
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla2.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain before conquest granada"
+  },
+
+
+    {
+    "id": "castilla3",
+    "name": "Kingom of Castile 1492 - 1516 AD",
+    "era": "medieval",
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla3.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain"
+  },
+
+
+    {
+    "id": "navarra",
+    "name": "Kingdom of Navarre 1200 - 1516 AD",
+    "era": "medieval",
+    "religion": "Roman Catholicism",
+    "keywords": ["navarra", "kingdom", "catholic", "spain"],
+    "file": "maps/europe/ibericPeninsula/navarra.json",
+    "flag": "flags/europe/ibericPeninsula/Bandera_de_Reino_de_Navarra.svg.png",
+    "description": "reino de navarra"
+  },
+
+
+
+    {
+    "id": "granada1",
+    "name": "Emirate of Granada 1270 - ",
+    "era": "medieval",
+    "religion": "Islam",
+    "keywords": ["granada", "emirate", "islam", "spain"],
+    "file": "maps/europe/ibericPeninsula/granada1.json",
+    "flag": "flags/europe/ibericPeninsula/Royal_Standard_of_Nasrid_Dynasty_Kingdom_of_Grenade.svg.png",
+    "description": "granada islam emirate"
+  },
+
 
 
 
@@ -439,7 +508,7 @@
     "id": "athens",
     "name": "Athens 500-400 BC",
     "era": "classic",
-    "continent": "Europa",
+    "religion": "Ancient Greek Religion",
     "keywords": ["athens", "greek", "500-400 BC", "greece", "500-400 ", "hellenic"],
     "file": "maps/europe/greece/athens.json"
   },
@@ -448,7 +517,7 @@
     "id": "sparts",
     "name": "Sparta 900-146 BC",
     "era": "classic",
-    "continent": "Europa",
+    "religion": "Ancient Greek Religion",
     "keywords": ["sparta", "greek", "500-400 BC", "greece", "900-146 BC"],
     "file": "maps/europe/greece/sparta.json"
   },
@@ -456,7 +525,7 @@
     "id": "messene",
     "name": "Messene 300 BC",
     "era": "classic",
-    "continent": "Europa",
+    "religion": "Ancient Greek Religion",
     "keywords": ["Messene", "greek", "300 BC", "greece", "greece"],
     "file": "maps/europe/greece/messene.json"
   },
@@ -464,7 +533,7 @@
     "id": "corinth",
     "name": "Corinth 700-146 BC",
     "era": "classic",
-    "continent": "Europa",
+    "religion": "Ancient Greek Religion",
     "keywords": ["corinth", "corinto", "greek", "700-146 BC ", "greece", "greece"],
     "file": "maps/europe/greece/corinth.json"
   },
@@ -473,7 +542,7 @@
     "id": "argos",
     "name": "Argos 1200-146 BC ",
     "era": "classic",
-    "continent": "Europa",
+    "religion": "Ancient Greek Religion",
     "keywords": ["argos",  "greek", "1200-146 BC ", "greece", "greece"],
     "file": "maps/europe/greece/corinth.json"
   },
@@ -483,7 +552,7 @@
     "id": "arcadianLeague",
     "name": "Arcadian league 370-230 BC ",
     "era": "classic",
-    "continent": "Hellenic world",
+    "religion": "Ancient Greek Religion",
     "keywords": ["arcadian league",  "greek", "1200-146 BC ", "greece", "greece", "hellenic", "Hellenistic"],
     "file": "maps/europe/greece/arcadianLeague.json"
   },
@@ -492,7 +561,7 @@
     "id": "Elis",
     "name": "Elis  V-IV BC  ",
     "era": "classic",
-    "continent": "classic",
+    "religion": "Ancient Greek Religion",
     "keywords": ["elis",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/Elis.json"
   },
@@ -502,7 +571,7 @@
     "id": "patras",
     "name": "Patras 700-146 BC ",
     "era": "classic",
-    "continent": "classic",
+    "religion": "classic",
     "keywords": ["patras",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/patras.json"
   },
@@ -511,7 +580,7 @@
     "id": "thebes",
     "name": "Thebes 900-146 BC ",
     "era": "classic",
-    "continent": "classic",
+    "religion": "Ancient Greek Religion",
     "keywords": ["thebes",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/thebes.json"
   },
@@ -520,7 +589,7 @@
     "id": "achaeanLeague",
     "name": "Achaean league 280-192 BC ",
     "era": "classic",
-    "continent": "hellenic",
+    "religion": "Ancient Greek Religion",
     "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/achaeanLeague.json"
   },
@@ -530,7 +599,7 @@
     "id": "achaeanLeague2",
     "name": "Achaean league 192-146 BC ",
     "era": "hellenic",
-    "continent": "hellenic",
+    "religion": "Ancient Greek Religion",
     "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/achaeanLeague2.json"
   },
@@ -540,7 +609,7 @@
     "id": "aegina",
     "name": "Aegina V BC ",
     "era": "classic",
-    "continent": "hellenic",
+    "religion": "Ancient Greek Religion",
     "keywords": ["Aegina",  "greek", "", "greece", "greece", "hellenic"],
     "file": "maps/europe/greece/aegina.json"
   },
@@ -568,7 +637,7 @@
     "id": "egypt1",
     "name": "Egypt old kingdom 2686-2181 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Ancient Egyptian religion",
     "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom"],
     "file": "maps/africa/nordAfrica/egypt1.json"
 
@@ -578,7 +647,7 @@
     "id": "egypt2",
     "name": "Lower Egypt (first intermediate period) 2181-2055 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Ancient Egyptian religion",
     "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period"],
     "file": "maps/africa/nordAfrica/egypt2.json"
 
@@ -589,7 +658,7 @@
     "id": "egypt3",
     "name": "Upper Egypt (first intermediate period) 2181-2055 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Ancient Egyptian religion",
     "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto"],
     "file": "maps/africa/nordAfrica/egypt3.json"
 
@@ -601,7 +670,7 @@
     "id": "egypt4",
     "name": "Egypt middle kingdom 2055-1650 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Ancient Egyptian religion",
     "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio"],
     "file": "maps/africa/nordAfrica/egypt4.json"
 
@@ -611,7 +680,7 @@
     "id": "egypt5",
     "name": "Egypt new kingdom 1549-1069 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Ancient Egyptian religion",
     "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo"],
     "file": "maps/africa/nordAfrica/egypt5.json"
 
@@ -622,7 +691,7 @@
     "id": "carthague1",
     "name": "Carthage (kingdom) 814-649 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Phoenician religion",
     "keywords": ["nord",  "carthague", "cartago"],
     "file": "maps/africa/nordAfrica/carthague1.json",
     "description": "Carthague fi..."
@@ -632,7 +701,7 @@
     "id": "carthague2",
     "name": "Carthage (kingdom) 649-500 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Phoenician religion",
     "keywords": ["nord",  "carthague", "cartago"],
     "file": "maps/africa/nordAfrica/carthague2.json",
     "description": "Carthague fi..king."
@@ -642,7 +711,7 @@
     "id": "carthague3",
     "name": "Carthage (Kingdom & Republic) 399-261 BC ",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Phoenician religion",
     "keywords": ["nord",  "carthague", "cartago", "republic"],
     "file": "maps/africa/nordAfrica/carthague3.json",
     "description": "Carthague fi..king and republic."
@@ -652,7 +721,7 @@
     "id": "carthague4",
     "name": "Carthage (Republic) 201-146 BC",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Phoenician religion",
     "keywords": ["nord",  "carthague", "cartago", "republic"],
     "file": "maps/africa/nordAfrica/carthague4.json",
     "description": "Carthague republic, finally defeated by rome. cartago delenda est ;("
@@ -664,7 +733,7 @@
     "id": "numidia",
     "name": "Numidia 200 BC ",
     "era": "Antigüedad",
-    "continent": "África",
+    "religion": "Politeísta bereber",
     "keywords": ["nord",  "nilo", "numidia"],
     "file": "maps/africa/nordAfrica/numidia.json",
     "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
@@ -711,7 +780,7 @@
     "id": "palmyra",
     "name": "Palmyrene kingdom 260-270 AD ",
     "era": "Antigüedad",
-    "continent": "Middle East",
+    "religion": "Middle East",
     "keywords": ["palmyra", "middle", "Zenobia", "palmira"],
     "file": "maps/africa/middleEast/palmyra.json"
 
@@ -721,7 +790,7 @@
     "id": "palmyraEmpire",
     "name": "Palmyrene empire 270-273 AD ",
     "era": "Antigüedad",
-    "continent": "Middle East",
+    "religion": "Middle East",
     "keywords": ["palmyra", "middle", "Zenobia", "empire", "palmira"],
     "file": "maps/africa/middleEast/palmyraEmpire.json"
 

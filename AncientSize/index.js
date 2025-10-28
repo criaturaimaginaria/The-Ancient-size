@@ -51,7 +51,7 @@ searchInput.addEventListener("input", function () {
   const filtered = indexData.filter(map =>
     map.name.toLowerCase().includes(query) ||
     map.era.toLowerCase().includes(query) ||
-    map.continent.toLowerCase().includes(query) ||
+    map.religion.toLowerCase().includes(query) ||
     map.keywords.some(k => k.toLowerCase().includes(query))
   );
 
@@ -247,7 +247,7 @@ function showLayerInfo(layerName) {
       <b>${info.name}</b><br>
       ${info.flag ? `<div class="flagContainer"><img src="${info.flag}"></div>` : ""}
       <p><text>Era:</text> ${info.era}</p><br>
-      <p><text>Continent:</text> ${info.continent}</p><br>
+      ${info.religion ? `<p><text>religion:</text> ${info.religion}</p><br>` : ""}
       ${areaText}
       <p><text>Description:</text> ${info.description || ""}</p>
     `;

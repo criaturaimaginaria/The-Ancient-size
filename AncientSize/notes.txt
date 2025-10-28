@@ -1,6 +1,8 @@
-
--make an automatic surface calculator based on the 
-geojson data to put in the tooltip card.
+*agregar?*
+-capital
+-religion
+-población
+-forma de gobierno
 
 -subirlo a la web 
 
