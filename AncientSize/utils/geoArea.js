@@ -1,5 +1,5 @@
 
-function calculateGeoJSONArea(geometry) {
+export function calculateGeoJSONArea(geometry) {
   // radio tierra en metros
   const R = 6371000; 
 
