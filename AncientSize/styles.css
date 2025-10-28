@@ -321,7 +321,9 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-
+.mobileSign{
+display: none;
+}
 
   @media screen and (max-width: 768px) {
 
@@ -355,7 +357,7 @@ input[type="checkbox"] {
   font-family: "Averia Serif Libre", serif;
   font-weight: 700;
   font-style: normal;
-}
+} 
 
 
 }
