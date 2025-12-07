@@ -545,7 +545,9 @@
     "era": "classic",
     "religion": "Ancient Greek Religion",
     "keywords": ["athens", "greek", "500-400 BC", "greece", "500-400 ", "hellenic"],
-    "file": "maps/europe/greece/athens.json"
+    "flag": "flags/europe/greece/athen 4.png",
+    "file": "maps/europe/greece/athens.json",
+     "description": "Between 500 and 400 BC, Athens rose from a threatened city-state to a major power. The period began with victory in the Persian Wars, which strengthened its navy and economy. Under Pericles, Athens experienced a Golden Age of democracy, art, philosophy, and the Parthenon. It ended weakened by the Peloponnesian War against Sparta."
   },
 
   {
@@ -649,6 +651,16 @@
     "file": "maps/europe/greece/aegina.json"
   },
 
+    {
+    "id": "alexander",
+    "name": "Empire of Alexander the Great (Macedonian Empire) 336-323 BC",
+    "era": "Hellenism",
+    "religion": "Greek religion, Egyptian religion, Mesopotamian religions, Zoroastrianism etc ",
+    "keywords": ["alexandcer the great", "greece", "hellenism", "macedonian","macedonia","empire"],
+    "file": "maps/europe/greece/alexanderEmpire.json",
+    "flag": "flags/europe/greece/Flag_of_Greek_Macedonia.svg.png",
+    "description": "The Empire of Alexander the Great began in Macedonia in 336 BC and expanded rapidly after conquering key cities such as Troy, Tyre, Gaza, Memphis, and Babylon, reaching as far as India. His empire united Europe, Asia, and Africa. After his death in 323 BC, his generals divided the territory and founded new kingdoms."
+  },
 
 
 
