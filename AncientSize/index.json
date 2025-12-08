@@ -664,6 +664,19 @@
 
 
 
+      {
+    "id": "delianLeague",
+    "name": "Delian league 431 BC",
+    "era": "Hellenism",
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "macedonian","delian","delos", "league", ""],
+    "file": "maps/europe/greece/delianLeague.json",
+
+    "description": "The Delian League existed from 478 BC to 404 BC and was dissolved in 404 BC. It began as a defensive alliance of Greek city-states formed to protect against Persian attacks after the Persian Wars. Over time, Athens transformed the league into an empire by moving the treasury from Delos to Athens, forcing members to pay tribute, suppressing revolts, and imposing control through its navy and political power."
+  },
+
+
+
 
 
 
