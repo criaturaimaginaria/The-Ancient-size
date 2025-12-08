@@ -36,7 +36,8 @@
     "keywords": ["imperio", "coliseo", "98-117 AD", "roma", "empire"],
     "file": "maps/europe/romeTrajan.json",
     "flag": "flags/europe/romeflag.svg",
-    "description": "roman empire y bla bla bla"
+    "population": "60 million",
+    "description": "From 97 to 117 AD, Rome under Emperor Trajan reached the height of its power and territory. Expansion was achieved mainly through successful military campaigns, especially the Dacian Wars, which brought great wealth and secure borders along the Danube. Trajan also conquered parts of the Near East, including Armenia and Mesopotamia. Rome reached its maximum territorial extent in 117 AD, just before Trajan’s death."
   },
 
 
@@ -667,12 +668,24 @@
       {
     "id": "delianLeague",
     "name": "Delian league 431 BC",
-    "era": "Hellenism",
+    "era": "Classic greece",
     "religion": "Ancient Greek religion ",
-    "keywords": ["greek", "greece", "hellenism", "macedonian","delian","delos", "league", ""],
+    "keywords": ["greek", "greece", "hellenism", "478","delian","delos", "league", "404","athens","empire"],
     "file": "maps/europe/greece/delianLeague.json",
 
     "description": "The Delian League existed from 478 BC to 404 BC and was dissolved in 404 BC. It began as a defensive alliance of Greek city-states formed to protect against Persian attacks after the Persian Wars. Over time, Athens transformed the league into an empire by moving the treasury from Delos to Athens, forcing members to pay tribute, suppressing revolts, and imposing control through its navy and political power."
+  },
+
+
+        {
+    "id": "peloponnesianLeague",
+    "name": "Peloponnesian League 431 BC",
+    "era": "classic greece",
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "550","peloponnesian","peloponeso", "league", "404","sparta"],
+    "file": "maps/europe/greece/peloponnesianLeague.json",
+
+    "description": "The Peloponnesian League was formed around 550 BC and ceased to exist in 404 BC. It was a military alliance led by Sparta, bringing together many Greek city-states of the Peloponnese and central Greece. Unlike the Delian League, its members kept more independence but were expected to support Sparta in war. The league’s main goal was to defend against rivals, especially Athens, during the Peloponnesian War."
   },
 
 

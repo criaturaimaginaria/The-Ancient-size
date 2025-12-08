@@ -247,8 +247,9 @@ function showLayerInfo(layerName) {
       <b>${info.name}</b><br>
       ${info.flag ? `<div class="flagContainer"><img src="${info.flag}"></div>` : ""}
       <p><text>Era:</text> ${info.era}</p><br>
-      ${info.religion ? `<p><text>religion:</text> ${info.religion}</p><br>` : ""}
+      ${info.religion ? `<p><text>Religion:</text> ${info.religion}</p><br>` : ""}
       ${areaText}
+      ${info.population ? `<p><text>Population ≈</text> ${info.population}</p><br>` : ""}
       <p><text>Description:</text> ${info.description || ""}</p>
     `;
   }
