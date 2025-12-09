@@ -3,7 +3,7 @@
   "properties": {
     "name": "Eastern Roman Empire 1451-1453 AD",
     "id": "athens",
-    "fillColor": "#003EA8"
+    "fillColor": "#B50000"
   },
   "geometry": {
     "type": "MultiPolygon",
