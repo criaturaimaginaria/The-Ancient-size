@@ -32,16 +32,17 @@
     "id": "rome2",
     "name": "Rome (Empire) 98-117 AD ",
     "era": "High Roman Empire",
+    "capital": "Rome",
     "religion": "Ancient Roman religion.",
+    "currency":"Aureus (gold), Denarius (silver), Sestertius (brass), As (copper)",
+    "GovernmentType":"Principate (Republican forms, imperial reality)",
     "keywords": ["imperio", "coliseo", "98-117 AD", "roma", "empire"],
     "file": "maps/europe/romeTrajan.json",
     "flag": "flags/europe/romeflag.svg",
     "population": "60 million",
+    "lenguages":"Latin",
     "description": "From 97 to 117 AD, Rome under Emperor Trajan reached the height of its power and territory. Expansion was achieved mainly through successful military campaigns, especially the Dacian Wars, which brought great wealth and secure borders along the Danube. Trajan also conquered parts of the Near East, including Armenia and Mesopotamia. Rome reached its maximum territorial extent in 117 AD, just before Trajan’s death."
   },
-
-
-
 
 
 
@@ -222,7 +223,7 @@
     "keywords": ["republic","gaeta", "839-1140"],
     "file": "maps/europe/maritimeRepublics/gaeta.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Gaeta.svg",
-    "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
+    "description": "The Duchy of Gaeta was a small but strategically important maritime state in southern Italy during the Early Middle Ages. Originally under Byzantine influence, it became effectively independent in the 9th century. Ruled by local dynasties, it balanced diplomacy between Byzantines, Lombards, and Muslims before being absorbed by the Normans in the 12th century."
   },
 
 
@@ -427,8 +428,28 @@
   
 
 
+    {
+    "id": "kingdomSturias",
+    "name": "Kingdom of Asturias 814 AD",
+    "era": "Early Middle Ages",
+    "religion": "Roman Catholicism",
+    "keywords": ["asturias", "kingdom", "cristian", "800s", "iberic","spain"],
+    "file": "maps/europe/ibericPeninsula/kingdomAsturias.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_the_Kingdom_of_Asturias.svg.png",
+    "description": "The Kingdom of Asturias was a Christian state founded in the early 8th century after the Muslim conquest of the Iberian Peninsula. It began with the victory of Pelayo at the Battle of Covadonga (c. 722) and became the first nucleus of the Christian Reconquista. From the north, it slowly expanded and later evolved into the Kingdom of León."
+  },
 
 
+    {
+    "id": "cordoba emirate",
+    "name": "Emirate of Córdoba 814 AD",
+    "era": "Early Middle Ages",
+    "religion": "Sunni Islam",
+    "keywords": ["cordoba", "emirate", "islam", "800s", "andalus"],
+    "file": "maps/europe/ibericPeninsula/cordobaEmirate.json",
+    "flag": "flags/europe/ibericPeninsula/Umayyad_Flag_(Green).png",
+    "description": "The Emirate of Córdoba was a Muslim state founded in 756 by Abd al-Rahman I in the Iberian Peninsula after breaking away from the Abbasid Caliphate. With Córdoba as its capital, it strengthened Muslim rule in Al-Andalus, encouraged agriculture, trade, and culture, and faced internal conflicts and Christian attacks. In 929, it became the Caliphate of Córdoba."
+  },
 
 
 
@@ -689,6 +710,21 @@
   },
 
 
+    {
+    "id": "easternRomanLast",
+    "name": "Eastern Roman Empire 1451-1453 AD",
+    "era": "middle ages",
+    "religion": "Eastern Orthodox Christianity",
+    "keywords": [ "Constantinople fall", "Byzantine Empire", "Constantine XI", "constantinopla", "Eastern Roman Empire", "1453", "Hagia Sophia", "Ottoman conquest",  "End of the Middle Ages" ],
+    "population":"45.000",
+    "lenguages":"Greek",
+    "capital":"Constantinople",
+    "currency":"Hyperpyron",
+    "GovernmentType":"Hereditary absolute monarchy",
+    "file": "maps/europe/greece/easterRomanEmpireLast.json",
+    "flag": "flags/europe/greece/Byzantine_imperial_flag,_14th_century_(firesteels_vesion).svg.png",
+    "description": "Between 1451 and 1453, the Eastern Roman Empire entered its final and irreversible crisis. Sultan Mehmed II systematically prepared the destruction of Constantinople by isolating the city, building fortresses along the Bosporus, and deploying massive cannons. Emperor Constantine XI ruled a city reduced to shadows of its former power, short on men, allies, and supplies. After a brutal siege, Ottoman forces breached the walls on May 29, 1453. Constantine died fighting among his soldiers, ending over a thousand years of uninterrupted Roman statehood."
+  },
 
 
 

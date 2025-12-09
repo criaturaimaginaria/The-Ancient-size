@@ -246,8 +246,14 @@ function showLayerInfo(layerName) {
     tooltipBox.innerHTML = `
       <b>${info.name}</b><br>
       ${info.flag ? `<div class="flagContainer"><img src="${info.flag}"></div>` : ""}
-      <p><text>Era:</text> ${info.era}</p><br>
+      ${info.capital ? `<p><text>Capital:</text> ${info.capital}</p><br>` : ""}
+      ${info.GovernmentType ? `<p><text>Government type:</text> ${info.GovernmentType}</p><br>` : ""}
+      ${info.currency ? `<p><text>Currency:</text> ${info.currency}</p><br>` : ""}
+
       ${info.religion ? `<p><text>Religion:</text> ${info.religion}</p><br>` : ""}
+
+
+      ${info.lenguages ? `<p><text>Lenguages:</text> ${info.lenguages}</p><br>` : ""}
       ${areaText}
       ${info.population ? `<p><text>Population ≈</text> ${info.population}</p><br>` : ""}
       <p><text>Description:</text> ${info.description || ""}</p>
