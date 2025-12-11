@@ -1,7 +1,7 @@
 *agregar?*
--capital
--población
--forma de gobierno
+-Capital
+-Currency
+-Government type
 
 -subirlo a la web 
 
