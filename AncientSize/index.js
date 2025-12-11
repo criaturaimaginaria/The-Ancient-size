@@ -41,8 +41,13 @@ fetch('./index.json')
 const searchInput = document.getElementById("map-search");
 const resultsContainer = document.getElementById("search-results");
 const tooltip = document.getElementById("map-tooltip");
+let showAllActive = false;
+
 
 searchInput.addEventListener("input", function () {
+
+showAllActive = false;
+
   const query = this.value.toLowerCase();
   resultsContainer.innerHTML = "";
 
@@ -195,8 +200,18 @@ fetch('./index.json')
   .then(data => mapIndex = data);
 
 function renderResults(results) {
+  const textEmpty = (searchInput.value || '').trim() === '';
+
+  // SI NO HAY TEXTO Y NO HAY SHOW-ALL Y NO HAY FILTRO DE AÑo no muestra nada
+  if (textEmpty && !showAllActive && !yearFilterActive) {
+    searchResults.innerHTML = '';
+    return;
+  }
+
+  // dibujar resultados normalmente
   searchResults.innerHTML = '';
-  if (results.length === 0) return;
+  if (!results || results.length === 0) return;
+
   results.forEach(map => {
     const div = document.createElement('div');
     div.className = 'result-item';
@@ -205,6 +220,8 @@ function renderResults(results) {
     searchResults.appendChild(div);
   });
 }
+
+
 
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.toLowerCase();
@@ -218,6 +235,7 @@ searchInput.addEventListener('input', () => {
 });
 
 showAllBtn.addEventListener('click', () => {
+  showAllActive = true;
   // borra texto del buscador
   searchInput.value = '';
   renderResults(mapIndex);
@@ -271,3 +289,114 @@ function hideLayerInfo() {
 }
 
 
+
+
+
+
+
+
+
+
+
+// YEAR FILTER-------------------------------
+
+const showDateFilterBtn = document.getElementById('show-dateFilter');
+const yearFilterBox = document.getElementById('year-filter');
+const yearInput = document.getElementById('year-input');
+const yearEra = document.getElementById('year-era');
+const yMinus1 = document.getElementById('year-minus-1');
+const yPlus1 = document.getElementById('year-plus-1');
+
+
+let yearFilterActive = false;
+
+// convierte lo que escribe el usuario a valor interno (BC = negativo)
+function getSelectedYear() {
+  const raw = parseInt(yearInput.value);
+  if (isNaN(raw)) return null;
+  return yearEra.value === 'BC' ? -Math.abs(raw) : Math.abs(raw);
+}
+
+function applyCombinedFilters() {
+  let results = mapIndex || [];
+  const text = (searchInput.value || '').toLowerCase().trim();
+
+  if (text !== '') {
+    results = results.filter(m =>
+      (m.name && m.name.toLowerCase().includes(text)) ||
+      (m.era && m.era.toLowerCase().includes(text)) ||
+      (m.religion && m.religion.toLowerCase().includes(text)) ||
+      (Array.isArray(m.keywords) && m.keywords.some(k => k.toLowerCase().includes(text)))
+    );
+  }
+
+  if (yearFilterActive) {
+    const y = getSelectedYear();
+    if (y !== null) {
+      results = results.filter(m => {
+        if (typeof m.yearStart !== 'number' || typeof m.yearEnd !== 'number') return false;
+        return y >= m.yearStart && y <= m.yearEnd;
+      });
+    }
+  }
+
+  renderResults(results);
+}
+
+// togglemostrar/ocultar y activar/desactivar (con cambio visual)
+showDateFilterBtn.addEventListener('click', () => {
+  const visible = yearFilterBox.style.display === 'block';
+  if (visible) {
+    yearFilterBox.style.display = 'none';
+    yearFilterActive = false;
+    showDateFilterBtn.classList.remove('active-year-btn');
+  } else {
+    yearFilterBox.style.display = 'block';
+    yearFilterActive = true;
+    showDateFilterBtn.classList.add('active-year-btn');
+  }
+  applyCombinedFilters();
+});
+
+
+searchInput.addEventListener('input', applyCombinedFilters);
+showAllBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  yearInput.value = '';
+  yearEra.value = 'AD';
+  applyCombinedFilters();
+});
+
+
+function updateYear(delta) {
+  let cur = parseInt(yearInput.value);
+  if (isNaN(cur)) cur = 0;
+  cur = Math.max(0, cur + delta); // evitar negativos en input
+  yearInput.value = cur;
+  applyCombinedFilters();
+}
+
+function enableAutoRepeat(btn, cb) {
+  let interval = null, timeout = null;
+  const start = (e) => { e.preventDefault(); cb(); timeout = setTimeout(() => interval = setInterval(cb, 65), 65); };
+  const stop = () => { clearTimeout(timeout); if (interval) clearInterval(interval); interval = null; };
+  btn.addEventListener('mousedown', start);
+  btn.addEventListener('touchstart', start);
+  document.addEventListener('mouseup', stop);
+  document.addEventListener('touchend', stop);
+  document.addEventListener('touchcancel', stop);
+}
+
+enableAutoRepeat(yPlus1, () => updateYear(1));
+enableAutoRepeat(yMinus1, () => updateYear(-1));
+
+yearInput.addEventListener('input', applyCombinedFilters);
+yearEra.addEventListener('change', applyCombinedFilters);
+
+yearFilterBox.style.display = 'none';
+showDateFilterBtn.classList.remove('active-year-btn');
+
+
+
+
+// END YEAR FILTER---------------------------

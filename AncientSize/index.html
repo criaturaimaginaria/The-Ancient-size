@@ -41,7 +41,21 @@
 
             <div id="map-controls">
               <input type="text" id="map-search" placeholder="search civilization, era, country..." >
-              <button id="show-all">All Maps</button>
+              <button id="show-all">All</button>
+              <button id="show-dateFilter">By Year</button>
+
+              <div id="year-filter" style="display:none; margin-top:6px;">
+                <div class="yearFilterContainer">
+                    <button id="year-minus-1" type="button">−</button>
+                    <input type="number" id="year-input" placeholder="Year" ">
+                    <button id="year-plus-1" type="button">+</button>
+                    <select id="year-era">
+                      <option value="AD">AD</option>
+                      <option value="BC">BC</option>
+                    </select>
+                </div>
+              </div>
+
               <div id="search-results" class="results-list"></div>
             </div>
 

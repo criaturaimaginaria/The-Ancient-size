@@ -99,12 +99,144 @@
   cursor: pointer;
 }
 
+
+#show-dateFilter{
+
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: min(1.2vw, 1.2em);
+}
+
+#show-dateFilter:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------year search bar----------- */
+
+
+#year-filter {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+
+.yearFilterContainer {
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+
+  gap: 6px;
+  background: #f4f4f4;
+width: fit-content;
+  /* padding: 6px 10px; */
+  border-radius: 6px;
+
+}
+
+
+#year-minus-1,
+#year-plus-1 {
+  background: #e5e5e5;
+  border: 1px solid #e6e6e6;
+  padding: 4px 10px;
+  font-size: min(1.2vw, 1.2em);
+  line-height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.15s;
+  /* font-family: "Times New Roman", serif; */
+}
+
+#year-minus-1:hover,
+#year-plus-1:hover {
+  background: #d6d6d6;
+  border-color: #9b9b9b;
+}
+
+
+#year-input {
+  
+  width: 25%;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  background: #fafafa;
+  /* font-size: 15px;
+  font-family: "Georgia", serif; */
+  color: #222;
+}
+
+#year-input::-webkit-outer-spin-button,
+#year-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#year-input {
+  -moz-appearance: textfield;
+}
+
+#year-era {
+  padding: 2px 3px;
+  background: #eaeaea;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  /* font-size: 14px; */
+  color: #333;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#year-era:hover {
+  background: #dcdcdc;
+}
+
+
+#show-dateFilter {
+  opacity: 0.65;
+  transition: 0.2s;
+  border: 1px solid #b4b4b4;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#show-dateFilter.active-year-btn {
+  opacity: 1;
+  background-color: #3b3b3b;
+  border-color: #3b3b3b;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+#show-dateFilter.active-year-btn:hover {
+  opacity: 0.85;
+  background-color: #5d5d5d;
+    border-color: #5d5d5d;
+}
+
+
+
+/* ---------------- */
+
+
 .results-list{
   margin-top: 4px;
 }
 
 #map-search{
-  width: 70%;
+  width: 65%;
   font-size: min(1.2vw, 1.2em);
 }
 
