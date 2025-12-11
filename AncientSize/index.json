@@ -1019,6 +1019,23 @@
 
 
 
+  {
+    "id": "cyprus",
+    "name": "Kingdom of Cyprus 1192-1489 AD ",
+    "era": "imddle ages",
+    "yearStart": 1192,
+    "yearEnd": 1489,
+    "capital": "Nicosia",
+    "religion": "Roman Catholic",
+    "currency":"Cypriot gros",
+    "GovernmentType":"Feudal monarchy",
+    "keywords": ["cyprus", "chipre", "christian", "kingdom"],
+    "file": "maps/middleEast/cyprusKingdom.json",
+    "flag": "flags/middleEast/Stemma_reale_di_Giano_di_Cipro.svg.png",
+    "population": "150,000",
+    "lenguages":"Cypriot Greek",
+    "description": "The Kingdom of Cyprus was created in 1192 when Guy of Lusignan acquired the island after the Third Crusade, establishing a Crusader-style monarchy. Strategic for trade and military control, Cyprus gradually fell under Venetian influence. In 1489, political pressure led Queen Caterina Cornaro to cede the island to Venice, ending the kingdom."
+  },
 
 
 
