@@ -1039,6 +1039,43 @@
 
 
 
+  {
+    "id": "jerusalemKingdom",
+    "name": "Kingdom of Jerusalem 1099-1187 AD ",
+    "era": "imddle ages",
+    "yearStart": 1099,
+    "yearEnd": 1186,
+    "capital": "Jerusalén",
+    "religion": "Roman Catholicism",
+    "currency":"gold bezant",
+    "GovernmentType":"Feudal hereditary monarchy",
+    "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin"],
+    "file": "maps/middleEast/jerusalenKingdom.json",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+    "population": "300,000 to 600,000",
+    "lenguages":"Latin",
+    "description": "The Kingdom of Jerusalem was founded in 1099 after the First Crusade, when crusaders captured the Holy City and established a Latin feudal monarchy in the Levant. Its survival depended on narrow supply routes, European support, and powerful military orders. Between 1186 and 1187, the crushing defeat at Hattin allowed Saladin to reconquer almost all its territory, including Jerusalem."
+  },
+
+
+  
+  {
+    "id": "jerusalemKingdomlast",
+    "name": "Kingdom of Jerusalem 1268-1291 AD",
+    "era": "imddle ages",
+    "yearStart": 1268,
+    "yearEnd": 1291,
+    "capital": "Acre",
+    "religion": "Roman Catholicism",
+    "currency":"gold bezant",
+    "GovernmentType":"Feudal hereditary monarchy",
+    "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin"],
+    "file": "maps/middleEast/jerusalenKingdomLast.json",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+
+    "lenguages":"Latin",
+    "description": "The Kingdom of Jerusalem slowly withered as the Mamluks cut down its coastal enclaves one by one. In 1291, Acre, the last great Crusader stronghold, fell after a desperate defense, its walls shattered and its defenders pushed into the sea. With Acre’s collapse, the Crusader kingdom vanished from the Middle East, ending nearly two centuries of Latin rule."
+  },
 
 
 
@@ -1059,7 +1096,7 @@
     "yearEnd": 270,
     "religion": "Middle East",
     "keywords": ["palmyra", "middle", "Zenobia", "palmira"],
-    "file": "maps/africa/middleEast/palmyra.json"
+    "file": "maps/middleEast/palmyra.json"
 
   },
 
@@ -1072,7 +1109,7 @@
     "yearEnd": 273,
     "religion": "Middle East",
     "keywords": ["palmyra", "middle", "Zenobia", "empire", "palmira"],
-    "file": "maps/africa/middleEast/palmyraEmpire.json"
+    "file": "maps/middleEast/palmyraEmpire.json"
 
   }
 
