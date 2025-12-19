@@ -128,7 +128,12 @@ function loadMap(file, name) {
         fillColor: data.properties.fillColor || "#FF0000",
         weight: 1.3,
         opacity: 1.5,
-      }).addTo(map);
+
+        onEachFeature: (feature, layer) => {
+          layer.on('mouseover', () => showLayerInfoMinimal(name));
+          layer.on('mouseout', hideLayerInfo);
+        }
+      });layer.addTo(map);
 
       activeLayers.push({ 
         name, 
@@ -218,9 +223,20 @@ const searchResults = document.getElementById('search-results');
 const showAllBtn = document.getElementById('show-all');
 
 let mapIndex = [];
+
 fetch('./index.json')
   .then(res => res.json())
-  .then(data => mapIndex = data);
+  .then(async index => {
+    if (Array.isArray(index)) {
+      mapIndex = index;
+    } else if (index.parts) {
+      // cargar todas las partes de los indices partidos y unirlos
+      const parts = await Promise.all(
+        index.parts.map(p => fetch(p).then(r => r.json()))
+      );
+      mapIndex = parts.flat();
+    }
+  });
 
 function renderResults(results) {
   const textEmpty = (searchInput.value || '').trim() === '';
@@ -269,6 +285,7 @@ showAllBtn.addEventListener('click', () => {
 
 
 const tooltipBox = document.getElementById("layer-info-tooltip");
+const tooltipBoxMinimal = document.getElementById("layer-info-tooltipMinimal");
 
 function showLayerInfo(layerName) {
   const info = indexData.find(item => item.name === layerName);
@@ -310,6 +327,26 @@ function showLayerInfo(layerName) {
 
 function hideLayerInfo() {
   tooltipBox.style.display = "none";
+    tooltipBoxMinimal.style.display = "none";
+}
+
+
+
+
+
+// ---------------------------------
+// NUEVO: tooltip minimalista para polígono
+function showLayerInfoMinimal(layerName) {
+  const info = indexData.find(item => item.name === layerName);
+  if (!info) {
+    tooltipBoxMinimal.innerHTML = "<i>No data found</i>";
+  } else {
+    tooltipBoxMinimal.innerHTML = `
+      <b>${info.name}</b><br>
+      ${info.flag ? `<div class="flagContainerMinimal"><img src="${info.flag}"></div>` : ""}
+    `;
+  }
+  tooltipBoxMinimal.style.display = "block";
 }
 
 

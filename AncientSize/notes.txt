@@ -1,9 +1,9 @@
 *agregar?*
--Capital
--Currency
--Government type
+
+rotate polygon
 
 -subirlo a la web 
 
 
 
+81 maps
