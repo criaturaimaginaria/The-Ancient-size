@@ -1,0 +1,65 @@
+[
+
+  {
+    "id": "egypt1",
+    "name": "Egypt old kingdom 2686-2181 BC",
+    "era": "Antigüedad",
+    "yearStart": -2686,
+    "yearEnd": -2181,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom"],
+    "file": "maps/africa/nordAfrica/egypt1.json"
+
+  },
+
+  {
+    "id": "egypt2",
+    "name": "Lower Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "yearStart": -2181,
+    "yearEnd": -2055,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period"],
+    "file": "maps/africa/nordAfrica/egypt2.json"
+
+  },
+
+  
+  {
+    "id": "egypt3",
+    "name": "Upper Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "yearStart": -2181,
+    "yearEnd": -2055,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto"],
+    "file": "maps/africa/nordAfrica/egypt3.json"
+
+  },
+
+  
+  
+  {
+    "id": "egypt4",
+    "name": "Egypt middle kingdom 2055-1650 BC",
+    "era": "Antigüedad",
+    "yearStart": -2055,
+    "yearEnd": -1650,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio"],
+    "file": "maps/africa/nordAfrica/egypt4.json"
+
+  },
+    
+  {
+    "id": "egypt5",
+    "name": "Egypt new kingdom 1549-1069 BC",
+    "era": "Antigüedad",
+    "yearStart": -1549,
+    "yearEnd": -1069,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo"],
+    "file": "maps/africa/nordAfrica/egypt5.json"
+
+  }
+]

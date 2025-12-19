@@ -1,0 +1,98 @@
+[
+
+
+
+
+
+
+{
+  "id": "monaco_early",
+  "name": "Monaco 1297-1342",
+  "era": "medieval",
+  "yearStart": 1297,
+  "yearEnd": 1342,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Genovese coinage",
+  "GovernmentType": "Hereditary lordship under the Grimaldi family.",
+  "keywords": ["monaco", "grimaldi", "medieval", "state"],
+  "file": "maps/europe/france/monaco1.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Ligurian (Monégasque)",
+  "description": "The State of Monaco originated in 1297 when François Grimaldi seized the fortress of Monaco from Genoese control. Initially limited to the Rock of Monaco, the Grimaldi family gradually consolidated power. Around 1342, Monaco achieved its first territorial expansion by securing Menton and Roquebrune, strengthening its strategic position along the Ligurian coast."
+},
+
+
+{
+  "id": "monaco_medieval_modern",
+  "name": "Monaco 1355–1793",
+  "era": "medieval_to_early_modern",
+  "yearStart": 1355,
+  "yearEnd": 1793,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Monégasque and regional coinage",
+  "GovernmentType": "Hereditary lordship, later principality under the Grimaldi family.",
+  "keywords": ["monaco", "grimaldi", "principality", "medieval", "early_modern"],
+  "file": "maps/europe/france/monaco2.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Ligurian (Monégasque)",
+  "description": "In 1355, Charles I of Grimaldi secured Monaco’s territorial integrity through a treaty with Genoa, formally acquiring Menton and Roquebrune. This expansion defined Monaco’s borders for centuries. The Grimaldi dynasty preserved sovereignty through strategic alliances with Spain and France. In 1793, Revolutionary France annexed Monaco, abolished the monarchy, and ended its independence."
+},
+
+{
+  "id": "monaco_modern",
+  "name": "Monaco 1814–1861",
+  "era": "modern",
+  "yearStart": 1814,
+  "yearEnd": 1861,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Monégasque and French coinage",
+  "GovernmentType": "Hereditary principality under the Grimaldi family.",
+  "keywords": ["monaco", "principality", "grimaldi", "modern"],
+  "file": "maps/europe/france/monaco3.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Monégasque (Ligurian), French",
+  "description": "Monaco was restored in 1814 after Napoleon’s defeat but placed under French protection. In 1861, the principality lost Menton and Roquebrune to France following local revolts, drastically reducing its territory. Monaco retained internal autonomy, and its full international independence was later reaffirmed after World War I through the 1918 Franco-Monegasque Treaty."
+},
+
+{
+  "id": "monaco_contemporary",
+  "name": "Monaco 1861–present",
+  "era": "contemporary",
+  "yearStart": 1861,
+  "yearEnd": 2025,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Euro",
+  "GovernmentType": "Hereditary constitutional monarchy (principality).",
+  "keywords": ["monaco", "principality", "grimaldi", "modern", "contemporary"],
+  "file": "maps/europe/france/monaco4.json",
+  "flag": "flags/europe/france/Flag_of_Monaco.svg.png",
+  "lenguages": "French (official), Monégasque",
+  "description": "After losing most of its territory in 1861, Monaco survived as a small principality under French protection. Economic diversification through tourism and finance ensured its stability. Monaco’s sovereignty was internationally secured by treaties with France, particularly in 1918 and 2002. Today, it remains an independent microstate ruled by the Grimaldi dynasty."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

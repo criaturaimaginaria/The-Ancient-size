@@ -1,0 +1,94 @@
+[
+
+    
+
+
+    {
+    "id": "kingdomSturias",
+    "name": "Kingdom of Asturias 814 AD",
+    "era": "Early Middle Ages",
+    "yearStart": 766,
+    "yearEnd": 868,
+    "religion": "Roman Catholicism",
+    "keywords": ["asturias", "kingdom", "cristian", "800s", "iberic","spain"],
+    "file": "maps/europe/ibericPeninsula/kingdomAsturias.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_the_Kingdom_of_Asturias.svg.png",
+    "description": "The Kingdom of Asturias was a Christian state founded in the early 8th century after the Muslim conquest of the Iberian Peninsula. It began with the victory of Pelayo at the Battle of Covadonga (c. 722) and became the first nucleus of the Christian Reconquista. From the north, it slowly expanded and later evolved into the Kingdom of León."
+  },
+
+
+    {
+    "id": "cordoba emirate",
+    "name": "Emirate of Córdoba 814 AD",
+    "era": "Early Middle Ages",
+    "yearStart": 814,
+    "yearEnd": 868,
+    "religion": "Sunni Islam",
+    "keywords": ["cordoba", "emirate", "islam", "800s", "andalus"],
+    "file": "maps/europe/ibericPeninsula/cordobaEmirate.json",
+    "flag": "flags/europe/ibericPeninsula/Umayyad_Flag_(Green).png",
+    "description": "The Emirate of Córdoba was a Muslim state founded in 756 by Abd al-Rahman I in the Iberian Peninsula after breaking away from the Abbasid Caliphate. With Córdoba as its capital, it strengthened Muslim rule in Al-Andalus, encouraged agriculture, trade, and culture, and faced internal conflicts and Christian attacks. In 929, it became the Caliphate of Córdoba."
+  },
+
+
+
+  
+    {
+    "id": "castilla2",
+    "name": "Kingom of Castile 1270 - 1492 AD",
+    "era": "medieval",
+    "yearStart": 1270,
+    "yearEnd": 1492,
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla2.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain before conquest granada"
+  },
+
+
+    {
+    "id": "castilla3",
+    "name": "Kingom of Castile 1492 - 1516 AD",
+    "era": "medieval",
+    "yearStart": 1492,
+    "yearEnd": 1516,
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla3.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain"
+  },
+
+
+    {
+    "id": "navarra",
+    "name": "Kingdom of Navarre 1200 - 1516 AD",
+    "era": "medieval",
+    "yearStart": 1200,
+    "yearEnd": 1516,
+    "religion": "Roman Catholicism",
+    "keywords": ["navarra", "kingdom", "catholic", "spain"],
+    "file": "maps/europe/ibericPeninsula/navarra.json",
+    "flag": "flags/europe/ibericPeninsula/Bandera_de_Reino_de_Navarra.svg.png",
+    "description": "reino de navarra"
+  },
+
+
+
+    {
+    "id": "granada1",
+    "name": "Emirate of Granada 1270 - ",
+    "era": "medieval",
+    "yearStart": 1270,
+    "yearEnd": 1487,
+    "religion": "Islam",
+    "keywords": ["granada", "emirate", "islam", "spain"],
+    "file": "maps/europe/ibericPeninsula/granada1.json",
+    "flag": "flags/europe/ibericPeninsula/Royal_Standard_of_Nasrid_Dynasty_Kingdom_of_Grenade.svg.png",
+    "description": "granada islam emirate"
+  }
+
+
+
+]

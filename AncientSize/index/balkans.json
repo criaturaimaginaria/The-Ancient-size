@@ -1,0 +1,16 @@
+[
+
+      {
+    "id": "ragusa",
+    "name": "Republic of Ragusa 1358-1808 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1358,
+    "yearEnd": 1808,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","ragusa", "1358-1808"],
+    "file": "maps/europe/maritimeRepublics/ragusa.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Republic_of_Ragusa.svg",
+    "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
+  }
+
+]

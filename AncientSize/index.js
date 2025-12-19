@@ -29,13 +29,26 @@ let activeLayers = [];
 const layersList = document.getElementById("layers-list");
 
 // load the map index
+// load the map index (MERGED)
 fetch('./index.json')
-  .then(response => response.json())
-  .then(data => {
-    indexData = data;
-    // console.log("Índice cargado:", indexData);
+  .then(res => res.json())
+  .then(async index => {
+
+    if (Array.isArray(index)) {
+      indexData = index;
+      return;
+    }
+
+    const parts = await Promise.all(
+      index.parts.map(p => fetch(p).then(r => r.json()))
+    );
+
+    indexData = parts.flat();
   })
-  .catch(error => console.error('Error cargando el índice:', error));
+  .catch(err => console.error('Error cargando índice:', err));
+
+  const initialMap = indexData.find(item => item.id === "rome2");
+
 
 // search in the index
 const searchInput = document.getElementById("map-search");
@@ -73,20 +86,30 @@ showAllActive = false;
 // loadMap("maps/europe/romeTrajan.json", "Rome (Empire) 98-117 AD ");
 // waits for the map to load and then load the initial map 
 fetch('./index.json')
-  .then(response => response.json())
-  .then(data => {
-    indexData = data;
+  .then(res => res.json())
+  .then(async index => {
 
-    // Buscar el mapa inicial por ID
+    // modo viejo (por compatibilidad)
+    if (Array.isArray(index)) {
+      indexData = index;
+    } else {
+      const parts = await Promise.all(
+        index.parts.map(p => fetch(p).then(r => r.json()))
+      );
+      indexData = parts.flat();
+    }
+
+    // carga inicial
     const initialMap = indexData.find(item => item.id === "rome2");
-
     if (initialMap) {
       loadMap(initialMap.file, initialMap.name);
     } else {
-      console.error('No se encontró el mapa en index.json');
+      console.warn('rome2 no encontrado en índice');
     }
+
   })
-  .catch(error => console.error('Error cargando el índice:', error));
+  .catch(err => console.error('Error cargando índice:', err));
+
 
 // Función para cargar un mapa y actualizar el panel de capas
 

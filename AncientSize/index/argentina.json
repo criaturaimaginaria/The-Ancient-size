@@ -1,0 +1,30 @@
+[
+
+
+    {
+    "id": "ViceroyaltyPlata1",
+    "name": "Viceroyalty of the Río de la Plata 1776 - 1810",
+    "era": "modern",
+    "yearStart": 1776,
+    "yearEnd": 1810,
+    "religion": "Roman Catholicism",
+    "keywords": ["america", "argentina", "buenos aires", "spain","virreinato","uruguay"],
+    "file": "maps/america/sudAmerica/virreinatoRioDeLaPlata1.json",
+    "flag": "flags/america/sudAmerica/Flag_of_Cross_of_Burgundy.svg.png",
+    "description": "virreinato y bla"
+  },
+
+
+      {
+    "id": "provinciasUnidasDelRioDeLaPlata",
+    "name": "Provincias Unidas del Río de la Plata 1810 - 1816",
+    "era": "contemporary",
+    "yearStart": 1810,
+    "yearEnd": 1816,
+    "religion": "Roman Catholicism",
+    "keywords": ["america", "argentina", "buenos aires", "spain","provincias unidas","uruguay"],
+    "file": "maps/america/sudAmerica/provinciasUnidasDelRioDeLaPlata.json",
+    "flag": "flags/america/sudAmerica/provinciasUnidas.png",
+    "description": "The United Provinces arose in 1810 after the May Revolution. The Banda Oriental was lost due to Portuguese invasion, internal conflicts, and weak central authority, and was later annexed as the Cisplatine Province in 1821."
+  }
+]

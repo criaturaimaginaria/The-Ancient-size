@@ -1,0 +1,217 @@
+[
+    
+
+    {
+    "id": "minoanCivilization",
+    "name": "Minoan civilization 3000-1450 BC",
+    "era": "Antigüedad",
+    "yearStart": -3000,
+    "yearEnd": -1450,
+    "religion": "Nature-centered polytheism",
+    "keywords": [ "greek", "minoan", "greece", "minoica", "minocicos"],
+    "GovernmentType":"Palatial monarchy",
+    "capital": "Knossos",
+    "file": "maps/europe/greece/minoanCivilization.json",
+    "description": "The Minoan civilization began around 3000 BCE on Crete, developing a prosperous palatial system driven by trade, craftsmanship, and strong religious traditions. Around 1450 BCE, it was gradually absorbed by the Mycenaeans, who took control of its major centers and adopted aspects of its culture. The final disappearance of Minoan society came with the wider collapse of Mycenaean Greece during the 12th-century BCE Mediterranean crisis."
+  },
+
+
+  {
+    "id": "athens",
+    "name": "Athens 500-400 BC",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -400,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["athens", "greek", "500-400 BC", "greece", "500-400 ", "hellenic"],
+    "flag": "flags/europe/greece/athen 4.png",
+    "file": "maps/europe/greece/athens.json",
+     "description": "Between 500 and 400 BC, Athens rose from a threatened city-state to a major power. The period began with victory in the Persian Wars, which strengthened its navy and economy. Under Pericles, Athens experienced a Golden Age of democracy, art, philosophy, and the Parthenon. It ended weakened by the Peloponnesian War against Sparta."
+  },
+
+  {
+    "id": "sparts",
+    "name": "Sparta 900-146 BC",
+    "era": "classic",
+    "yearStart": -900,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["sparta", "greek", "500-400 BC", "greece", "900-146 BC"],
+    "file": "maps/europe/greece/sparta.json"
+  },
+  {
+    "id": "messene",
+    "name": "Messene 300 BC",
+    "era": "classic",
+    "yearStart": -300,
+    "yearEnd": -300,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["Messene", "greek", "300 BC", "greece", "greece"],
+    "file": "maps/europe/greece/messene.json"
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth 700-146 BC",
+    "era": "classic",
+    "yearStart": -700,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["corinth", "corinto", "greek", "700-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+    {
+    "id": "argos",
+    "name": "Argos 1200-146 BC ",
+    "era": "classic",
+    "yearStart": -1200,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["argos",  "greek", "1200-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+
+    {
+    "id": "arcadianLeague",
+    "name": "Arcadian league 370-230 BC ",
+    "era": "classic",
+    "yearStart": -370,
+    "yearEnd": -230,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["arcadian league",  "greek", "1200-146 BC ", "greece", "greece", "hellenic", "Hellenistic"],
+    "file": "maps/europe/greece/arcadianLeague.json"
+  },
+
+    {
+    "id": "Elis",
+    "name": "Elis  V-IV BC  ",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -300,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["elis",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/Elis.json"
+  },
+
+
+      {
+    "id": "patras",
+    "name": "Patras 700-146 BC ",
+    "era": "classic",
+    "yearStart": -700,
+    "yearEnd": -146,
+    "religion": "classic",
+    "keywords": ["patras",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/patras.json"
+  },
+
+        {
+    "id": "thebes",
+    "name": "Thebes 900-146 BC ",
+    "era": "classic",
+    "yearStart": -900,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["thebes",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/thebes.json"
+  },
+
+          {
+    "id": "achaeanLeague",
+    "name": "Achaean league 280-192 BC ",
+    "era": "classic",
+    "yearStart": -280,
+    "yearEnd": -192,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague.json"
+  },
+
+
+  {
+    "id": "achaeanLeague2",
+    "name": "Achaean league 192-146 BC ",
+    "era": "hellenic",
+    "yearStart": -192,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague2.json"
+  },
+
+
+    {
+    "id": "aegina",
+    "name": "Aegina V BC ",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -400,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["Aegina",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/aegina.json"
+  },
+
+    {
+    "id": "alexander",
+    "name": "Empire of Alexander the Great (Macedonian Empire) 336-323 BC",
+    "era": "Hellenism",
+    "yearStart": -336,
+    "yearEnd": -323,
+    "religion": "Greek religion, Egyptian religion, Mesopotamian religions, Zoroastrianism etc ",
+    "keywords": ["alexandcer the great", "greece", "hellenism", "macedonian","macedonia","empire"],
+    "file": "maps/europe/greece/alexanderEmpire.json",
+    "flag": "flags/europe/greece/Flag_of_Greek_Macedonia.svg.png",
+    "description": "The Empire of Alexander the Great began in Macedonia in 336 BC and expanded rapidly after conquering key cities such as Troy, Tyre, Gaza, Memphis, and Babylon, reaching as far as India. His empire united Europe, Asia, and Africa. After his death in 323 BC, his generals divided the territory and founded new kingdoms."
+  },
+
+
+
+      {
+    "id": "delianLeague",
+    "name": "Delian league 431 BC",
+    "era": "Classic greece",
+    "yearStart": -478,
+    "yearEnd": -404,
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "478","delian","delos", "league", "404","athens","empire"],
+    "file": "maps/europe/greece/delianLeague.json",
+
+    "description": "The Delian League existed from 478 BC to 404 BC and was dissolved in 404 BC. It began as a defensive alliance of Greek city-states formed to protect against Persian attacks after the Persian Wars. Over time, Athens transformed the league into an empire by moving the treasury from Delos to Athens, forcing members to pay tribute, suppressing revolts, and imposing control through its navy and political power."
+  },
+
+
+        {
+    "id": "peloponnesianLeague",
+    "name": "Peloponnesian League 431 BC",
+    "era": "classic greece",
+    "yearStart": -550,
+    "yearEnd": -404,
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "550","peloponnesian","peloponeso", "league", "404","sparta"],
+    "file": "maps/europe/greece/peloponnesianLeague.json",
+
+    "description": "The Peloponnesian League was formed around 550 BC and ceased to exist in 404 BC. It was a military alliance led by Sparta, bringing together many Greek city-states of the Peloponnese and central Greece. Unlike the Delian League, its members kept more independence but were expected to support Sparta in war. The league’s main goal was to defend against rivals, especially Athens, during the Peloponnesian War."
+  },
+
+
+    {
+    "id": "easternRomanLast",
+    "name": "Eastern Roman Empire 1451-1453 AD",
+    "era": "middle ages",
+    "yearStart": 1451,
+    "yearEnd": 1453,
+    "religion": "Eastern Orthodox Christianity",
+    "keywords": [ "Constantinople fall", "Byzantine Empire", "Constantine XI", "constantinopla", "Eastern Roman Empire", "1453", "Hagia Sophia", "Ottoman conquest",  "End of the Middle Ages" ,"rome"],
+    "population":"45.000",
+    "lenguages":"Greek",
+    "capital":"Constantinople",
+    "currency":"Hyperpyron",
+    "GovernmentType":"Hereditary absolute monarchy",
+    "file": "maps/europe/greece/easterRomanEmpireLast.json",
+    "flag": "flags/europe/greece/Byzantine_imperial_flag,_14th_century_(firesteels_vesion).svg.png",
+    "description": "Between 1451 and 1453, the Eastern Roman Empire entered its final and irreversible crisis. Sultan Mehmed II systematically prepared the destruction of Constantinople by isolating the city, building fortresses along the Bosporus, and deploying massive cannons. Emperor Constantine XI ruled a city reduced to shadows of its former power, short on men, allies, and supplies. After a brutal siege, Ottoman forces breached the walls on May 29, 1453. Constantine died fighting among his soldiers, ending over a thousand years of uninterrupted Roman statehood."
+  }
+
+
+]

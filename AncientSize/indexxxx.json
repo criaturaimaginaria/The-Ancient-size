@@ -1,0 +1,1332 @@
+[
+
+
+{
+    "id": "rome",
+    "name": "Rome (kingdom) 753-630 BC",
+    "era": "Rpublic",
+    "yearStart": -753,
+    "yearEnd": -630,
+    "religion": "Ancient Roman religion.",
+    "keywords": ["republic", "coliseo", "senado", "roma"],
+    "file": "maps/europe/rome.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+  {
+    "id": "romeKing2",
+    "name": "Rome (kingdom) 618-509 BC",
+    "era": "kingdom",
+        "yearStart": -618,
+    "yearEnd": -509,
+    "religion": "Ancient Roman religion.",
+    "keywords": ["kingdom", "king", "rey", "roma"],
+    "file": "maps/europe/romeKingdom2.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+    {
+    "id": "romeRepublic1",
+    "name": "Rome (Republic) 268-241 BC",
+    "era": "republic",
+        "yearStart": -268,
+    "yearEnd": -241,
+    "religion": "Ancient Roman religion.",
+    "keywords": ["republic", "roma", "senate", "roma"],
+    "file": "maps/europe/romeAppClaudius.json",
+    "flag": "flags/europe/romeflag.svg"
+  },
+  {
+    "id": "rome2",
+    "name": "Rome (Empire) 98-117 AD ",
+    "era": "High Roman Empire",
+        "yearStart": 98,
+    "yearEnd": 117,
+    "capital": "Rome",
+    "religion": "Ancient Roman religion.",
+    "currency":"Aureus (gold), Denarius (silver), Sestertius (brass), As (copper)",
+    "GovernmentType":"Principate (Republican forms, imperial reality)",
+    "keywords": ["imperio", "coliseo", "98-117 AD", "roma", "empire"],
+    "file": "maps/europe/romeTrajan.json",
+    "flag": "flags/europe/romeflag.svg",
+    "population": "60 million",
+    "lenguages":"Latin",
+    "description": "From 97 to 117 AD, Rome under Emperor Trajan reached the height of its power and territory. Expansion was achieved mainly through successful military campaigns, especially the Dacian Wars, which brought great wealth and secure borders along the Danube. Trajan also conquered parts of the Near East, including Armenia and Mesopotamia. Rome reached its maximum territorial extent in 117 AD, just before Trajan’s death."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+  {
+    "id": "venice1",
+    "name": "Republic of Venice 700-1095 AD ",
+    "era": "medieval",
+    "capital": "Venice",
+    "fundationFall": "697-1797 AD (1848-1849)",
+    "yearStart": 700,
+    "yearEnd": 1095,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","venice", "839-1140", "venezia", "venecia"],
+    "file": "maps/europe/maritimeRepublics/venice1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
+    "description": "From 700 to 1095, the Republic of Venice evolved from a Byzantine dependency into a powerful maritime republic, expanding trade networks, securing independence, developing institutions, and emerging as a dominant Mediterranean commercial and naval force."
+  },
+
+
+    {
+    "id": "venice2",
+    "name": "Republic of Venice 1430-1570 AD ",
+    "era": "medieval - renaissance",
+    "capital": "Venice",
+    "fundationFall": "697-1797 AD (1848-1849)",
+    "yearStart": 1430,
+    "yearEnd": 1570,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","venice", "1430-1570 ", "venezia", "venecia"],
+    "file": "maps/europe/maritimeRepublics/venice2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Venice.svg",
+    "description": "From 1430 to 1570, the Republic of Venice reached its zenith, dominating Mediterranean trade, flourishing in art and architecture, facing Ottoman expansion, losing eastern territories, yet remaining a powerful, wealthy, and culturally vibrant state."
+  },
+
+
+  {
+    "id": "amalfi",
+    "name": "Republica di Amalfi 839 AD - 1137 AD ",
+    "era": "medieval",
+    "yearStart": 839,
+    "yearEnd": 1137,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","amalfi", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/amalfi.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Amalfi.svg",
+    "description": "The Republic of Amalfi, a maritime power in southern Italy (9th–11th centuries), dominated Mediterranean trade, developed early banking and naval innovations, and maintained independence until Norman conquest integrated it into the Kingdom of Sicily."
+  },
+
+    {
+    "id": "ancona",
+    "name": "Republica di Ancona 1000-1532 AD ",
+    "era": "medieval",
+    "yearStart": 1000,
+    "yearEnd": 1532,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","ancona", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/ancona.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Ancona.png",
+    "description": "The Republic of Ancona, a small maritime republic on Italy’s Adriatic coast (11th–16th centuries), thrived on trade and shipbuilding, maintaining political autonomy while navigating pressures from Venice, the Papal States, and other regional powers."
+  },
+
+
+      {
+    "id": "noli",
+    "name": "Republica di Noli 1192-1797 AD",
+    "era": "medieval",
+    "yearStart": 1192,
+    "yearEnd": 1797,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","noli", "839", "1137 "],
+    "file": "maps/europe/maritimeRepublics/noli.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Noli.svg.png",
+    "description": "The Republic of Noli, a tiny maritime republic in Liguria, Italy (12th–18th centuries), maintained independence through alliances with Genoa, focused on trade and local defense, and was eventually absorbed into the Ligurian Republic under Napoleon."
+  },
+
+
+  
+      {
+    "id": "genova1",
+    "name": "Republica di Genoa 1005 AD ",
+    "era": "medieval",
+    "yearStart": 839,
+    "yearEnd": 1137,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","genoa", "839", "1137 ", "genova"],
+    "file": "maps/europe/maritimeRepublics/genova1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
+  },
+
+
+    {
+    "id": "genova2",
+    "name": "Republic of Genoa 1566-1755 AD",
+    "yearStart": 1566,
+    "yearEnd": 1755,
+    "era": "medieval - renaissance",
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","genoa", "839", "1137 ", "genova"],
+    "file": "maps/europe/maritimeRepublics/genova2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
+  },
+
+
+  
+  {
+    "id": "corsa",
+    "name": "Republica Corsa 1755-1769 AD ",
+    "era": "1700s",
+    "yearStart": 1755,
+    "yearEnd": 1769,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","corsica", "cora"],
+    "file": "maps/europe/maritimeRepublics/republicaCorsa.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Corsica.svg.png",
+    "description": "the republic of corsica was a republic in"
+  },
+
+
+    
+  {
+    "id": "pisa1",
+    "name": "Republic of Pisa 1005-1090 AD ",
+    "era": "medieval",
+    "yearStart": 1005,
+    "yearEnd": 1090,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa1.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+      
+  {
+    "id": "pisa2",
+    "name": "Republic of Pisa 1090-1115 AD ",
+    "era": "medieval",
+    "yearStart": 1090,
+    "yearEnd": 1115,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa2.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+        
+  {
+    "id": "pisa3",
+    "name": "Republic of Pisa 1115-1183 AD ",
+    "era": "medieval",
+    "yearStart": 1115,
+    "yearEnd": 1183,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","pisa", "tower"],
+    "file": "maps/europe/maritimeRepublics/pisa3.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
+  },
+
+
+          
+  {
+    "id": "ragusa",
+    "name": "Republic of Ragusa 1358-1808 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1358,
+    "yearEnd": 1808,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","ragusa", "1358-1808"],
+    "file": "maps/europe/maritimeRepublics/ragusa.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Republic_of_Ragusa.svg",
+    "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
+  },
+
+
+
+            
+  {
+    "id": "gaeta",
+    "name": "Duchy of Gaeta 839-1140 AD  ",
+    "era": "medieval",
+    "yearStart": 839,
+    "yearEnd": 1140,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","gaeta", "839-1140"],
+    "file": "maps/europe/maritimeRepublics/gaeta.json",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Gaeta.svg",
+    "description": "The Duchy of Gaeta was a small but strategically important maritime state in southern Italy during the Early Middle Ages. Originally under Byzantine influence, it became effectively independent in the 9th century. Ruled by local dynasties, it balanced diplomacy between Byzantines, Lombards, and Muslims before being absorbed by the Normans in the 12th century."
+  },
+
+
+
+  {
+    "id": "savoy",
+    "name": "Duchy of Savoy 1416-1770",
+    "era": "medieval",
+    "yearStart": 1416,
+    "yearEnd": 1770,
+    "fundationFall": "1416-1792; 1814-1860",
+    "capital": "Turin",
+    "religion": "Roman Catholicism",
+    "currency":"Piedmontese lira",
+    "GovernmentType":"Initially a duchy, later hereditary monarchy.",
+    "keywords": ["italy", "savoy", "ducado", "saboya", "duchy"],
+    "file": "maps/europe/italy/savoyDuchy.json",
+    "flag": "flags/europe/italy/Flag_of_Savoie.svg.png",
+    "lenguages":"Piedmontese",
+    "description": "The Duchy of Savoy was created in 1416 when Emperor Sigismund of the Holy Roman Empire elevated the County of Savoy to ducal rank. The ruling House of Savoy gradually expanded its territory on both sides of the Alps, controlling strategic Alpine passes between France and Italy. Over time, the political center shifted eastward, and Turin became the capital, marking a stronger Italian orientation."
+  },
+
+
+
+{
+  "id": "mantua",
+  "name": "Duchy of Mantua 1530-1708",
+  "era": "early_modern",
+  "yearStart": 1530,
+  "yearEnd": 1708,
+  "fundationFall": "1530-1708",
+  "capital": "Mantua",
+  "religion": "Roman Catholicism",
+  "currency": "Mantuan lira",
+  "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
+  "keywords": ["italy", "mantua", "ducado", "mantova", "duchy"],
+  "file": "maps/europe/italy/mantuaDuchy.json",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Mantua_(1575–1707).svg.png",
+  "lenguages": "Mantuan (Lombard)",
+  "description": "The Duchy of Mantua was created in 1530 when Emperor Charles V elevated the Marquisate of Mantua to ducal rank under the Gonzaga family. Mantua had previously been ruled as a marquisate since 1433. The Gonzaga transformed the city into a major cultural center of the Italian Renaissance. The duchy remained a hereditary state within the Holy Roman Empire until 1708, when it was abolished after the War of the Spanish Succession and annexed by the Habsburg Monarchy."
+},
+
+{
+  "id": "ferrara",
+  "name": "Duchy of Ferrara 1471-1598",
+  "era": "early_modern",
+  "yearStart": 1471,
+  "yearEnd": 1598,
+  "fundationFall": "1471-1598",
+  "capital": "Ferrara",
+  "religion": "Roman Catholicism",
+  "currency": "Ferrarese lira",
+  "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
+  "keywords": ["italy", "ferrara", "ducado", "estense", "duchy"],
+  "file": "maps/europe/italy/ferraraDuchy.json",
+  "flag": "flags/europe/italy/Coat_of_arms_of_the_House_of_Este_(1471).svg.png",
+  "lenguages": "Ferrarese (Emilian)",
+  "description": "The Duchy of Ferrara was established in 1471 when Pope Paul II elevated the Marquisate of Ferrara to ducal status under the House of Este. Previously ruled as a marquisate, Ferrara became a prominent Renaissance court and cultural center. The duchy remained a hereditary state until 1598, when it reverted to direct Papal control following the extinction of the legitimate Este line."
+},
+
+
+{
+  "id": "urbino",
+  "name": "Duchy of Urbino 1443-1631",
+  "era": "early_modern",
+  "yearStart": 1443,
+  "yearEnd": 1631,
+  "fundationFall": "1443-1631",
+  "capital": "Urbino",
+  "religion": "Roman Catholicism",
+  "currency": "Urbino lira",
+  "GovernmentType": "Initially a county, later a hereditary duchy.",
+  "keywords": ["italy", "urbino", "ducado", "montefeltro", "duchy"],
+  "file": "maps/europe/italy/urbinoDuchy.json",
+  "flag": "flags/europe/italy/Flag_of_Duchy_of_Urbino.svg.png",
+  "lenguages": "Urbinate (Central Italian)",
+  "description": "The Duchy of Urbino was created in 1443 when Pope Eugene IV elevated the County of Urbino to ducal rank under the Montefeltro family. Renowned as a leading Renaissance court, Urbino flourished as a center of art, humanism, and military leadership. The duchy remained a hereditary state until 1631, when it was absorbed into the Papal States following the extinction of the ruling dynasty."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "monaco_early",
+  "name": "Monaco 1297-1342",
+  "era": "medieval",
+  "yearStart": 1297,
+  "yearEnd": 1342,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Genovese coinage",
+  "GovernmentType": "Hereditary lordship under the Grimaldi family.",
+  "keywords": ["monaco", "grimaldi", "medieval", "state"],
+  "file": "maps/europe/france/monaco1.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Ligurian (Monégasque)",
+  "description": "The State of Monaco originated in 1297 when François Grimaldi seized the fortress of Monaco from Genoese control. Initially limited to the Rock of Monaco, the Grimaldi family gradually consolidated power. Around 1342, Monaco achieved its first territorial expansion by securing Menton and Roquebrune, strengthening its strategic position along the Ligurian coast."
+},
+
+
+{
+  "id": "monaco_medieval_modern",
+  "name": "Monaco 1355–1793",
+  "era": "medieval_to_early_modern",
+  "yearStart": 1355,
+  "yearEnd": 1793,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Monégasque and regional coinage",
+  "GovernmentType": "Hereditary lordship, later principality under the Grimaldi family.",
+  "keywords": ["monaco", "grimaldi", "principality", "medieval", "early_modern"],
+  "file": "maps/europe/france/monaco2.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Ligurian (Monégasque)",
+  "description": "In 1355, Charles I of Grimaldi secured Monaco’s territorial integrity through a treaty with Genoa, formally acquiring Menton and Roquebrune. This expansion defined Monaco’s borders for centuries. The Grimaldi dynasty preserved sovereignty through strategic alliances with Spain and France. In 1793, Revolutionary France annexed Monaco, abolished the monarchy, and ended its independence."
+},
+
+{
+  "id": "monaco_modern",
+  "name": "Monaco 1814–1861",
+  "era": "modern",
+  "yearStart": 1814,
+  "yearEnd": 1861,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Monégasque and French coinage",
+  "GovernmentType": "Hereditary principality under the Grimaldi family.",
+  "keywords": ["monaco", "principality", "grimaldi", "modern"],
+  "file": "maps/europe/france/monaco3.json",
+  "flag": "flags/europe/france/Lozenge_flag_of_Monaco.svg.png",
+  "lenguages": "Monégasque (Ligurian), French",
+  "description": "Monaco was restored in 1814 after Napoleon’s defeat but placed under French protection. In 1861, the principality lost Menton and Roquebrune to France following local revolts, drastically reducing its territory. Monaco retained internal autonomy, and its full international independence was later reaffirmed after World War I through the 1918 Franco-Monegasque Treaty."
+},
+
+{
+  "id": "monaco_contemporary",
+  "name": "Monaco 1861–present",
+  "era": "contemporary",
+  "yearStart": 1861,
+  "yearEnd": 2025,
+  "fundationFall": "1297-1793; 1814-present",
+  "capital": "Monaco",
+  "religion": "Roman Catholicism",
+  "currency": "Euro",
+  "GovernmentType": "Hereditary constitutional monarchy (principality).",
+  "keywords": ["monaco", "principality", "grimaldi", "modern", "contemporary"],
+  "file": "maps/europe/france/monaco4.json",
+  "flag": "flags/europe/france/Flag_of_Monaco.svg.png",
+  "lenguages": "French (official), Monégasque",
+  "description": "After losing most of its territory in 1861, Monaco survived as a small principality under French protection. Economic diversification through tourism and finance ensured its stability. Monaco’s sovereignty was internationally secured by treaties with France, particularly in 1918 and 2002. Today, it remains an independent microstate ruled by the Grimaldi dynasty."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "florenceRepublic",
+    "name": "Republic of Florence 1115-1406 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1115,
+    "yearEnd": 1406,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
+    "file": "maps/europe/italy/florenceRepublic.json",
+    "flag": "flags/europe/italy/Flag_of_Florence.svg",
+    "description": "The Republic of Florence was a powerful city-state in Tuscany, governed by merchant oligarchs and later the Medici, known for banking wealth, republican institutions, and extraordinary cultural influence during the Renaissance."
+  },
+    {
+    "id": "florenceRepublic2",
+    "name": "Republic of Florence 1406-1569 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1406,
+    "yearEnd": 1569,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic","florencia", "florence", "1115-1406 AD "],
+    "file": "maps/europe/italy/florenceRepublic2.json",
+    "flag": "flags/europe/italy/Flag_of_Florence.svg",
+    "description": "In this map we can see the annexation of the Republic of Pisa."
+  },
+
+
+
+
+  {
+    "id": "naplesKingdom",
+    "name": "kingdom of Naples 1282-1806 & 1815-1816 AD",
+    "era": "medieval",
+    "yearStart": 1282,
+    "yearEnd": 1816,
+    "religion": "Roman Catholicism",
+    "keywords": ["kingdom", "naples", "1282-1806 & 1815-1816"],
+    "file": "maps/europe/italy/naplesKingdom.json",
+    "flag": "flags/europe/italy/naplesFlag-Trastámara.png",
+    "description": "The Kingdom of Naples, officially the Kingdom of Sicily, was a state that ruled the part of the Italian Peninsula south of the Papal States between 1282 and 1816."
+  },
+
+
+    {
+    "id": "massa",
+    "name": "Duchy of Massa 1473-1796 AD  ",
+    "era": "medieval - renaissance",
+    "yearStart": 1473,
+    "yearEnd": 1796,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "massa", "1473", "duchy", "ducado"],
+    "file": "maps/europe/italy/massaDuchy.json",
+    "flag": "flags/europe/italy/Repubblica_di_Massa-Bandiera.svg.png",
+    "description": "massa republic"
+  },
+
+
+    {
+    "id": "siena",
+    "name": "Republic of Siena 1125 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1125,
+    "yearEnd": 1555,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "siena", "1125"],
+    "file": "maps/europe/italy/siena.json",
+    "flag": "flags/europe/italy/Flag_of_Siena.png",
+    "description": "The Republic of Siena (1125–1555) was an Italian city-state, governed as an oligarchic republic, with an economy based on banking and trade, renowned for its art, culture, and Gothic architecture."
+  },
+
+
+    {
+    "id": "lucca",
+    "name": "Republic of Lucca 1160-1805 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1160,
+    "yearEnd": 1805,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "lucca", "1160"],
+    "file": "maps/europe/italy/lucca.json",
+    "flag": "flags/europe/italy/Flag_of_Lucca.png",
+    "description": "The Republic of Lucca was a small independent state in Tuscany, thriving as a banking and silk center. Governed by oligarchic institutions, it preserved its autonomy until annexed by Napoleon in 1805."
+  },
+
+  {
+    "id": "KingdomSicilia",
+    "name": "Kingdom of Sicily 1282-1806 AD ",
+    "era": "medieval - renaissance",
+    "yearStart": 1282,
+    "yearEnd": 1806,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "siena", "1125"],
+    "file": "maps/europe/italy/siciliaKingdom.json",
+    "flag": "flags/europe/italy/Bandiera_del_Regno_di_Sicilia_4.svg.png",
+    "description": "In 1282, the Kingdom of Sicily erupted during the Sicilian Vespers, expelling Angevin rule. It transformed into a vibrant Mediterranean power, blending Norman, Arab, and Byzantine influences under Aragonese protection and enduring legacy."
+  },
+
+  
+  
+    {
+    "id": "sanMarino1",
+    "name": "San Marino IV - X",
+    "era": "medieval ",
+    "yearStart": 300,
+    "yearEnd": 900,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "san marino", "300 AD", "900 AD"],
+    "file": "maps/europe/italy/sanMarino1.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, founded in 301 AD"
+  },
+
+
+    {
+    "id": "sanMarino2",
+    "name": "San Marino X - 1320 AD",
+    "era": "medieval ",
+    "yearStart": 900,
+    "yearEnd": 1300,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "san marino", "900 AD", "1300"],
+    "file": "maps/europe/italy/sanMarino2.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, annexation of Acquaviva and Domagnano."
+  },
+
+  
+    {
+    "id": "sanMarino3",
+    "name": "San Marino 1320 - 1463 AD",
+    "era": "medieval ",
+    "yearStart": 1320,
+    "yearEnd": 1463,
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "san marino", "1320"],
+    "file": "maps/europe/italy/sanMarino3.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, annexation of Chiesanuova. "
+  },
+
+    {
+    "id": "sanMarino4",
+    "name": "San Marino 1463 AD - Present",
+    "yearStart": 1463,
+    "yearEnd": 2025,
+    "era": "medieval - renaissance - modern",
+    "religion": "Roman Catholicism",
+    "keywords": ["republic", "san marino", "1463AD"],
+    "file": "maps/europe/italy/sanMarino4.json",
+    "flag": "flags/europe/italy/Flag_of_San_Marino.svg",
+    "description": "The Republic of San Marino, annexation of Serravalle, Faetano and Montegiardino. Since then its territory remains unchanged."
+  },
+
+
+
+    {
+    "id": "papalStatesRisorgimento",
+    "name": "Papal States 1600-1859",
+    "yearStart": 1600,
+    "yearEnd": 1859,
+    "era": "renaissance - modern",
+    "religion": "Roman Catholicism",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/papalStatesRisorgimento.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "The Papal States were a conglomeration of territories on the Italian peninsula under the direct sovereign rule of the pope from 756 to 1870. They were among the major states of Italy from the 8th century until the unification of Italy, which took place between 1859 and 1870, culminating in their demise."
+  },
+
+      {
+    "id": "papalStatesRisorgimento2",
+    "name": "Papal States 1859-1870 AD",
+    "era": "risorgimento",
+    "yearStart": 1859,
+    "yearEnd": 1870,
+    "religion": "Roman Catholicism",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/papalStatesRisorgimento2.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "Papal states after losing some territory to the unification of Italy."
+  },
+
+    {
+    "id": "vaticanCity",
+    "name": "Vatican city 1929AD-today",
+    "era": "world war II - modern",
+    "yearStart": 1929,
+    "yearEnd": 2025,
+    "religion": "Roman Catholicism",
+    "keywords": ["kingdom", "papal states", "risorgimn", "christian"],
+    "file": "maps/europe/italy/vaticanCity.json",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "description": "Vatican City is the smallest sovereign state in the world, an enclave within Rome ruled by the Pope as the head of the Catholic Church. Established in 1929, it is the center of the Catholic world, home to significant sites like St. Peter's Basilica and the Vatican Museums."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    {
+    "id": "kingdomSturias",
+    "name": "Kingdom of Asturias 814 AD",
+    "era": "Early Middle Ages",
+    "yearStart": 766,
+    "yearEnd": 868,
+    "religion": "Roman Catholicism",
+    "keywords": ["asturias", "kingdom", "cristian", "800s", "iberic","spain"],
+    "file": "maps/europe/ibericPeninsula/kingdomAsturias.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_the_Kingdom_of_Asturias.svg.png",
+    "description": "The Kingdom of Asturias was a Christian state founded in the early 8th century after the Muslim conquest of the Iberian Peninsula. It began with the victory of Pelayo at the Battle of Covadonga (c. 722) and became the first nucleus of the Christian Reconquista. From the north, it slowly expanded and later evolved into the Kingdom of León."
+  },
+
+
+    {
+    "id": "cordoba emirate",
+    "name": "Emirate of Córdoba 814 AD",
+    "era": "Early Middle Ages",
+    "yearStart": 814,
+    "yearEnd": 868,
+    "religion": "Sunni Islam",
+    "keywords": ["cordoba", "emirate", "islam", "800s", "andalus"],
+    "file": "maps/europe/ibericPeninsula/cordobaEmirate.json",
+    "flag": "flags/europe/ibericPeninsula/Umayyad_Flag_(Green).png",
+    "description": "The Emirate of Córdoba was a Muslim state founded in 756 by Abd al-Rahman I in the Iberian Peninsula after breaking away from the Abbasid Caliphate. With Córdoba as its capital, it strengthened Muslim rule in Al-Andalus, encouraged agriculture, trade, and culture, and faced internal conflicts and Christian attacks. In 929, it became the Caliphate of Córdoba."
+  },
+
+
+
+  
+    {
+    "id": "castilla2",
+    "name": "Kingom of Castile 1270 - 1492 AD",
+    "era": "medieval",
+    "yearStart": 1270,
+    "yearEnd": 1492,
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla2.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain before conquest granada"
+  },
+
+
+    {
+    "id": "castilla3",
+    "name": "Kingom of Castile 1492 - 1516 AD",
+    "era": "medieval",
+    "yearStart": 1492,
+    "yearEnd": 1516,
+    "religion": "Roman Catholicism",
+    "keywords": ["catolicos", "spain", "castilla", "reyes"],
+    "file": "maps/europe/ibericPeninsula/castilla3.json",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "description": "pre spain"
+  },
+
+
+    {
+    "id": "navarra",
+    "name": "Kingdom of Navarre 1200 - 1516 AD",
+    "era": "medieval",
+    "yearStart": 1200,
+    "yearEnd": 1516,
+    "religion": "Roman Catholicism",
+    "keywords": ["navarra", "kingdom", "catholic", "spain"],
+    "file": "maps/europe/ibericPeninsula/navarra.json",
+    "flag": "flags/europe/ibericPeninsula/Bandera_de_Reino_de_Navarra.svg.png",
+    "description": "reino de navarra"
+  },
+
+
+
+    {
+    "id": "granada1",
+    "name": "Emirate of Granada 1270 - ",
+    "era": "medieval",
+    "yearStart": 1270,
+    "yearEnd": 1487,
+    "religion": "Islam",
+    "keywords": ["granada", "emirate", "islam", "spain"],
+    "file": "maps/europe/ibericPeninsula/granada1.json",
+    "flag": "flags/europe/ibericPeninsula/Royal_Standard_of_Nasrid_Dynasty_Kingdom_of_Grenade.svg.png",
+    "description": "granada islam emirate"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "id": "ViceroyaltyPlata1",
+    "name": "Viceroyalty of the Río de la Plata 1776 - 1810",
+    "era": "modern",
+    "yearStart": 1776,
+    "yearEnd": 1810,
+    "religion": "Roman Catholicism",
+    "keywords": ["america", "argentina", "buenos aires", "spain","virreinato","uruguay"],
+    "file": "maps/america/sudAmerica/virreinatoRioDeLaPlata1.json",
+    "flag": "flags/america/sudAmerica/Flag_of_Cross_of_Burgundy.svg.png",
+    "description": "virreinato y bla"
+  },
+
+
+      {
+    "id": "provinciasUnidasDelRioDeLaPlata",
+    "name": "Provincias Unidas del Río de la Plata 1810 - 1816",
+    "era": "contemporary",
+    "yearStart": 1810,
+    "yearEnd": 1816,
+    "religion": "Roman Catholicism",
+    "keywords": ["america", "argentina", "buenos aires", "spain","provincias unidas","uruguay"],
+    "file": "maps/america/sudAmerica/provinciasUnidasDelRioDeLaPlata.json",
+    "flag": "flags/america/sudAmerica/provinciasUnidas.png",
+    "description": "The United Provinces arose in 1810 after the May Revolution. The Banda Oriental was lost due to Portuguese invasion, internal conflicts, and weak central authority, and was later annexed as the Cisplatine Province in 1821."
+  },
+
+
+
+    {
+    "id": "inca",
+    "name": "Inca empire 1495-1533 AD",
+    "era": "inca",
+    "yearStart": 1495,
+    "yearEnd": 1533,
+    "capital": "Cuzco",
+    "religion": "Andean polytheistic religion",
+    "GovernmentType":"absolute theocratic monarchy",
+    "keywords": ["inca", "tahuantinsuyo", "1533 AD", "america", "empire"],
+    "file": "maps/america/sudAmerica/peru/incaEmpire.json",
+    "flag": "flags/america/sudAmerica/Suntur_Paucar.svg.png",
+    "population": "10 million",
+    "lenguages":"Quechua",
+    "description": "The Inca Empire, centered in Cuzco, reached its greatest expansion in the early 16th century under its last powerful rulers. However, civil war and disease weakened it. In 1533, Spanish forces led by Francisco Pizarro defeated the Incas, executed Atahualpa, seized Cuzco, and formally dissolved the empire."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "id": "minoanCivilization",
+    "name": "Minoan civilization 3000-1450 BC",
+    "era": "Antigüedad",
+    "yearStart": -3000,
+    "yearEnd": -1450,
+    "religion": "Nature-centered polytheism",
+    "keywords": [ "greek", "minoan", "greece", "minoica", "minocicos"],
+    "GovernmentType":"Palatial monarchy",
+    "capital": "Knossos",
+    "file": "maps/europe/greece/minoanCivilization.json",
+    "description": "The Minoan civilization began around 3000 BCE on Crete, developing a prosperous palatial system driven by trade, craftsmanship, and strong religious traditions. Around 1450 BCE, it was gradually absorbed by the Mycenaeans, who took control of its major centers and adopted aspects of its culture. The final disappearance of Minoan society came with the wider collapse of Mycenaean Greece during the 12th-century BCE Mediterranean crisis."
+  },
+
+
+  {
+    "id": "athens",
+    "name": "Athens 500-400 BC",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -400,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["athens", "greek", "500-400 BC", "greece", "500-400 ", "hellenic"],
+    "flag": "flags/europe/greece/athen 4.png",
+    "file": "maps/europe/greece/athens.json",
+     "description": "Between 500 and 400 BC, Athens rose from a threatened city-state to a major power. The period began with victory in the Persian Wars, which strengthened its navy and economy. Under Pericles, Athens experienced a Golden Age of democracy, art, philosophy, and the Parthenon. It ended weakened by the Peloponnesian War against Sparta."
+  },
+
+  {
+    "id": "sparts",
+    "name": "Sparta 900-146 BC",
+    "era": "classic",
+    "yearStart": -900,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["sparta", "greek", "500-400 BC", "greece", "900-146 BC"],
+    "file": "maps/europe/greece/sparta.json"
+  },
+  {
+    "id": "messene",
+    "name": "Messene 300 BC",
+    "era": "classic",
+    "yearStart": -300,
+    "yearEnd": -300,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["Messene", "greek", "300 BC", "greece", "greece"],
+    "file": "maps/europe/greece/messene.json"
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth 700-146 BC",
+    "era": "classic",
+    "yearStart": -700,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["corinth", "corinto", "greek", "700-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+    {
+    "id": "argos",
+    "name": "Argos 1200-146 BC ",
+    "era": "classic",
+    "yearStart": -1200,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["argos",  "greek", "1200-146 BC ", "greece", "greece"],
+    "file": "maps/europe/greece/corinth.json"
+  },
+
+
+    {
+    "id": "arcadianLeague",
+    "name": "Arcadian league 370-230 BC ",
+    "era": "classic",
+    "yearStart": -370,
+    "yearEnd": -230,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["arcadian league",  "greek", "1200-146 BC ", "greece", "greece", "hellenic", "Hellenistic"],
+    "file": "maps/europe/greece/arcadianLeague.json"
+  },
+
+    {
+    "id": "Elis",
+    "name": "Elis  V-IV BC  ",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -300,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["elis",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/Elis.json"
+  },
+
+
+      {
+    "id": "patras",
+    "name": "Patras 700-146 BC ",
+    "era": "classic",
+    "yearStart": -700,
+    "yearEnd": -146,
+    "religion": "classic",
+    "keywords": ["patras",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/patras.json"
+  },
+
+        {
+    "id": "thebes",
+    "name": "Thebes 900-146 BC ",
+    "era": "classic",
+    "yearStart": -900,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["thebes",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/thebes.json"
+  },
+
+          {
+    "id": "achaeanLeague",
+    "name": "Achaean league 280-192 BC ",
+    "era": "classic",
+    "yearStart": -280,
+    "yearEnd": -192,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague.json"
+  },
+
+
+  {
+    "id": "achaeanLeague2",
+    "name": "Achaean league 192-146 BC ",
+    "era": "hellenic",
+    "yearStart": -192,
+    "yearEnd": -146,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["achaean League",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/achaeanLeague2.json"
+  },
+
+
+    {
+    "id": "aegina",
+    "name": "Aegina V BC ",
+    "era": "classic",
+    "yearStart": -500,
+    "yearEnd": -400,
+    "religion": "Ancient Greek Religion",
+    "keywords": ["Aegina",  "greek", "", "greece", "greece", "hellenic"],
+    "file": "maps/europe/greece/aegina.json"
+  },
+
+    {
+    "id": "alexander",
+    "name": "Empire of Alexander the Great (Macedonian Empire) 336-323 BC",
+    "era": "Hellenism",
+    "yearStart": -336,
+    "yearEnd": -323,
+    "religion": "Greek religion, Egyptian religion, Mesopotamian religions, Zoroastrianism etc ",
+    "keywords": ["alexandcer the great", "greece", "hellenism", "macedonian","macedonia","empire"],
+    "file": "maps/europe/greece/alexanderEmpire.json",
+    "flag": "flags/europe/greece/Flag_of_Greek_Macedonia.svg.png",
+    "description": "The Empire of Alexander the Great began in Macedonia in 336 BC and expanded rapidly after conquering key cities such as Troy, Tyre, Gaza, Memphis, and Babylon, reaching as far as India. His empire united Europe, Asia, and Africa. After his death in 323 BC, his generals divided the territory and founded new kingdoms."
+  },
+
+
+
+      {
+    "id": "delianLeague",
+    "name": "Delian league 431 BC",
+    "era": "Classic greece",
+    "yearStart": -478,
+    "yearEnd": -404,
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "478","delian","delos", "league", "404","athens","empire"],
+    "file": "maps/europe/greece/delianLeague.json",
+
+    "description": "The Delian League existed from 478 BC to 404 BC and was dissolved in 404 BC. It began as a defensive alliance of Greek city-states formed to protect against Persian attacks after the Persian Wars. Over time, Athens transformed the league into an empire by moving the treasury from Delos to Athens, forcing members to pay tribute, suppressing revolts, and imposing control through its navy and political power."
+  },
+
+
+        {
+    "id": "peloponnesianLeague",
+    "name": "Peloponnesian League 431 BC",
+    "era": "classic greece",
+    "yearStart": -550,
+    "yearEnd": -404,
+    "religion": "Ancient Greek religion ",
+    "keywords": ["greek", "greece", "hellenism", "550","peloponnesian","peloponeso", "league", "404","sparta"],
+    "file": "maps/europe/greece/peloponnesianLeague.json",
+
+    "description": "The Peloponnesian League was formed around 550 BC and ceased to exist in 404 BC. It was a military alliance led by Sparta, bringing together many Greek city-states of the Peloponnese and central Greece. Unlike the Delian League, its members kept more independence but were expected to support Sparta in war. The league’s main goal was to defend against rivals, especially Athens, during the Peloponnesian War."
+  },
+
+
+    {
+    "id": "easternRomanLast",
+    "name": "Eastern Roman Empire 1451-1453 AD",
+    "era": "middle ages",
+    "yearStart": 1451,
+    "yearEnd": 1453,
+    "religion": "Eastern Orthodox Christianity",
+    "keywords": [ "Constantinople fall", "Byzantine Empire", "Constantine XI", "constantinopla", "Eastern Roman Empire", "1453", "Hagia Sophia", "Ottoman conquest",  "End of the Middle Ages" ,"rome"],
+    "population":"45.000",
+    "lenguages":"Greek",
+    "capital":"Constantinople",
+    "currency":"Hyperpyron",
+    "GovernmentType":"Hereditary absolute monarchy",
+    "file": "maps/europe/greece/easterRomanEmpireLast.json",
+    "flag": "flags/europe/greece/Byzantine_imperial_flag,_14th_century_(firesteels_vesion).svg.png",
+    "description": "Between 1451 and 1453, the Eastern Roman Empire entered its final and irreversible crisis. Sultan Mehmed II systematically prepared the destruction of Constantinople by isolating the city, building fortresses along the Bosporus, and deploying massive cannons. Emperor Constantine XI ruled a city reduced to shadows of its former power, short on men, allies, and supplies. After a brutal siege, Ottoman forces breached the walls on May 29, 1453. Constantine died fighting among his soldiers, ending over a thousand years of uninterrupted Roman statehood."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "egypt1",
+    "name": "Egypt old kingdom 2686-2181 BC",
+    "era": "Antigüedad",
+    "yearStart": -2686,
+    "yearEnd": -2181,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom"],
+    "file": "maps/africa/nordAfrica/egypt1.json"
+
+  },
+
+  {
+    "id": "egypt2",
+    "name": "Lower Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "yearStart": -2181,
+    "yearEnd": -2055,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period"],
+    "file": "maps/africa/nordAfrica/egypt2.json"
+
+  },
+
+  
+  {
+    "id": "egypt3",
+    "name": "Upper Egypt (first intermediate period) 2181-2055 BC",
+    "era": "Antigüedad",
+    "yearStart": -2181,
+    "yearEnd": -2055,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto"],
+    "file": "maps/africa/nordAfrica/egypt3.json"
+
+  },
+
+  
+  
+  {
+    "id": "egypt4",
+    "name": "Egypt middle kingdom 2055-1650 BC",
+    "era": "Antigüedad",
+    "yearStart": -2055,
+    "yearEnd": -1650,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio"],
+    "file": "maps/africa/nordAfrica/egypt4.json"
+
+  },
+    
+  {
+    "id": "egypt5",
+    "name": "Egypt new kingdom 1549-1069 BC",
+    "era": "Antigüedad",
+    "yearStart": -1549,
+    "yearEnd": -1069,
+    "religion": "Ancient Egyptian religion",
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo"],
+    "file": "maps/africa/nordAfrica/egypt5.json"
+
+  },
+
+
+  {
+    "id": "carthague1",
+    "name": "Carthage (kingdom) 814-649 BC",
+    "era": "Antigüedad",
+    "yearStart": -814,
+    "yearEnd": -649,
+    "religion": "Phoenician religion",
+    "keywords": ["nord",  "carthague", "cartago"],
+    "file": "maps/africa/nordAfrica/carthague1.json",
+    "description": "Carthague fi..."
+  },
+
+    {
+    "id": "carthague2",
+    "name": "Carthage (kingdom) 649-500 BC",
+    "era": "Antigüedad",
+    "yearStart": -649,
+    "yearEnd": -500,
+    "religion": "Phoenician religion",
+    "keywords": ["nord",  "carthague", "cartago"],
+    "file": "maps/africa/nordAfrica/carthague2.json",
+    "description": "Carthague fi..king."
+  },
+
+  {
+    "id": "carthague3",
+    "name": "Carthage (Kingdom & Republic) 399-261 BC ",
+    "era": "Antigüedad",
+    "yearStart": -399,
+    "yearEnd": -261,
+    "religion": "Phoenician religion",
+    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "file": "maps/africa/nordAfrica/carthague3.json",
+    "description": "Carthague fi..king and republic."
+  },
+
+    {
+    "id": "carthague4",
+    "name": "Carthage (Republic) 201-146 BC",
+    "era": "Antigüedad",
+    "yearStart": -201,
+    "yearEnd": -146,
+    "religion": "Phoenician religion",
+    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "file": "maps/africa/nordAfrica/carthague4.json",
+    "description": "Carthague republic, finally defeated by rome. cartago delenda est ;("
+  },
+
+
+
+  {
+    "id": "numidia",
+    "name": "Numidia 200 BC ",
+    "era": "Antigüedad",
+    "yearStart": -200,
+    "yearEnd": -46,
+    "religion": "Politeísta bereber",
+    "keywords": ["nord",  "nilo", "numidia"],
+    "file": "maps/africa/nordAfrica/numidia.json",
+    "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": "petra",
+    "name": "Nabataean Civilization 30BC - 106 AD",
+    "era": "antigua",
+    "yearStart": -170,
+    "yearEnd": 106,
+    "religion": "Nabataean polytheism",
+    "capital": "Petra",
+    "fundationFall":"170 BC - 106 AD",
+    "currency":"gold bezant",
+    "GovernmentType":"hereditary monarchy",
+    "keywords": ["petra", "Nabataean", "nabateos", "jordania"],
+    "file": "maps/middleEast/petra.json",
+    "lenguages":"Nabataean Aramaic",
+    "description": "Before 170 BC, the Nabataeans functioned mainly as a loosely organized tribal confederation controlling caravan routes across southern Jordan and northern Arabia. Around 170 BC, the emergence of documented kings marks political centralization and territorial control. The kingdom flourished through trade until Rome peacefully annexed it in AD 106, absorbing it as the province of Arabia Petraea."
+  },
+
+
+
+
+
+  {
+    "id": "cyprus",
+    "name": "Kingdom of Cyprus 1192-1489 AD ",
+    "era": "imddle ages",
+    "yearStart": 1192,
+    "yearEnd": 1489,
+    "capital": "Nicosia",
+    "religion": "Roman Catholic",
+    "currency":"Cypriot gros",
+    "GovernmentType":"Feudal monarchy",
+    "keywords": ["cyprus", "chipre", "christian", "kingdom"],
+    "file": "maps/middleEast/cyprusKingdom.json",
+    "flag": "flags/middleEast/Stemma_reale_di_Giano_di_Cipro.svg.png",
+    "population": "150,000",
+    "lenguages":"Cypriot Greek",
+    "description": "The Kingdom of Cyprus was created in 1192 when Guy of Lusignan acquired the island after the Third Crusade, establishing a Crusader-style monarchy. Strategic for trade and military control, Cyprus gradually fell under Venetian influence. In 1489, political pressure led Queen Caterina Cornaro to cede the island to Venice, ending the kingdom."
+  },
+
+
+
+  {
+    "id": "jerusalemKingdom",
+    "name": "Kingdom of Jerusalem 1099-1187 AD ",
+    "era": "imddle ages",
+    "yearStart": 1099,
+    "yearEnd": 1186,
+    "capital": "Jerusalén",
+    "religion": "Roman Catholicism",
+    "currency":"gold bezant",
+    "GovernmentType":"Feudal hereditary monarchy",
+    "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin"],
+    "file": "maps/middleEast/jerusalenKingdom.json",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+    "population": "300,000 to 600,000",
+    "lenguages":"Latin",
+    "description": "The Kingdom of Jerusalem was founded in 1099 after the First Crusade, when crusaders captured the Holy City and established a Latin feudal monarchy in the Levant. Its survival depended on narrow supply routes, European support, and powerful military orders. Between 1186 and 1187, the crushing defeat at Hattin allowed Saladin to reconquer almost all its territory, including Jerusalem."
+  },
+
+
+  
+  {
+    "id": "jerusalemKingdomlast",
+    "name": "Kingdom of Jerusalem 1268-1291 AD",
+    "era": "imddle ages",
+    "yearStart": 1268,
+    "yearEnd": 1291,
+    "capital": "Acre",
+    "religion": "Roman Catholicism",
+    "currency":"gold bezant",
+    "GovernmentType":"Feudal hereditary monarchy",
+    "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin", "kingdom"],
+    "file": "maps/middleEast/jerusalenkingdomLast.json",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+
+    "lenguages":"Latin",
+    "description": "The Kingdom of Jerusalem slowly withered as the Mamluks cut down its coastal enclaves one by one. In 1291, Acre, the last great Crusader stronghold, fell after a desperate defense, its walls shattered and its defenders pushed into the sea. With Acre’s collapse, the Crusader kingdom vanished from the Middle East, ending nearly two centuries of Latin rule."
+  },
+
+
+
+
+
+
+
+
+
+
+
+    
+  {
+    "id": "palmyra",
+    "name": "Palmyrene kingdom 260-270 AD ",
+    "era": "Antigüedad",
+    "yearStart": 260,
+    "yearEnd": 270,
+    "religion": "Middle East",
+    "keywords": ["palmyra", "middle", "Zenobia", "palmira"],
+    "file": "maps/middleEast/palmyra.json"
+
+  },
+
+
+  {
+    "id": "palmyraEmpire",
+    "name": "Palmyrene empire 270-273 AD ",
+    "era": "Antigüedad",
+    "yearStart": 270,
+    "yearEnd": 273,
+    "religion": "Middle East",
+    "keywords": ["palmyra", "middle", "Zenobia", "empire", "palmira"],
+    "file": "maps/middleEast/palmyraEmpire.json"
+
+  }
+
+
+
+
+
+
+
+
+]
