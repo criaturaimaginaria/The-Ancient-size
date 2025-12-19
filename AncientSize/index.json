@@ -266,6 +266,80 @@
 
 
 
+  {
+    "id": "savoy",
+    "name": "Duchy of Savoy 1416-1770",
+    "era": "medieval",
+    "yearStart": 1416,
+    "yearEnd": 1770,
+    "fundationFall": "1416-1792; 1814-1860",
+    "capital": "Turin",
+    "religion": "Roman Catholicism",
+    "currency":"Piedmontese lira",
+    "GovernmentType":"Initially a duchy, later hereditary monarchy.",
+    "keywords": ["italy", "savoy", "ducado", "saboya", "duchy"],
+    "file": "maps/europe/italy/savoyDuchy.json",
+    "flag": "flags/europe/italy/Flag_of_Savoie.svg.png",
+    "lenguages":"Piedmontese",
+    "description": "The Duchy of Savoy was created in 1416 when Emperor Sigismund of the Holy Roman Empire elevated the County of Savoy to ducal rank. The ruling House of Savoy gradually expanded its territory on both sides of the Alps, controlling strategic Alpine passes between France and Italy. Over time, the political center shifted eastward, and Turin became the capital, marking a stronger Italian orientation."
+  },
+
+
+
+{
+  "id": "mantua",
+  "name": "Duchy of Mantua 1530-1708",
+  "era": "early_modern",
+  "yearStart": 1530,
+  "yearEnd": 1708,
+  "fundationFall": "1530-1708",
+  "capital": "Mantua",
+  "religion": "Roman Catholicism",
+  "currency": "Mantuan lira",
+  "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
+  "keywords": ["italy", "mantua", "ducado", "mantova", "duchy"],
+  "file": "maps/europe/italy/mantuaDuchy.json",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Mantua_(1575–1707).svg.png",
+  "lenguages": "Mantuan (Lombard)",
+  "description": "The Duchy of Mantua was created in 1530 when Emperor Charles V elevated the Marquisate of Mantua to ducal rank under the Gonzaga family. Mantua had previously been ruled as a marquisate since 1433. The Gonzaga transformed the city into a major cultural center of the Italian Renaissance. The duchy remained a hereditary state within the Holy Roman Empire until 1708, when it was abolished after the War of the Spanish Succession and annexed by the Habsburg Monarchy."
+},
+
+{
+  "id": "ferrara",
+  "name": "Duchy of Ferrara 1471-1598",
+  "era": "early_modern",
+  "yearStart": 1471,
+  "yearEnd": 1598,
+  "fundationFall": "1471-1598",
+  "capital": "Ferrara",
+  "religion": "Roman Catholicism",
+  "currency": "Ferrarese lira",
+  "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
+  "keywords": ["italy", "ferrara", "ducado", "estense", "duchy"],
+  "file": "maps/europe/italy/ferraraDuchy.json",
+  "flag": "flags/europe/italy/Coat_of_arms_of_the_House_of_Este_(1471).svg.png",
+  "lenguages": "Ferrarese (Emilian)",
+  "description": "The Duchy of Ferrara was established in 1471 when Pope Paul II elevated the Marquisate of Ferrara to ducal status under the House of Este. Previously ruled as a marquisate, Ferrara became a prominent Renaissance court and cultural center. The duchy remained a hereditary state until 1598, when it reverted to direct Papal control following the extinction of the legitimate Este line."
+},
+
+
+{
+  "id": "urbino",
+  "name": "Duchy of Urbino 1443-1631",
+  "era": "early_modern",
+  "yearStart": 1443,
+  "yearEnd": 1631,
+  "fundationFall": "1443-1631",
+  "capital": "Urbino",
+  "religion": "Roman Catholicism",
+  "currency": "Urbino lira",
+  "GovernmentType": "Initially a county, later a hereditary duchy.",
+  "keywords": ["italy", "urbino", "ducado", "montefeltro", "duchy"],
+  "file": "maps/europe/italy/urbinoDuchy.json",
+  "flag": "flags/europe/italy/Flag_of_Duchy_of_Urbino.svg.png",
+  "lenguages": "Urbinate (Central Italian)",
+  "description": "The Duchy of Urbino was created in 1443 when Pope Eugene IV elevated the County of Urbino to ducal rank under the Montefeltro family. Renowned as a leading Renaissance court, Urbino flourished as a center of art, humanism, and military leadership. The duchy remained a hereditary state until 1631, when it was absorbed into the Papal States following the extinction of the ruling dynasty."
+},
 
 
 
@@ -1031,6 +1105,22 @@
 
 
 
+  {
+    "id": "petra",
+    "name": "Nabataean Civilization 30BC - 106 AD",
+    "era": "antigua",
+    "yearStart": -170,
+    "yearEnd": 106,
+    "religion": "Nabataean polytheism",
+    "capital": "Petra",
+    "fundationFall":"170 BC - 106 AD",
+    "currency":"gold bezant",
+    "GovernmentType":"hereditary monarchy",
+    "keywords": ["petra", "Nabataean", "nabateos", "jordania"],
+    "file": "maps/middleEast/petra.json",
+    "lenguages":"Nabataean Aramaic",
+    "description": "Before 170 BC, the Nabataeans functioned mainly as a loosely organized tribal confederation controlling caravan routes across southern Jordan and northern Arabia. Around 170 BC, the emergence of documented kings marks political centralization and territorial control. The kingdom flourished through trade until Rome peacefully annexed it in AD 106, absorbing it as the province of Arabia Petraea."
+  },
 
 
 
