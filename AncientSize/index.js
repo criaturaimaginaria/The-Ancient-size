@@ -335,7 +335,6 @@ function hideLayerInfo() {
 
 
 // ---------------------------------
-// NUEVO: tooltip minimalista para polígono
 function showLayerInfoMinimal(layerName) {
   const info = indexData.find(item => item.name === layerName);
   if (!info) {

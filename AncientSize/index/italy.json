@@ -69,6 +69,160 @@
 
 
 
+{
+  "id": "odoacer1",
+  "name": "Kingdom of Odoacer 476–493 AD",
+  "era": "Post-Roman Western Europe",
+  "yearStart": 476,
+  "yearEnd": 493,
+  "capital": "Ravenna",
+  "religion": "Arian Christianity",
+  "currency": "Late Roman coinage (Solidus, Siliqua)",
+  "GovernmentType": "Germanic kingship over Roman administrative structures",
+  "keywords": ["odoacer", "post-roman", "italy", "476 AD", "kingdom", "odoacro"],
+  "file": "maps/europe/italy/odoacer.json",
+  "lenguages": "Latin, Germanic languages",
+  "description": "After the fall of the Western Roman Empire in 476 AD, Odoacer ruled Italy as king. He maintained Roman institutions while exercising Germanic military power, governing until his defeat by Theodoric the Great in 493."
+},
+
+{
+  "id": "ostrogothic1",
+  "name": "Ostrogothic Kingdom 493–534 AD",
+  "era": "Post-Roman Western Europe",
+  "fundationFall": "493-553 AD",
+  "yearStart": 493,
+  "yearEnd": 534,
+  "capital": "Ravenna",
+  "religion": "Arian Christianity",
+  "currency": "Late Roman coinage (Solidus, Siliqua)",
+  "GovernmentType": "Germanic kingship preserving Roman administration",
+  "keywords": ["ostrogoths", "italy", "post-roman", "theodoric", "kingdom"],
+  "file": "maps/europe/italy/ostrogothic.json",
+  "lenguages": "Latin, Gothic",
+  "description": "Founded by Theodoric the Great in 493 AD, the Ostrogothic Kingdom ruled Italy while preserving Roman law and institutions. It combined Gothic military leadership with Roman administration until its destruction during Justinian’s Gothic War."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "modena1",
+  "name": "Duchy of Modena and Reggio 1452–1859 AD",
+  "era": "Late Medieval and Early Modern Italy",
+  "fundationFall": "1452-1859 AD",
+  "yearStart": 1452,
+  "yearEnd": 1859,
+  "capital": "Modena",
+  "religion": "Roman Catholicism",
+  "currency": "Modenese lira, Scudo",
+  "GovernmentType": "Hereditary duchy (Este dynasty)",
+  "keywords": ["modena", "reggio", "este", "italy", "duchy", "holy roman empire"],
+  "file": "maps/europe/italy/modena.json",
+  "flag": "flags/europe/italy/Ducado_de_Modena_(antes_de_1830).svg.png",
+  "lenguages": "Italian, Latin",
+  "description": "The Duchy of Modena and Reggio was established in 1452 when Borso d’Este was granted the ducal title by the Holy Roman Emperor. Ruled by the House of Este, it was a sovereign state within the Holy Roman Empire, known for its political stability, patronage of the arts, and strategic position in northern Italy. The duchy survived until 1859, when it was annexed during the Italian unification process."
+},
+
+
+{
+  "id": "parma1",
+  "name": "Duchy of Parma and Piacenza 1545–1860 AD",
+  "era": "Early Modern Italy",
+  "fundationFall": "1545–1802  1814-1860 AD",
+  "yearStart": 1545,
+  "yearEnd": 1860,
+  "capital": "Parma",
+  "religion": "Roman Catholicism",
+  "currency": "Parma lira, Scudo",
+  "GovernmentType": "Hereditary duchy (Farnese and Bourbon dynasties)",
+  "keywords": ["parma", "piacenza", "farnese", "bourbon", "italy", "duchy"],
+  "file": "maps/europe/italy/parma.json",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Parma.svg.png",
+  "lenguages": "Italian, Latin",
+  "description": "The Duchy of Parma and Piacenza was created in 1545 by Pope Paul III for his son Pier Luigi Farnese. Ruled by the Farnese and later the Bourbons, it remained independent until annexed in 1859 during the Italian unification."
+},
+
+{
+  "id": "verona1",
+  "name": "March of Verona (c. 951–1164 AD)",
+  "era": "Early Medieval Italy",
+  "fundationFall": "c. 951–1164 AD",
+  "yearStart": 951,
+  "yearEnd": 1164,
+  "capital": "Verona",
+  "religion": "Roman Catholicism",
+  "currency": "Carolingian and Imperial coinage",
+  "GovernmentType": "Imperial march (Holy Roman Empire)",
+  "keywords": ["verona", "march", "holy roman empire", "italy", "medieval"],
+  "file": "maps/europe/italy/veronaMarch.json",
+  "flag": "flags/europe/italy/Flag_of_the_March_of_Verona.jpg",
+  "lenguages": "Latin",
+  "description": "The March of Verona was established in the mid-10th century as a frontier territory of the Holy Roman Empire to control northeastern Italy. It declined as imperial authority weakened and was absorbed by autonomous communes and local lordships by the 12th century."
+},
+
+
+
+{
+  "id": "milan1",
+  "name": "Duchy of Milan 1395–1545 AD",
+  "era": "Late Medieval and Early Modern Italy",
+  "fundationFall": "1395-1447 1450-1796 AD",
+  "yearStart": 1395,
+  "yearEnd": 1545,
+  "capital": "Milan",
+  "religion": "Roman Catholicism",
+  "currency": "Milanese lira, Imperial coinage",
+  "GovernmentType": "Hereditary duchy (Visconti, Sforza, later Habsburg rule)",
+  "keywords": ["milan", "duchy", "visconti", "sforza", "holy roman empire", "italy"],
+  "file": "maps/europe/italy/duchyMilan1.json",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg.png",
+  "lenguages": "lombardo, milanés",
+  "description": "The Duchy of Milan was created in 1395 when Emperor Wenceslaus granted ducal status to Gian Galeazzo Visconti. A major power in northern Italy, it later passed to the Sforza and then to foreign dynasties, ending with Napoleon’s conquest in 1796."
+},
+
+
+
+{
+  "id": "milan2",
+  "name": "Duchy of Milan (1545–1796 AD)",
+  "era": "Early Modern Italy",
+  "fundationFall": "1395-1447 1450-1796 AD",
+  "yearStart": 1545,
+  "yearEnd": 1796,
+  "capital": "Milan",
+  "religion": "Roman Catholicism",
+  "currency": "Milanese lira, Spanish and Imperial coinage",
+  "GovernmentType": "Imperial duchy under Spanish and Austrian Habsburg rule",
+  "keywords": ["milan", "duchy", "habsburg", "spain", "austria", "italy"],
+  "file": "maps/europe/italy/duchyMilan2.json",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg.png",
+  "lenguages": "Lombard, Milanese, Latin",
+  "description": "After 1545, the Duchy of Milan lost Parma and Piacenza and became a Habsburg-controlled state. Ruled first by Spain and later by Austria, it remained an important strategic territory in northern Italy until its dissolution by Napoleon in 1796."
+},
+
+
+
+
 
 
 
