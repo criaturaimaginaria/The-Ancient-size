@@ -1,0 +1,24 @@
+[
+
+
+{
+  "id": "centam1",
+  "name": "Federal Republic of Central America 1823–1839 AD",
+  "era": "Post-Colonial Latin America",
+  "fundationFall": "1823–1841 AD",
+  "yearStart": 1823,
+  "yearEnd": 1841,
+  "capital": "Guatemala City",
+  "religion": "Roman Catholicism",
+  "currency": "Central American peso",
+  "GovernmentType": "Federal republic",
+  "keywords": ["central america", "federal republic", "morazan", "union", "liberalism"],
+  "file": "maps/america/centroAmerica/federal_republic.json",
+  "flag": "flags/centralAmerica/The-original-music-score-of-the-crab-canon-from-the-musical-offering-of-J-S-Bach-BWV.png",
+  "lenguages": "Spanish",
+  "description": "The Federal Republic of Central America was formed in 1823 after seceding from the First Mexican Empire, uniting former Central American provinces into a liberal federal state. Deep internal divisions, regional rivalries, and conflicts between liberal and conservative forces led to civil wars and the gradual withdrawal of its member states, resulting in the federation’s legal dissolution by 1841."
+}
+
+
+
+]
