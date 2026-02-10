@@ -1,0 +1,79 @@
+[
+
+    
+
+{
+  "id": "hawaii_unification",
+  "name": "Hawaiian Kingdom 1791-1795",
+  "era": "moderna",
+  "yearStart": 1791,
+  "yearEnd": 1795,
+  "religion": "Hawaiian polytheism",
+  "capital": "Kailua-Kona",
+  "fundationFall": "1300-1893 AD",
+  "currency": "barter system",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["hawaii", "kamehameha", "polynesia", "unification", "pacific"],
+  "file": "maps/america/nordAmerica/hawaiiKingdom.json",
+  "lenguages": "Hawaiian",
+  "description": "Before 1791 the Hawaiian Islands were divided among rival chiefs. Kamehameha I, using Western firearms and advisors, began consolidating power. In 1795 he decisively defeated opposing rulers at the Battle of Nuʻuanu, securing control over most major islands and establishing the foundations of a unified Hawaiian Kingdom."
+},
+
+{
+  "id": "hawaii_kamehameha_reign",
+  "name": "Hawaiian Kingdom 1795-1810",
+  "era": "moderna",
+  "yearStart": 1795,
+  "yearEnd": 1810,
+  "religion": "Hawaiian polytheism",
+  "capital": "Lahaina",
+  "fundationFall": "1300-1893 AD",
+  "currency": "barter system",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["hawaii", "kamehameha", "polynesia", "kingdom", "pacific"],
+  "file": "maps/america/nordAmerica/hawaiiKingdom2.json",
+  "flag": "flags/america/nordAmerica/Flag_of_Hawaii_(1816).svg.png",
+  "lenguages": "Hawaiian",
+  "description": "After 1795 Kamehameha I consolidated control over most Hawaiian islands, completing unification in 1810 when Kauaʻi submitted peacefully. He centralized authority, regulated trade, and maintained traditional religion while expanding foreign relations. His rule stabilized the kingdom and strengthened its political structure until his death in 1824."
+},
+
+
+
+{
+  "id": "hawaii_kingdom_1810_1855",
+  "name": "Hawaiian Kingdom 1810-1855",
+  "era": "moderna",
+  "yearStart": 1810,
+  "yearEnd": 1855,
+  "religion": "Hawaiian Christianity",
+  "capital": "Honolulu",
+  "fundationFall": "1300-1893 AD",
+  "currency": "Hawaiian dollar and foreign coinage",
+  "GovernmentType": "constitutional monarchy",
+  "keywords": ["hawaii", "kamehameha", "polynesia", "kingdom", "pacific", "annexation claims"],
+  "file": "maps/america/nordAmerica/hawaiiKingdom3.json",
+  "flag": "flags/america/nordAmerica/Flag_of_Hawaii_(1816).svg.png",
+  "lenguages": "Hawaiian",
+  "description": "After 1810 Hawaii became a unified kingdom, strengthening trade and foreign diplomacy. Christianity replaced traditional religion, and a constitutional monarchy emerged in 1840. Hawaii began issuing its own coinage while foreign currencies circulated. During the 1850s the kingdom asserted claims over remote Northwestern Hawaiian Islands amid growing U.S. Pacific expansion."
+},
+
+{
+  "id": "hawaii_kingdom_1855_1893",
+  "name": "Hawaiian Kingdom 1855-1893",
+  "era": "moderna",
+  "yearStart": 1855,
+  "yearEnd": 1893,
+  "religion": "Christianity",
+  "capital": "Honolulu",
+  "fundationFall": "1300-1893 AD",
+  "currency": "Hawaiian dollar",
+  "GovernmentType": "constitutional monarchy",
+  "keywords": ["hawaii", "kalakaua", "liliuokalani", "overthrow", "annexation", "pacific"],
+  "file": "maps/america/nordAmerica/hawaiiKingdom4.json",
+  "flag": "flags/america/nordAmerica/Flag_of_Hawaii_(1816).svg.png",
+  "lenguages": "Hawaiian and English",
+  "description": "After 1855 Hawaii modernized under Kamehameha IV and later Kalākaua, expanding trade and diplomacy while issuing its own currency. The 1887 Bayonet Constitution weakened royal power in favor of American settlers. In 1893 Queen Liliʻuokalani was overthrown by U.S.-backed elites, ending the monarchy and leading to U.S. annexation in 1898."
+}
+
+
+]
