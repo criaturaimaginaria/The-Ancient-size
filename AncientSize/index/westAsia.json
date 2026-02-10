@@ -1,0 +1,23 @@
+[
+
+{
+  "id": "lydia_mermnada",
+  "name": "Lydian 685 BC-546 BC",
+  "era": "antigua",
+  "yearStart": -685,
+  "yearEnd": -546,
+  "religion": "Lydian polytheism",
+  "capital": "Sardis",
+  "fundationFall":"700 BC-546 BC",
+  "currency":"electrum coinage",
+  "GovernmentType":"hereditary monarchy",
+  "keywords": ["lydia", "mermnada", "croesus", "anatolia", "coin", ""],
+  "file": "maps/asia/westAsia/lydia.json",
+  "lenguages":"Lydian",
+  "description": "Before 685 BC Lydia was ruled by the Heraclid dynasty with limited regional power. Gyges founded the Mermnad dynasty, expanding across western Anatolia and subduing Greek cities. The Lydians pioneered coinage, later adopted and popularized by the Greeks. Under Croesus it reached its peak. In 546 BC Cyrus the Great defeated Croesus; Sardis fell and Lydia became a Persian satrapy."
+}
+
+
+
+
+]
