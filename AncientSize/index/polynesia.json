@@ -37,7 +37,25 @@
   "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Bora_Bora_(1837-1842).svg.png",
   "lenguages": "Tahitian",
   "description": "The Kingdom of Bora Bora emerged in the late 18th century as a sovereign Polynesian monarchy within the Society Islands. It maintained independence while engaging in limited diplomacy with European powers. Despite earlier recognition of autonomy, France annexed Bora Bora in 1888, ending its sovereignty and incorporating it into French Polynesia."
-}
+},
 
+
+{
+  "id": "raiatea_tahaa_kingdom",
+  "name": "Kingdom of Raiatea-Tahaa c.1720-1888",
+  "era": "moderna",
+  "yearStart": 1720,
+  "yearEnd": 1888,
+  "religion": "Polynesian religion and later Christianity",
+  "capital": "Raiatea",
+  "fundationFall": "c.1720-1888 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["raiatea", "tahaa", "polynesia", "pacific", "france", "society islands"],
+  "file": "maps/asia/southEastAsia/RaiateaKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Raiatea.svg.png",
+  "lenguages": "Tahitian",
+  "description": "Raiatea-Tahaa was a sacred and political center of Polynesia, remaining independent after Tahiti became a French protectorate. Its rulers resisted annexation for decades. In 1888 France used military force to suppress resistance and formally annexed the islands, ending the kingdom’s sovereignty and integrating them into French Polynesia."
+}
 
 ]
