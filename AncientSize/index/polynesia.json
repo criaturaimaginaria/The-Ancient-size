@@ -1,0 +1,43 @@
+[
+
+    
+
+{
+  "id": "tahiti_kingdom",
+  "name": "Kingdom of Tahiti 1788-1842",
+  "era": "moderna",
+  "yearStart": 1788,
+  "yearEnd": 1842,
+  "religion": "Polynesian religion and later Christianity",
+  "capital": "Papeete",
+  "fundationFall": "1788-1880 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["tahiti", "pomare", "polynesia", "pacific", "france"],
+  "file": "maps/asia/southEastAsia/tahitiKingdom.json",
+  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Tahiti.svg.png",
+  "lenguages": "Tahitian",
+  "description": "The Kingdom of Tahiti emerged under the Pōmare dynasty in the late 18th century, consolidating control over the island and nearby territories. It engaged in diplomacy with European powers and adopted Christianity. In 1842 France imposed a protectorate, and in 1880 Tahiti was formally annexed, ending its sovereignty."
+},
+
+
+{
+  "id": "bora_bora_kingdom",
+  "name": "Kingdom of Bora Bora 1788-1888",
+  "era": "moderna",
+  "yearStart": 1788,
+  "yearEnd": 1888,
+  "religion": "Polynesian religion and later Christianity",
+  "capital": "Vaitape",
+  "fundationFall": "1788-1888 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["bora bora", "polynesia", "pacific", "france", "society islands"],
+  "file": "maps/asia/southEastAsia/boraboraKingdom.json",
+  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Bora_Bora_(1837-1842).svg.png",
+  "lenguages": "Tahitian",
+  "description": "The Kingdom of Bora Bora emerged in the late 18th century as a sovereign Polynesian monarchy within the Society Islands. It maintained independence while engaging in limited diplomacy with European powers. Despite earlier recognition of autonomy, France annexed Bora Bora in 1888, ending its sovereignty and incorporating it into French Polynesia."
+}
+
+
+]
