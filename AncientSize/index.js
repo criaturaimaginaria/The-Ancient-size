@@ -334,25 +334,56 @@ function hideLayerInfo() {
 
 
 
-// ---------------------------------
+// ------------------------Geojson hover----------------------------
+// function showLayerInfoMinimal(layerName) {
+//   const info = indexData.find(item => item.name === layerName);
+//   if (!info) {
+//     tooltipBoxMinimal.innerHTML = "<i>No data found</i>";
+//   } else {
+//     tooltipBoxMinimal.innerHTML = `
+//       <b>${info.name}</b><br>
+//       ${info.flag ? `<div class="flagContainerMinimal"><img src="${info.flag}"></div>` : ""}
+//     `;
+//   }
+//   tooltipBoxMinimal.style.display = "block";
+// }
+
+
+// reload of the flags each time fixed
+const nameEl = document.createElement("b");
+const br = document.createElement("br");
+
+const flagContainer = document.createElement("div");
+flagContainer.className = "flagContainerMinimal";
+
+const flagImg = document.createElement("img");
+
+flagContainer.appendChild(flagImg);
+tooltipBoxMinimal.appendChild(nameEl);
+tooltipBoxMinimal.appendChild(br);
+tooltipBoxMinimal.appendChild(flagContainer);
+
+
 function showLayerInfoMinimal(layerName) {
   const info = indexData.find(item => item.name === layerName);
+
   if (!info) {
-    tooltipBoxMinimal.innerHTML = "<i>No data found</i>";
-  } else {
-    tooltipBoxMinimal.innerHTML = `
-      <b>${info.name}</b><br>
-      ${info.flag ? `<div class="flagContainerMinimal"><img src="${info.flag}"></div>` : ""}
-    `;
+    tooltipBoxMinimal.style.display = "none";
+    return;
   }
+
+  nameEl.textContent = info.name;
+
+  if (info.flag) {
+    flagImg.src = info.flag;
+    flagContainer.style.display = "block";
+  } else {
+    flagContainer.style.display = "none";
+  }
+
   tooltipBoxMinimal.style.display = "block";
 }
-
-
-
-
-
-
+// -----------------------end geojson hover------------------------------
 
 
 
