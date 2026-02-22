@@ -77,7 +77,7 @@ showAllActive = false;
     const btn = document.createElement("button");
     btn.textContent = `${map.name}`;
     btn.classList.add("result-item");
-    btn.addEventListener("click", () => loadMap(map.file, map.name));
+    btn.addEventListener("click", () => loadMap(map.file, map.name, map.fillColor));
     resultsContainer.appendChild(btn);
   });
 });
@@ -102,7 +102,7 @@ fetch('./index.json')
     // carga inicial
     const initialMap = indexData.find(item => item.id === "rome2");
     if (initialMap) {
-      loadMap(initialMap.file, initialMap.name);
+      loadMap(initialMap.file, initialMap.name, initialMap.fillColor);
     } else {
       console.warn('rome2 no encontrado en índice');
     }
@@ -113,7 +113,43 @@ fetch('./index.json')
 
 // Función para cargar un mapa y actualizar el panel de capas
 
-function loadMap(file, name) {
+// function loadMap(file, name) {
+//   const existing = activeLayers.find(m => m.name === name);
+//   if (existing) {
+//     alert(`the map "${name}" is already loaded`);
+//     return;
+//   }
+
+//   fetch(file)
+//     .then(response => response.json())
+//     .then(data => {
+//       const layer = new L.trueSize(data, {
+//         color: data.properties.fillColor || "black",
+//         fillColor: data.properties.fillColor || "#FF0000",
+//         weight: 1.3,
+//         opacity: 1.5,
+
+//         onEachFeature: (feature, layer) => {
+//           layer.on('mouseover', () => showLayerInfoMinimal(name));
+//           layer.on('mouseout', hideLayerInfo);
+//         }
+//       });layer.addTo(map);
+
+//       activeLayers.push({ 
+//         name, 
+//         layer, 
+//         visible: true,
+//         geometry: data.geometry   
+//       });
+
+//       renderLayersList();
+//     })
+//     .catch(error => console.error('Error cargando mapa:', error));
+// }
+
+
+function loadMap(file, name, indexFillColor) {
+
   const existing = activeLayers.find(m => m.name === name);
   if (existing) {
     alert(`the map "${name}" is already loaded`);
@@ -123,9 +159,66 @@ function loadMap(file, name) {
   fetch(file)
     .then(response => response.json())
     .then(data => {
-      const layer = new L.trueSize(data, {
-        color: data.properties.fillColor || "black",
-        fillColor: data.properties.fillColor || "#FF0000",
+
+      let geojsonData = data;
+      let geometryForArea = null;
+      let detectedFillColor = null;
+
+
+      if (data.type === "FeatureCollection") {
+
+        // Si hay varias features 
+        if (data.features.length > 1) {
+
+          const multiCoords = [];
+
+          data.features.forEach(f => {
+            if (f.geometry.type === "Polygon") {
+              multiCoords.push(f.geometry.coordinates);
+            }
+            else if (f.geometry.type === "MultiPolygon") {
+              multiCoords.push(...f.geometry.coordinates);
+            }
+          });
+
+          geojsonData = {
+            type: "Feature",
+            properties: {},
+            geometry: {
+              type: "MultiPolygon",
+              coordinates: multiCoords
+            }
+          };
+
+          geometryForArea = geojsonData.geometry;
+        }
+        else {
+          // Solo una feature
+          geojsonData = data.features[0];
+          geometryForArea = geojsonData.geometry;
+        }
+
+      }
+      else if (data.type === "Feature") {
+        geojsonData = data;
+        geometryForArea = data.geometry;
+      }
+
+
+      detectedFillColor =
+        indexFillColor ||
+        geojsonData?.properties?.fillColor ||
+        "#FF0000";
+
+
+      // capa Leaflet
+      // -------------------------------
+
+      console.log("Color recibido:", indexFillColor);
+
+      const layer = new L.trueSize(geojsonData, {
+        color: detectedFillColor,
+        fillColor: detectedFillColor,
         weight: 1.3,
         opacity: 1.5,
 
@@ -133,19 +226,33 @@ function loadMap(file, name) {
           layer.on('mouseover', () => showLayerInfoMinimal(name));
           layer.on('mouseout', hideLayerInfo);
         }
-      });layer.addTo(map);
+      });
 
-      activeLayers.push({ 
-        name, 
-        layer, 
+      layer.addTo(map);
+
+      activeLayers.push({
+        name,
+        layer,
         visible: true,
-        geometry: data.geometry   
+        geometry: geometryForArea
       });
 
       renderLayersList();
     })
     .catch(error => console.error('Error cargando mapa:', error));
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function renderLayersList() {
@@ -255,7 +362,7 @@ function renderResults(results) {
     const div = document.createElement('div');
     div.className = 'result-item';
     div.textContent = map.name;
-    div.onclick = () => loadMap(map.file, map.name);
+    div.onclick = () => loadMap(map.file, map.name, map.fillColor);
     searchResults.appendChild(div);
   });
 }
@@ -372,13 +479,16 @@ function showLayerInfoMinimal(layerName) {
     return;
   }
 
-  nameEl.textContent = info.name;
+  // Setear nombre
+  nameEl.textContent = info.name || "";
 
+  // Setear bandera
   if (info.flag) {
     flagImg.src = info.flag;
     flagContainer.style.display = "block";
   } else {
     flagContainer.style.display = "none";
+    flagImg.src = "";
   }
 
   tooltipBoxMinimal.style.display = "block";

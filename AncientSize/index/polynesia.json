@@ -56,6 +56,25 @@
   "flag": "flags/asia/southEastAsia/Flag_of_Raiatea.svg.png",
   "lenguages": "Tahitian",
   "description": "Raiatea-Tahaa was a sacred and political center of Polynesia, remaining independent after Tahiti became a French protectorate. Its rulers resisted annexation for decades. In 1888 France used military force to suppress resistance and formally annexed the islands, ending the kingdom’s sovereignty and integrating them into French Polynesia."
+},
+
+{
+  "id": "tonga_kingdom_1875_1900",
+  "name": "Kingdom of Tonga 1875-1900",
+  "era": "moderna",
+  "yearStart": 1875,
+  "yearEnd": 1900,
+  "religion": "Christianity (mainly Methodist)",
+  "capital": "Nukuʻalofa",
+  "fundationFall": "1875-1900 AD",
+  "currency": "Tongan pound",
+  "GovernmentType": "constitutional hereditary monarchy",
+  "keywords": ["tonga", "polynesia", "pacific", "britain", "monarchy", "constitution 1875"],
+  "file": "maps/asia/southEastAsia/TongaKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Tonga.svg.png",
+  "fillColor":"#0E00A1",
+  "lenguages": "Tongan",
+  "description": "After the 1875 Constitution promulgated by King George Tupou I, Tonga became a centralized constitutional monarchy with defined laws, parliament and land system. It maintained internal sovereignty while navigating foreign pressure. In 1900 Tonga signed a Treaty of Friendship with Britain, becoming a protected state but not a colony."
 }
 
 ]
