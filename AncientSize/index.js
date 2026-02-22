@@ -376,7 +376,10 @@ searchInput.addEventListener('input', () => {
     return;
   }
   const filtered = mapIndex.filter(m => m.name.toLowerCase().includes(query));
-  const filtered2 = mapIndex.filter(m => m.keywords.toLowerCase().includes(query));
+const filtered2 = mapIndex.filter(m =>
+  Array.isArray(m.keywords) &&
+  m.keywords.some(k => k.toLowerCase().includes(query))
+);
   renderResults(filtered || filtered2);
 });
 
@@ -597,6 +600,8 @@ yearEra.addEventListener('change', applyCombinedFilters);
 yearFilterBox.style.display = 'none';
 showDateFilterBtn.classList.remove('active-year-btn');
 
+
+// ---------------- ROTATION CONTROL ----------------
 
 
 
