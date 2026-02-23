@@ -7,7 +7,7 @@
     "yearStart": -2686,
     "yearEnd": -2181,
     "religion": "Ancient Egyptian religion",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom"],
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "old kingdom", "africa"],
     "file": "maps/africa/nordAfrica/egypt1.json"
 
   },
@@ -19,7 +19,7 @@
     "yearStart": -2181,
     "yearEnd": -2055,
     "religion": "Ancient Egyptian religion",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period"],
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "intermediate period", "africa"],
     "file": "maps/africa/nordAfrica/egypt2.json"
 
   },
@@ -32,7 +32,7 @@
     "yearStart": -2181,
     "yearEnd": -2055,
     "religion": "Ancient Egyptian religion",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto"],
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "alto egipto", "africa"],
     "file": "maps/africa/nordAfrica/egypt3.json"
 
   },
@@ -46,7 +46,7 @@
     "yearStart": -2055,
     "yearEnd": -1650,
     "religion": "Ancient Egyptian religion",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio"],
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "reino medio", "africa"],
     "file": "maps/africa/nordAfrica/egypt4.json"
 
   },
@@ -58,7 +58,7 @@
     "yearStart": -1549,
     "yearEnd": -1069,
     "religion": "Ancient Egyptian religion",
-    "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo"],
+    "keywords": ["pirámides", "faraón", "nilo", "egipto", "neino nuevo", "africa"],
     "file": "maps/africa/nordAfrica/egypt5.json"
 
   }

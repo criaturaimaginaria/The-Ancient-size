@@ -9,7 +9,7 @@
     "yearStart": -814,
     "yearEnd": -649,
     "religion": "Phoenician religion",
-    "keywords": ["nord",  "carthague", "cartago"],
+    "keywords": ["nord",  "carthague", "cartago", "africa"],
     "file": "maps/africa/nordAfrica/carthague1.json",
     "description": "Carthague fi..."
   },
@@ -21,7 +21,7 @@
     "yearStart": -649,
     "yearEnd": -500,
     "religion": "Phoenician religion",
-    "keywords": ["nord",  "carthague", "cartago"],
+    "keywords": ["nord",  "carthague", "cartago", "africa"],
     "file": "maps/africa/nordAfrica/carthague2.json",
     "description": "Carthague fi..king."
   },
@@ -33,7 +33,7 @@
     "yearStart": -399,
     "yearEnd": -261,
     "religion": "Phoenician religion",
-    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "keywords": ["nord",  "carthague", "cartago", "republic", "africa"],
     "file": "maps/africa/nordAfrica/carthague3.json",
     "description": "Carthague fi..king and republic."
   },
@@ -45,7 +45,7 @@
     "yearStart": -201,
     "yearEnd": -146,
     "religion": "Phoenician religion",
-    "keywords": ["nord",  "carthague", "cartago", "republic"],
+    "keywords": ["nord",  "carthague", "cartago", "republic", "africa"],
     "file": "maps/africa/nordAfrica/carthague4.json",
     "description": "Carthague republic, finally defeated by rome. cartago delenda est ;("
   },
@@ -59,7 +59,7 @@
     "yearStart": -200,
     "yearEnd": -46,
     "religion": "Politeísta bereber",
-    "keywords": ["nord",  "nilo", "numidia"],
+    "keywords": ["nord",  "nilo", "numidia", "africa"],
     "file": "maps/africa/nordAfrica/numidia.json",
     "description": "The Republic of San Marino, founded in 301 AD in the Apennine Mountains, is considered the world’s oldest independent republic, preserving its sovereignty, distinctive institutions, and cultural identity entirely surrounded by Italy."
   }

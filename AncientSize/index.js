@@ -11,8 +11,6 @@ const map = L.map("map", {
 });
 
 
-
-
 L.control.zoom({ position: "bottomleft" }).addTo(map);
 
 new L.tileLayer(
@@ -36,22 +34,63 @@ const layersList = document.getElementById("layers-list");
 
 // load the map index
 // load the map index (MERGED)
+
+// --- all fetchs and logs ---
 fetch('./index.json')
   .then(res => res.json())
-  .then(async index => {
+  .then(async (index) => {
+    let totalObjetos = 0;
 
     if (Array.isArray(index)) {
       indexData = index;
-      return;
+      mapIndex = index; 
+      totalObjetos = index.length;
+    } else if (index.parts) {
+      
+      const parts = await Promise.all(
+        index.parts.map(async (ruta) => {
+          try {
+            const r = await fetch(ruta);
+            const data = await r.json();
+            
+            // LOG INDIVIDUAL: Conteo por cada fichero
+            const cantidad = data.length;
+            totalObjetos += cantidad;
+            console.log(
+              `%c FICHERO: %c${ruta.padEnd(25)} %c OBJETOS: %c${cantidad}`,
+              "color: #888", "color: #00d4ff; font-weight: bold", 
+              "color: #888", "color: #fff; font-weight: bold"
+            );
+            
+            return data;
+          } catch (err) {
+            console.error(`Error cargando el fichero ${ruta}:`, err);
+            return [];
+          }
+        })
+      );
+
+      // Unificamos todos los archivos en un solo array
+      indexData = parts.flat();
+      mapIndex = indexData; // Sincronizamos la variable que usa el filtro de años
     }
 
-    const parts = await Promise.all(
-      index.parts.map(p => fetch(p).then(r => r.json()))
+    // ----global log ---
+    console.log("%c--------------------------------------------------", "color: #444");
+    console.log(
+      `%c TOTAL Countries: ${totalObjetos} `,
+      "background: #2e7d32; color: white; font-weight: bold; border-radius: 4px; padding: 2px 5px;"
     );
+    console.log("%c--------------------------------------------------", "color: #444");
 
-    indexData = parts.flat();
+      //buscamos a Roma
+    const initialMap = indexData.find(item => item.id === "rome2");
+    if (initialMap) {
+      loadMap(initialMap.file, initialMap.name, initialMap.fillColor);
+    }
   })
-  .catch(err => console.error('Error cargando índice:', err));
+  .catch(err => console.error('Error crítico en el sistema de índices:', err));
+
 
   const initialMap = indexData.find(item => item.id === "rome2");
 
@@ -89,69 +128,7 @@ showAllActive = false;
 });
 
 
-// loadMap("maps/europe/romeTrajan.json", "Rome (Empire) 98-117 AD ");
-// waits for the map to load and then load the initial map 
-fetch('./index.json')
-  .then(res => res.json())
-  .then(async index => {
 
-    // modo viejo (por compatibilidad)
-    if (Array.isArray(index)) {
-      indexData = index;
-    } else {
-      const parts = await Promise.all(
-        index.parts.map(p => fetch(p).then(r => r.json()))
-      );
-      indexData = parts.flat();
-    }
-
-    // carga inicial
-    const initialMap = indexData.find(item => item.id === "rome2");
-    if (initialMap) {
-      loadMap(initialMap.file, initialMap.name, initialMap.fillColor);
-    } else {
-      console.warn('rome2 no encontrado en índice');
-    }
-
-  })
-  .catch(err => console.error('Error cargando índice:', err));
-
-
-// Función para cargar un mapa y actualizar el panel de capas
-
-// function loadMap(file, name) {
-//   const existing = activeLayers.find(m => m.name === name);
-//   if (existing) {
-//     alert(`the map "${name}" is already loaded`);
-//     return;
-//   }
-
-//   fetch(file)
-//     .then(response => response.json())
-//     .then(data => {
-//       const layer = new L.trueSize(data, {
-//         color: data.properties.fillColor || "black",
-//         fillColor: data.properties.fillColor || "#FF0000",
-//         weight: 1.3,
-//         opacity: 1.5,
-
-//         onEachFeature: (feature, layer) => {
-//           layer.on('mouseover', () => showLayerInfoMinimal(name));
-//           layer.on('mouseout', hideLayerInfo);
-//         }
-//       });layer.addTo(map);
-
-//       activeLayers.push({ 
-//         name, 
-//         layer, 
-//         visible: true,
-//         geometry: data.geometry   
-//       });
-
-//       renderLayersList();
-//     })
-//     .catch(error => console.error('Error cargando mapa:', error));
-// }
 function loadMap(file, name, indexFillColor) {
   const existing = activeLayers.find(m => m.name === name);
   if (existing) {
@@ -194,7 +171,8 @@ function loadMap(file, name, indexFillColor) {
         layer: layer,
         layerId: layerId,
         visible: true,
-        rotation: 0
+        rotation: 0,
+        geometry: geojsonData.geometry
       };
 
       const observer = new MutationObserver(() => {
@@ -246,14 +224,6 @@ function loadMap(file, name, indexFillColor) {
     })
     .catch(error => console.error('Error cargando mapa:', error));
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -337,19 +307,7 @@ const showAllBtn = document.getElementById('show-all');
 
 let mapIndex = [];
 
-fetch('./index.json')
-  .then(res => res.json())
-  .then(async index => {
-    if (Array.isArray(index)) {
-      mapIndex = index;
-    } else if (index.parts) {
-      // cargar todas las partes de los indices partidos y unirlos
-      const parts = await Promise.all(
-        index.parts.map(p => fetch(p).then(r => r.json()))
-      );
-      mapIndex = parts.flat();
-    }
-  });
+
 
 function renderResults(results) {
   const textEmpty = (searchInput.value || '').trim() === '';
@@ -411,7 +369,8 @@ function showLayerInfo(layerName) {
   if (layerObj && layerObj.geometry) {
     const area = calculateGeoJSONArea(layerObj.geometry);
     const areaKm2 = area / 1e6;
-    areaText = `<p><text>Area ≈</text> ${areaKm2.toFixed(2)} km²</p><br>`;
+    // areaText = `<p><text>Area ≈</text> ${areaKm2.toFixed(2)} km²</p><br>`;
+    areaText = `<p><strong>Area:</strong> ≈ ${areaKm2.toLocaleString(undefined, {maximumFractionDigits: 2})} km²</p> <br>`;
   }
 
   if (!info) {
@@ -445,9 +404,6 @@ function hideLayerInfo() {
   tooltipBox.style.display = "none";
     tooltipBoxMinimal.style.display = "none";
 }
-
-
-
 
 
 // ------------------------Geojson hover----------------------------

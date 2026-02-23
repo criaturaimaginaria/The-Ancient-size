@@ -75,6 +75,102 @@
   "fillColor":"#0E00A1",
   "lenguages": "Tongan",
   "description": "After the 1875 Constitution promulgated by King George Tupou I, Tonga became a centralized constitutional monarchy with defined laws, parliament and land system. It maintained internal sovereignty while navigating foreign pressure. In 1900 Tonga signed a Treaty of Friendship with Britain, becoming a protected state but not a colony."
+},
+
+{
+  "id": "fiji_united_kingdom_1871_1874",
+  "name": "United Kingdom of Fiji 1871-1874",
+  "era": "moderna",
+  "yearStart": 1871,
+  "yearEnd": 1874,
+  "religion": "Christianity (mainly Methodist)",
+  "capital": "Levuka",
+  "fundationFall": "1871-1874 AD",
+  "currency": "Fijian pound",
+  "GovernmentType": "constitutional monarchy",
+  "keywords": ["fiji", "pacific", "melanesia", "cakobau", "britain", "levuka", "fiyi", "viti", "matanitu", "kingdom"],
+  "file": "maps/asia/southEastAsia/fiyiKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_the_Kingdom_of_Fiji_(1871-1874).svg.png",
+  "fillColor": "#00825B",
+  "lenguages": "Fijian",
+  "description": "Established in 1871 under King Cakobau, the United Kingdom of Fiji unified several chiefdoms into a constitutional monarchy with a parliament dominated by European settlers. Financial instability and internal tensions weakened the state. In 1874 Cakobau ceded sovereignty to Britain, ending Fijian independence and beginning colonial rule."
+},
+
+{
+  "id": "rarotonga_kingdom_1858_1893",
+  "name": "Kingdom of Rarotonga 1858-1888",
+  "era": "moderna",
+  "yearStart": 1858,
+  "yearEnd": 1888,
+  "religion": "Christianity (London Missionary Society)",
+  "capital": "Avarua",
+  "fundationFall": "1858-1888 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "constitutional monarchy",
+  "keywords": ["rarotonga", "cook islands", "polynesia", "pacific", "britain", "avarua", "ariki", "kingdom"],
+  "file": "maps/asia/southEastAsia/RarotongaKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Rarotonga_1858-1888.svg.png",
+  "fillColor": "#820900",
+  "lenguages": "Cook Islands Maori",
+  "description": "Founded in 1858 under Queen Makea Takau, the Kingdom of Rarotonga unified local ariki into a centralized monarchy influenced by missionaries. It maintained internal autonomy while engaging with foreign powers. In 1888 it became a British protectorate, and in 1893 it was incorporated into the Cook Islands Federation, ending its independent rule."
+},
+
+{
+  "id": "samoa_kingdom_1858_1899",
+  "name": "Kingdom of Samoa 1858/1873-1899",
+  "era": "moderna",
+  "yearStart": 1858,
+  "yearEnd": 1899,
+  "religion": "Christianity (mainly Congregational and Methodist)",
+  "capital": "Apia",
+  "fundationFall": "1858/1873-1899 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "elective monarchy",
+  "keywords": ["samoa", "apia", "polynesia", "pacific", "malietoa", "tripartite convention", "germany", "united states", "britain", "kingdom"],
+  "file": "maps/asia/southEastAsia/SamoaKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Samoa_(1879).svg.png",
+  "fillColor": "#6A0D0D",
+  "lenguages": "Samoan",
+  "description": "The Kingdom of Samoa developed from mid-19th century attempts to centralize power under a Tafaʻifa king, formalized in 1873. Rival chiefly factions and foreign intervention destabilized the monarchy. The 1899 Tripartite Convention between Germany, Britain and the United States partitioned the islands and formally abolished the Samoan monarchy, ending the kingdom."
+},
+
+{
+  "id": "huahine_kingdom_1815_1895",
+  "name": "Kingdom of Huahine 1815-1895",
+  "era": "moderna",
+  "yearStart": 1815,
+  "yearEnd": 1895,
+  "religion": "Christianity (Protestant, London Missionary Society)",
+  "capital": "Fare",
+  "fundationFall": "1815-1895 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "hereditary monarchy",
+  "keywords": ["huahine", "society islands", "polynesia", "pacific", "france", "teuruari", "leeward islands", "kingdom"],
+  "file": "maps/asia/southEastAsia/HuahineKingdom.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Huahine.svg.png",
+  "fillColor": "#A60B00",
+  "lenguages": "Tahitian",
+  "description": "The Kingdom of Huahine emerged in 1815 under the Teururai dynasty after regional conflicts in the Society Islands. It remained independent despite French expansion in Tahiti. In 1888 it became a French protectorate, and in 1895 France formally annexed the island, ending its sovereignty and integrating it into French Polynesia."
+},
+
+{
+  "id": "niue_kingdom_1875_1900",
+  "name": "Kingdom of Niue 1875-1900",
+  "era": "moderna",
+  "yearStart": 1875,
+  "yearEnd": 1900,
+  "religion": "Christianity (mainly Protestant)",
+  "capital": "Alofi",
+  "fundationFall": "1875-1900 AD",
+  "currency": "barter system and foreign coinage",
+  "GovernmentType": "elective monarchy",
+  "keywords": ["niue", "polynesia", "pacific", "patu-iki", "britain", "alo fi", "kingdom"],
+  "file": "maps/asia/southEastAsia/NiueKingdom.json",
+  "fillColor": "#C47A00",
+  "lenguages": "Niuean",
+  "description": "The Kingdom of Niue formed in 1875 when island chiefs established the title of Patu-iki to unify the clans and manage foreign relations. Seeking protection from rival powers, Niue requested British oversight. In 1900 it became a British protectorate, ending its full sovereignty, and in 1901 it was annexed under New Zealand administration."
 }
+
+
 
 ]
