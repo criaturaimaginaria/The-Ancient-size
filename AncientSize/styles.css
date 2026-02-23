@@ -22,6 +22,118 @@
   }
 
 
+/* ----------ROTATION STYLES---------------- */
+/* Esto asegura que el SVG sepa dónde está su centro al rotar */
+path.leaflet-interactive {
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: transform 0.1s linear;
+}
+
+.rotation-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 9px;
+  left: 55px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2px 8px 5px 8px;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  display: none;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #ddd;
+  backdrop-filter: blur(4px);
+}
+
+.rotation-label {
+  display: block;
+  font-size: 0.7em;
+  /* margin-bottom: 8px; */
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+/* .......... */
+
+
+#rotate-slider {
+  -webkit-appearance: none; 
+  appearance: none;         
+  width: 100%;
+  height: 6px;
+  background: #ffb453;    
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* 2. Chrome, Safari, Edge y Opera */
+#rotate-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #ff9d1c;     
+  border: 2px solid #ffb453; 
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease;
+}
+
+#rotate-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);    
+  background: #ffdcae;
+  transition: 0.2s ease-in-out;
+}
+
+/* 3. Firefox) */
+#rotate-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 2px solid #ffb453;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+/* ......... */
+
+#reset-rotation {
+  width: 100%;
+  background: #bababa;
+  color: #222;
+  border: 1px solid #ccc;
+  padding: 2px;
+  transform: translateY(-9px);
+  border-radius: 6px;
+  font-size: 0.57em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#reset-rotation:hover {
+  background: #e0e0e0;
+  color: #222;
+}
+
+/* rotación  fluida */
+path.leaflet-interactive {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+/* -----------END ROTATION STYLES---------------- */
+
+
 #layer-controls {
   position: absolute;
   width: 26em;

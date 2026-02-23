@@ -11,6 +11,8 @@ const map = L.map("map", {
 });
 
 
+
+
 L.control.zoom({ position: "bottomleft" }).addTo(map);
 
 new L.tileLayer(
@@ -25,6 +27,10 @@ new L.tileLayer(
 
 let indexData = [];
 let activeLayers = [];
+let currentLayerObj = null;
+const rotationControl = document.getElementById("rotation-control");
+const rotateSlider = document.getElementById("rotate-slider");
+
 // Referencia al contenedor HTML
 const layersList = document.getElementById("layers-list");
 
@@ -146,10 +152,7 @@ fetch('./index.json')
 //     })
 //     .catch(error => console.error('Error cargando mapa:', error));
 // }
-
-
 function loadMap(file, name, indexFillColor) {
-
   const existing = activeLayers.find(m => m.name === name);
   if (existing) {
     alert(`the map "${name}" is already loaded`);
@@ -159,88 +162,91 @@ function loadMap(file, name, indexFillColor) {
   fetch(file)
     .then(response => response.json())
     .then(data => {
-
       let geojsonData = data;
-      let geometryForArea = null;
-      let detectedFillColor = null;
-
-
+      
       if (data.type === "FeatureCollection") {
-
-        // Si hay varias features 
-        if (data.features.length > 1) {
-
-          const multiCoords = [];
-
-          data.features.forEach(f => {
-            if (f.geometry.type === "Polygon") {
-              multiCoords.push(f.geometry.coordinates);
-            }
-            else if (f.geometry.type === "MultiPolygon") {
-              multiCoords.push(...f.geometry.coordinates);
-            }
-          });
-
-          geojsonData = {
-            type: "Feature",
-            properties: {},
-            geometry: {
-              type: "MultiPolygon",
-              coordinates: multiCoords
-            }
-          };
-
-          geometryForArea = geojsonData.geometry;
-        }
-        else {
-          // Solo una feature
-          geojsonData = data.features[0];
-          geometryForArea = geojsonData.geometry;
-        }
-
-      }
-      else if (data.type === "Feature") {
-        geojsonData = data;
-        geometryForArea = data.geometry;
+        const multiCoords = [];
+        data.features.forEach(f => {
+          if (f.geometry.type === "Polygon") multiCoords.push(f.geometry.coordinates);
+          else if (f.geometry.type === "MultiPolygon") multiCoords.push(...f.geometry.coordinates);
+        });
+        geojsonData = {
+          type: "Feature",
+          properties: data.features[0].properties || {},
+          geometry: { type: "MultiPolygon", coordinates: multiCoords }
+        };
       }
 
+      const detectedFillColor = indexFillColor || geojsonData?.properties?.fillColor || "#FF0000";
 
-      detectedFillColor =
-        indexFillColor ||
-        geojsonData?.properties?.fillColor ||
-        "#FF0000";
-
-
-      // capa Leaflet
-      // -------------------------------
-
-      console.log("Color recibido:", indexFillColor);
-
+      const layerId = "ts-" + Date.now() + Math.floor(Math.random() * 1000);
+      
       const layer = new L.trueSize(geojsonData, {
         color: detectedFillColor,
         fillColor: detectedFillColor,
         weight: 1.3,
         opacity: 1.5,
+        className: layerId 
+      });
 
-        onEachFeature: (feature, layer) => {
-          layer.on('mouseover', () => showLayerInfoMinimal(name));
-          layer.on('mouseout', hideLayerInfo);
+      const mapLayerRecord = {
+        name: name,
+        layer: layer,
+        layerId: layerId,
+        visible: true,
+        rotation: 0
+      };
+
+      const observer = new MutationObserver(() => {
+        const elements = document.getElementsByClassName(mapLayerRecord.layerId);
+        for (let el of elements) {
+          const currentRot = `rotate(${mapLayerRecord.rotation}deg)`;
+          if (el.style.transform !== currentRot) {
+            el.style.transformOrigin = 'center';
+            el.style.transformBox = 'fill-box';
+            el.style.transform = currentRot;
+            el.style.pointerEvents = 'auto';
+          }
+          
+          el.onmouseenter = () => showLayerInfoMinimal(name);
+          el.onmouseleave = () => hideLayerInfo();
+          
+          // Re-vinculacioón del click por si Leaflet recrea el DOM
+          el.onmousedown = (e) => {
+            currentLayerObj = mapLayerRecord;
+            rotationControl.style.display = "block";
+            rotateSlider.value = mapLayerRecord.rotation;
+          };
         }
       });
 
-      layer.addTo(map);
-
-      activeLayers.push({
-        name,
-        layer,
-        visible: true,
-        geometry: geometryForArea
+      observer.observe(document.getElementById('map'), {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['d', 'class']
       });
+
+      // Evento inicial
+      layer.on('mousedown', (e) => {
+        L.DomEvent.stopPropagation(e);
+        currentLayerObj = mapLayerRecord;
+        rotationControl.style.display = "block";
+        rotateSlider.value = mapLayerRecord.rotation;
+      });
+
+      layer.addTo(map);
+      activeLayers.push(mapLayerRecord);
+
+      currentLayerObj = mapLayerRecord;
+      rotationControl.style.display = "block";
+      rotateSlider.value = 0;
 
       renderLayersList();
     })
     .catch(error => console.error('Error cargando mapa:', error));
 }
+
 
 
 
@@ -605,4 +611,36 @@ showDateFilterBtn.classList.remove('active-year-btn');
 
 
 
+
+const rotationValue = document.getElementById("rotation-value");
+const resetBtn = document.getElementById("reset-rotation");
+
+
+function applyRotation(record, angle) {
+  record.rotation = angle;
+  const elements = document.getElementsByClassName(record.layerId);
+  for (let el of elements) {
+    el.style.transformOrigin = 'center';
+    el.style.transformBox = 'fill-box'; 
+    el.style.transform = `rotate(${angle}deg)`;
+  }
+  rotationValue.textContent = angle;
+}
+
+rotateSlider.addEventListener('input', function() {
+  if (!currentLayerObj) return;
+  
+
+  const angle = parseInt(this.value);
+  applyRotation(currentLayerObj, angle);
+});
+
+resetBtn.addEventListener('click', () => {
+  if (!currentLayerObj) return;
+  
+  rotateSlider.value = 0;
+  applyRotation(currentLayerObj, 0);
+});
 // END YEAR FILTER---------------------------
+
+
