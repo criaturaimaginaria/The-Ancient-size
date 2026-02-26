@@ -2,11 +2,13 @@
   "parts": [
     "index/italy.json",
     "index/france.json",
+    "index/europe.json",
     "index/greece.json",
     "index/egypt.json",
     "index/middleeast.json",
     "index/northAmerica.json",
     "index/westAsia.json",
+    "index/eastAsia.json",
     "index/spain.json",
     "index/argentina.json",
     "index/peru.json",
@@ -15,5 +17,6 @@
     "index/centralAmerica.json",
     "index/southernAfrica.json",
     "index/balkans.json"
+
   ]
 }

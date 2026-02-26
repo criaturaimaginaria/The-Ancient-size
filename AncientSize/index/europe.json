@@ -1,0 +1,25 @@
+[
+
+{
+  "id": "ussr_1922_1939",
+  "name": "Socialist Union (USSR) 1922-1939",
+  "era": "contemporary",
+  "yearStart": 1922,
+  "yearEnd": 1939,
+  "religion": "State Atheism",
+  "capital": "Moscow",
+  "fundationFall": "1922-1991",
+  "currency": "Soviet Ruble",
+  "GovernmentType": "Marxist-Leninist federal socialist state",
+  "keywords": ["USSR","urss", "Soviet Union", "Stalin", "Lenin", "World War II", "Communism", "Molotov-Ribbentrop Pact", "socialism"],
+  "file": "maps/europe/russia/urss1922.json",
+  "flag": "flags/europe/europe/Flag_of_the_Soviet_Union.svg.png",
+  "fillColor": "#D40000",
+  "lenguages": "Russian (and national languages of the republics)",
+  "description": "The USSR was founded in 1922 following the Bolshevik victory in the Civil War. During World War II, on September 17 1939 it invaded eastern Poland. This expansion was enabled by the secret protocol of the Molotov-Ribbentrop Pact with Nazi Germany, which defined spheres of influence in Eastern Europe, allowing Stalin to annex territories to create a strategic buffer and reclaim former imperial lands."
+}
+
+
+
+
+]

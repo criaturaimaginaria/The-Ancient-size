@@ -1,0 +1,25 @@
+[
+
+
+
+{
+  "id": "tuvan_peoples_republic_1921_1944",
+  "name": "Tuvan People's Republic (1921-1944)",
+  "era": "contemporary",
+  "yearStart": 1921,
+  "yearEnd": 1944,
+  "religion": "Tibetan Buddhism and Shamanism (officially secular, later influenced by State Atheism)",
+  "capital": "Kyzyl",
+  "fundationFall": "1921-1944",
+  "currency": "Tuvan akşa",
+  "GovernmentType": "Marxist-Leninist single-party socialist republic",
+  "keywords": ["Tuva", "Tuvan People's Republic", "Tannu Tuva", "Soviet Union", "Mongolia", "Communism", "Salchak Toka"],
+  "file": "maps/asia/eastAsia/tuvan.json",
+  "flag": "flags/asia/eastAsia/Flag_of_the_Tuvan_People's_Republic_(1930-1935).svg.png",
+  "fillColor": "#C40000",
+  "lenguages": "Tuvan",
+  "description": "The Tuvan People's Republic, also known as Tannu Tuva, was a partially recognized socialist state that existed between 1921 and 1944 in Central Asia. It was recognized only by the Soviet Union and Mongolia. The state was heavily influenced by the USSR and gradually adopted Marxist-Leninist policies under the leadership of Salchak Toka. In 1944, Tuva was annexed by the Soviet Union and incorporated as the Tuvan Autonomous Oblast within the Russian SFSR."
+}
+
+
+]
