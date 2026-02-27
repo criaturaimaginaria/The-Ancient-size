@@ -1,5 +1,9 @@
 import { calculateGeoJSONArea } from './utils/geoArea.js';
-
+import { enableAutoRepeat } from './utils/uiHelpers.js';   
+import { getTooltipContent } from './utils/formatters.js';
+import { normalizeGeoJSON } from './utils/geoHelpers.js';
+import { filterMaps } from './utils/filterEngine.js';
+import { logFileLoaded, logTotalCount } from './utils/logger.js';
 
 
 const map = L.map("map", {
@@ -9,6 +13,7 @@ const map = L.map("map", {
   zoomDelta: 0.25,
   zoomSnap: 0.25,
 });
+
 
 
 L.control.zoom({ position: "bottomleft" }).addTo(map);
@@ -56,11 +61,7 @@ fetch('./index.json')
             // LOG INDIVIDUAL: Conteo por cada fichero
             const cantidad = data.length;
             totalObjetos += cantidad;
-            console.log(
-              `%c FICHERO: %c${ruta.padEnd(25)} %c OBJETOS: %c${cantidad}`,
-              "color: #888", "color: #00d4ff; font-weight: bold", 
-              "color: #888", "color: #fff; font-weight: bold"
-            );
+            logFileLoaded(ruta, data.length);
             
             return data;
           } catch (err) {
@@ -75,13 +76,7 @@ fetch('./index.json')
       mapIndex = indexData; // Sincronizamos la variable que usa el filtro de años
     }
 
-    // ----global log ---
-    console.log("%c--------------------------------------------------", "color: #444");
-    console.log(
-      `%c TOTAL Countries: ${totalObjetos} `,
-      "background: #2e7d32; color: white; font-weight: bold; border-radius: 4px; padding: 2px 5px;"
-    );
-    console.log("%c--------------------------------------------------", "color: #444");
+      logTotalCount(totalObjetos);
 
       //buscamos a Roma
     const initialMap = indexData.find(item => item.id === "rome2");
@@ -139,20 +134,7 @@ function loadMap(file, name, indexFillColor) {
   fetch(file)
     .then(response => response.json())
     .then(data => {
-      let geojsonData = data;
-      
-      if (data.type === "FeatureCollection") {
-        const multiCoords = [];
-        data.features.forEach(f => {
-          if (f.geometry.type === "Polygon") multiCoords.push(f.geometry.coordinates);
-          else if (f.geometry.type === "MultiPolygon") multiCoords.push(...f.geometry.coordinates);
-        });
-        geojsonData = {
-          type: "Feature",
-          properties: data.features[0].properties || {},
-          geometry: { type: "MultiPolygon", coordinates: multiCoords }
-        };
-      }
+      const geojsonData = normalizeGeoJSON(data);
 
       const detectedFillColor = indexFillColor || geojsonData?.properties?.fillColor || "#FF0000";
 
@@ -361,6 +343,7 @@ showAllBtn.addEventListener('click', () => {
 const tooltipBox = document.getElementById("layer-info-tooltip");
 const tooltipBoxMinimal = document.getElementById("layer-info-tooltipMinimal");
 
+
 function showLayerInfo(layerName) {
   const info = indexData.find(item => item.name === layerName);
   const layerObj = activeLayers.find(m => m.name === layerName);
@@ -369,31 +352,11 @@ function showLayerInfo(layerName) {
   if (layerObj && layerObj.geometry) {
     const area = calculateGeoJSONArea(layerObj.geometry);
     const areaKm2 = area / 1e6;
-    // areaText = `<p><text>Area ≈</text> ${areaKm2.toFixed(2)} km²</p><br>`;
     areaText = `<p><strong>Area:</strong> ≈ ${areaKm2.toLocaleString(undefined, {maximumFractionDigits: 2})} km²</p> <br>`;
   }
 
-  if (!info) {
-    tooltipBox.innerHTML = "<i>No data found</i>";
-  } else {
-    tooltipBox.innerHTML = `
-      <b>${info.name}</b><br>
-      ${info.flag ? `<div class="flagContainer"><img src="${info.flag}"></div>` : ""}
-      ${info.capital ? `<p><text>Capital:</text> ${info.capital}</p><br>` : ""}
-      ${info.fundationFall ? `<p><text>Foundation–Fall:</text> ${info.fundationFall}</p><br>` : ""}
-      ${info.GovernmentType ? `<p><text>Government type:</text> ${info.GovernmentType}</p><br>` : ""}
-      ${info.currency ? `<p><text>Currency:</text> ${info.currency}</p><br>` : ""}
-
-      ${info.religion ? `<p><text>Religion:</text> ${info.religion}</p><br>` : ""}
-
-
-      ${info.lenguages ? `<p><text>Lenguages:</text> ${info.lenguages}</p><br>` : ""}
-      ${areaText}
-      ${info.population ? `<p><text>Population ≈</text> ${info.population}</p><br>` : ""}
-      <p><text>Description:</text> ${info.description || ""}</p>
-    `;
-  }
-
+  // Aquí usamos la función que importamos de utils
+  tooltipBox.innerHTML = getTooltipContent(info, areaText);
   tooltipBox.style.display = "block";
 }
 
@@ -406,19 +369,7 @@ function hideLayerInfo() {
 }
 
 
-// ------------------------Geojson hover----------------------------
-// function showLayerInfoMinimal(layerName) {
-//   const info = indexData.find(item => item.name === layerName);
-//   if (!info) {
-//     tooltipBoxMinimal.innerHTML = "<i>No data found</i>";
-//   } else {
-//     tooltipBoxMinimal.innerHTML = `
-//       <b>${info.name}</b><br>
-//       ${info.flag ? `<div class="flagContainerMinimal"><img src="${info.flag}"></div>` : ""}
-//     `;
-//   }
-//   tooltipBoxMinimal.style.display = "block";
-// }
+
 
 
 // reload of the flags each time fixed
@@ -483,31 +434,22 @@ function getSelectedYear() {
   return yearEra.value === 'BC' ? -Math.abs(raw) : Math.abs(raw);
 }
 
+
+
 function applyCombinedFilters() {
-  let results = mapIndex || [];
-  const text = (searchInput.value || '').toLowerCase().trim();
-
-  if (text !== '') {
-    results = results.filter(m =>
-      (m.name && m.name.toLowerCase().includes(text)) ||
-      (m.era && m.era.toLowerCase().includes(text)) ||
-      (m.religion && m.religion.toLowerCase().includes(text)) ||
-      (Array.isArray(m.keywords) && m.keywords.some(k => k.toLowerCase().includes(text)))
-    );
-  }
-
-  if (yearFilterActive) {
-    const y = getSelectedYear();
-    if (y !== null) {
-      results = results.filter(m => {
-        if (typeof m.yearStart !== 'number' || typeof m.yearEnd !== 'number') return false;
-        return y >= m.yearStart && y <= m.yearEnd;
-      });
-    }
-  }
+  const query = searchInput.value;
+  const year = getSelectedYear();
+  
+  const results = filterMaps(mapIndex, { 
+    query, 
+    year, 
+    yearActive: yearFilterActive 
+  });
 
   renderResults(results);
 }
+
+
 
 // togglemostrar/ocultar y activar/desactivar (con cambio visual)
 showDateFilterBtn.addEventListener('click', () => {
@@ -542,16 +484,7 @@ function updateYear(delta) {
   applyCombinedFilters();
 }
 
-function enableAutoRepeat(btn, cb) {
-  let interval = null, timeout = null;
-  const start = (e) => { e.preventDefault(); cb(); timeout = setTimeout(() => interval = setInterval(cb, 65), 65); };
-  const stop = () => { clearTimeout(timeout); if (interval) clearInterval(interval); interval = null; };
-  btn.addEventListener('mousedown', start);
-  btn.addEventListener('touchstart', start);
-  document.addEventListener('mouseup', stop);
-  document.addEventListener('touchend', stop);
-  document.addEventListener('touchcancel', stop);
-}
+
 
 enableAutoRepeat(yPlus1, () => updateYear(1));
 enableAutoRepeat(yMinus1, () => updateYear(-1));
