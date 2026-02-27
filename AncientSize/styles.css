@@ -137,6 +137,38 @@ path.leaflet-interactive {
 /* -----------END ROTATION STYLES---------------- */
 
 
+
+/* --------GLOBE BUTTON------------------  */
+
+#globe-switch-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #2e7d32; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#globe-switch-btn:hover {
+  transform: scale(1.1);
+  background-color: #388e3c;
+}
+
+#globe-switch-btn img {
+  width: 35px;
+  filter: invert(1); 
+}
+/* ------------END GLOBE BUTTON------------- */
+
+
 #layer-controls {
   position: absolute;
   width: 26em;

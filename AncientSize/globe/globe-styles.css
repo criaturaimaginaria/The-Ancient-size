@@ -1,0 +1,17 @@
+#globe-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cesium-widget-credits {
+    display: block !important;
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente */
+    color: #eee;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
