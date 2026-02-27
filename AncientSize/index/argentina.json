@@ -26,5 +26,45 @@
     "file": "maps/america/sudAmerica/provinciasUnidasDelRioDeLaPlata.json",
     "flag": "flags/america/sudAmerica/provinciasUnidas.png",
     "description": "The United Provinces arose in 1810 after the May Revolution. The Banda Oriental was lost due to Portuguese invasion, internal conflicts, and weak central authority, and was later annexed as the Cisplatine Province in 1821."
-  }
+  },
+
+
+  {
+  "id": "argentina_1899_present",
+  "name": "Argentine Republic 1899-Present",
+  "era": "moderna",
+  "yearStart": 1899,
+  "yearEnd": 2026,
+  "religion": "Secular state (historically Roman Catholic)",
+  "capital": " Autonomous City of Buenos Aires",
+  "fundationFall": "1810 AD - Present",
+  "currency": "Argentine peso",
+  "GovernmentType": "federal presidential republic",
+  "keywords": ["argentina", "south america", "puna de atacama", "patagonia", "borders", "chile", "territorial consolidation", "laudo buchanan"],
+  "file": "maps/america/sudAmerica/argentina1899.json",
+  "flag": "flags/america/sudAmerica/Flag_of_Argentina.svg.png",
+  "fillColor": "#74ACDF",
+  "lenguages": "Spanish",
+  "description": "In 1899 Argentina secured international recognition of the Puna de Atacama after arbitration with Chile, completing its continental territorial consolidation. The region, disputed after the War of the Pacific, was divided, granting most to Argentina. Since then, borders have remained stable, with later treaties refining limits, especially with Chile. Argentina developed as a federal republic, experiencing political upheavals and dictatorship in the 20th century, and today functions as a democratic state."
+},
+
+
+  {
+  "id": "uruguay_1825_present",
+  "name": "Oriental Republic of Uruguay 1828-Present",
+  "era": "moderna",
+  "yearStart": 1828,
+  "yearEnd": 2026,
+  "religion": "Secular state (historically Roman Catholic)",
+  "capital": "Montevideo",
+  "fundationFall": "1825 AD - Present",
+  "currency": "Uruguayan peso",
+  "GovernmentType": "presidential republic",
+  "keywords": ["uruguay", "south america", "rio de la plata", "montevideo", "independence", "brazil", "argentina", "oriental republic"],
+  "file": "maps/america/sudAmerica/uruguay.json",
+  "flag": "flags/america/sudAmerica/Flag_of_Uruguay.svg.png",
+  "fillColor": "#000661",
+  "lenguages": "Spanish",
+  "description": "Uruguay began its independence process in 1825 with the declaration against Brazilian rule, led by the Thirty-Three Orientals. After the Cisplatine War between Brazil and Argentina, it became an independent state in 1828. Throughout the 19th and 20th centuries it consolidated democratic institutions, faced periods of civil conflict and a military dictatorship (1973–1985), and today is a stable democratic republic in South America."
+}
 ]

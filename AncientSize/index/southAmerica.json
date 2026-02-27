@@ -1,0 +1,23 @@
+[
+
+
+
+
+{
+  "id": "antarctica_1959_present",
+  "name": "Antarctica",
+  "era": "moderna",
+  "yearStart": 1959,
+  "yearEnd": 2026,
+  "fundationFall": "1959 AD (Treaty Signed) - Present",
+  "GovernmentType": "International condominium (Antarctic Treaty System)",
+  "keywords": ["antarctica", "south pole", "science", "treaty", "neutral territory", "glaciers", "wildlife", "exploration"],
+  "file": "maps/america/sudAmerica/antarctica.json",
+  "flag": "flags/america/sudAmerica/True_South_Antarctic_Flag.svg.png",
+  "fillColor": "#183EAB",
+  "lenguages": "English, Russian, Spanish, French (Scientific languages)",
+  "description": "Antarctica is the only continent without a native human population or a sovereign government. While seven nations historically claimed territories, the 1959 Antarctic Treaty effectively neutralized these claims, dedicating the entire landmass to peaceful scientific cooperation. It remains a demilitarized zone where international law prohibits nuclear testing and mineral mining. Today, it serves as a global laboratory for climate research and astronomy under a unique framework of international governance."
+}
+
+
+]

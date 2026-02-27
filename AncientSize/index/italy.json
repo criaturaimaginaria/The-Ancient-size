@@ -674,7 +674,7 @@
     "file": "maps/europe/italy/vaticanCity.json",
     "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
     "description": "Vatican City is the smallest sovereign state in the world, an enclave within Rome ruled by the Pope as the head of the Catholic Church. Established in 1929, it is the center of the Catholic world, home to significant sites like St. Peter's Basilica and the Vatican Museums."
-  }
+  },
 
 
 
@@ -682,7 +682,24 @@
 
 
 
-
+{
+  "id": "italy_1960_present",
+  "name": "Italy 1960-Present",
+  "era": "moderna",
+  "yearStart": 1960,
+  "yearEnd": 2026,
+  "religion": "Secular state (historically Roman Catholic)",
+  "capital": "Rome",
+  "fundationFall": "1861 AD - Present",
+  "currency": "Italian lira (1861–2002), Euro (2002–Present)",
+  "GovernmentType": "Kingdom (1861–1946), Republic (1946–Present)",
+  "keywords": ["italy", "europe", "somalia", "decolonization", "european union", "republic", "postwar", "mediterranean"],
+  "file": "maps/europe/italy/italy1960.json",
+  "flag": "flags/europe/italy/Flag_of_Italy.svg.png",
+  "fillColor": "#A10000",
+  "lenguages": "Italian",
+  "description": "In 1960 Italy ended its last colonial administration when the Trust Territory of Somalia gained independence, concluding its postwar decolonization. After losing its African empire following World War II, Italy focused on economic growth, becoming a founding member of the European Economic Community. Despite political instability and economic challenges, it developed as a parliamentary republic and remains a key member of the European Union."
+}
 
 
 
