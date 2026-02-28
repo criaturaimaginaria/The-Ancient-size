@@ -699,6 +699,63 @@
   "fillColor": "#A10000",
   "lenguages": "Italian",
   "description": "In 1960 Italy ended its last colonial administration when the Trust Territory of Somalia gained independence, concluding its postwar decolonization. After losing its African empire following World War II, Italy focused on economic growth, becoming a founding member of the European Economic Community. Despite political instability and economic challenges, it developed as a parliamentary republic and remains a key member of the European Union."
+},
+
+{
+  "id": "malta_1964_present",
+  "name": "Malta 1964-Present",
+  "era": "moderna",
+  "yearStart": 1964,
+  "yearEnd": 2026,
+  "religion": "Roman Catholic (official religion)",
+  "capital": "Valletta",
+  "fundationFall": "1964 AD - Present",
+  "currency": "Maltese lira (1964–2008), Euro (2008–Present)",
+  "GovernmentType": "Constitutional monarchy (1964–1974), Republic (1974–Present)",
+  "keywords": ["malta", "mediterranean", "independence", "british empire", "republic", "european union", "commonwealth", "valletta"],
+  "file": "maps/europe/italy/malta1964.json",
+  "flag": "flags/europe/italy/Flag_of_Malta.svg.png",
+  "fillColor": "#962727",
+  "lenguages": "Maltese, English",
+  "description": "Malta gained independence from the United Kingdom in 1964, initially remaining a constitutional monarchy within the Commonwealth. In 1974 it became a republic. British forces withdrew in 1979, marking full sovereignty. Malta later pursued neutrality and economic modernization, joining the European Union in 2004 and adopting the euro in 2008. Today it is a parliamentary republic and an active EU member in the Mediterranean region."
+},
+
+{
+  "id": "order_st_john_malta_1530_1798",
+  "name": "Sovereign Rule of the Order of St. John in Malta 1551-1798 AD",
+  "era": "moderna",
+  "yearStart": 1551,
+  "yearEnd": 1798,
+  "religion": "Roman Catholic",
+  "capital": "Valletta",
+  "fundationFall": "1530-1798",
+  "currency": "Maltese scudo",
+  "GovernmentType": "Elective monastic state",
+  "keywords": ["order of st john", "knights hospitaller", "malta", "tripoli", "ottoman empire", "napoleon", "mediterranean", "valletta"],
+  "file": "maps/europe/italy/malta1551.json",
+  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg.png",
+  "fillColor": "#B00000",
+  "lenguages": "Italian, Latin",
+  "description": "In 1530 Charles V granted Malta and Tripoli to the Order of St. John after their expulsion from Rhodes. Tripoli was lost to the Ottomans in 1551, but Malta remained their stronghold, notably resisting the Great Siege of 1565. The Order ruled as a sovereign military and religious state until 1798, when Napoleon Bonaparte seized Malta during his expedition to Egypt, ending Hospitaller rule."
+},
+
+{
+  "id": "order_st_john_malta_1530_1551",
+  "name": "Sovereign Rule of the Order of St. John in Malta 1530-1551 AD",
+  "era": "moderna",
+  "yearStart": 1530,
+  "yearEnd": 1551,
+  "religion": "Roman Catholic",
+  "capital": "Birgu",
+  "fundationFall": "1530-1798",
+  "currency": "Maltese scudo",
+  "GovernmentType": "Elective monastic state",
+  "keywords": ["order of st john", "knights hospitaller", "malta", "tripoli", "ottoman empire", "charles v", "mediterranean"],
+  "file": "maps/europe/italy/malta1530.json",
+  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg.png",
+  "fillColor": "#7D1A1A",
+  "lenguages": "Italian, Latin",
+  "description": "In 1530 Charles V granted Malta and Tripoli to the Order of St. John after their expulsion from Rhodes. The Knights established their base in Birgu and governed as a sovereign military-religious state. Tripoli, poorly defended and isolated, was captured by Ottoman forces in 1551, marking the Order’s loss of its North African possession while Malta remained under their control."
 }
 
 
