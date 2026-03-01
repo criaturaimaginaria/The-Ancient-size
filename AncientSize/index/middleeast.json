@@ -113,6 +113,24 @@
     "keywords": ["palmyra", "middle", "Zenobia", "empire", "palmira"],
     "file": "maps/middleEast/palmyraEmpire.json"
 
-  }
+  },
 
+{
+  "id": "achaemenid_empire_539_530_bc",
+  "name": "Achaemenid Empire 539–530 BC)",
+  "era": "Ancient",
+  "yearStart": -539,
+  "yearEnd": -530,
+  "fundationFall": "550–330 BC",
+  "religion": "Zoroastrianism",
+  "capital": "Pasargadae",
+  "currency": "Siglos / Lydian Stater",
+  "GovernmentType": "Absolute Monarchy",
+  "keywords": ["achaemenid", "cyrus the great", "persia", "babylon", "pasargadae", "mesopotamia", "ionia"],
+    "file": "maps/middleEast/AchaemenidEmpire-539.json",
+  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg.png",
+  "fillColor": "#942A21",
+  "lenguages": "Old Persian, Aramaic, Akkadian",
+  "description": "Following Babylon's fall in 539 BC, Cyrus established a superpower spanning from the Indus to the Ionian coast. He governed Greek poleis through tribute and local tyrants while focusing his final years on securing the northeastern frontiers. Although Cyrus died in 530 BC, the Achaemenid dynasty he founded remained the world's dominant force until its final collapse in 330 BC."
+}
 ]
