@@ -117,7 +117,7 @@
 
 {
   "id": "achaemenid_empire_539_530_bc",
-  "name": "Achaemenid Empire 539–530 BC)",
+  "name": "Achaemenid Empire 539–530 BC",
   "era": "Ancient",
   "yearStart": -539,
   "yearEnd": -530,
@@ -133,6 +133,26 @@
   "lenguages": "Old Persian, Aramaic, Akkadian",
   "description": "Following Babylon's fall in 539 BC, Cyrus established a superpower spanning from the Indus to the Ionian coast. He governed Greek poleis through tribute and local tyrants while focusing his final years on securing the northeastern frontiers. Although Cyrus died in 530 BC, the Achaemenid dynasty he founded remained the world's dominant force until its final collapse in 330 BC."
 },
+
+{
+  "id": "achaemenid_empire_513_480_bc",
+  "name": "Achaemenid Empire 513–480 BC",
+  "era": "Antiquity",
+  "yearStart": -513,
+  "yearEnd": -480,
+  "fundationFall": "550–330 BC",
+  "religion": "Zoroastrianism",
+  "capital": "Persepolis (Ceremonial), Susa (Administrative)",
+  "currency": "Daric (Gold), Siglos (Silver)",
+  "GovernmentType": "Absolute Monarchy (Satrapal System)",
+  "keywords": ["darius the great", "xerxes i", "satrapies", "royal road", "persian wars", "achaemenid"],
+    "file": "maps/middleEast/AchaemenidEmpire513_480.json",
+  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg.png",
+  "fillColor": "#BD8A0B",
+  "languages": "Old Persian, Elamite, Babylonian, Aramaic (Lingua Franca)",
+ "description": "In 513 BC, Darius I crossed the Danube, bringing Thrace and Macedonia under Persian control and establishing a transcontinental empire. For decades, the Satrapy system and Royal Road ensured stability from the Indus to Libya. However, 480 BC was a turning point. Following defeats at Salamis and Plataea, Xerxes I's invasion of Greece failed. The empire lost its European territories and Aegean hegemony to a Greek alliance led by Athens and Sparta, marking the beginning of its territorial retreat in the Mediterranean."
+},
+
 
 {
   "id": "imperial_state_iran_1971_1979",
@@ -152,6 +172,7 @@
   "lenguages": "Persian",
   "description": "In 1970, Iran formally waived its claim to Bahrain, but in 1971 it strategically seized the islands of Abu Musa and the Tunbs, establishing its final maritime borders. Under the Shah, Iran became a dominant regional military power in the Persian Gulf. This period ended in 1979 when the Pahlavi dynasty was overthrown during the Islamic Revolution."
 },
+
 
 {
   "id": "islamic_republic_iran_1979_2026",

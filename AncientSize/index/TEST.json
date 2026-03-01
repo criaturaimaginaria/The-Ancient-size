@@ -1,0 +1,22 @@
+[
+
+  {
+  "id": "test1",
+  "name": "testing country polygon 4000BC-4000AD",
+  "era": "moderna",
+  "yearStart": -4000,
+  "yearEnd": 4000,
+  "religion": "all religions",
+  "capital": "Gallifrey",
+  "fundationFall": "4000 BC - 4000 AD",
+  "currency": "Bitcoin",
+  "GovernmentType": "presidential republic",
+  "keywords": ["test", "testing", "country", "polygon"],
+  "file": "maps/testMap.json",
+  "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Venice.png/1280px-Flag_of_Venice.png",
+  "fillColor": "#4D0000",
+  "lenguages": "italian",
+  "description": "Best description of all times"
+}
+
+]
