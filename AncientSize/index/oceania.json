@@ -1,0 +1,42 @@
+[
+
+
+{
+  "id": "new_zealand_1947_present",
+  "name": "New Zealand",
+  "era": "moderna",
+  "yearStart": 1947,
+  "yearEnd": 2026,
+  "religion": "Christianity, Irreligion",
+  "capital": "Wellington",
+  "currency": "New Zealand Dollar",
+  "GovernmentType": "Unitary parliamentary constitutional monarchy",
+  "keywords": ["new zealand", "aotearoa", "independence", "commonwealth", "pacific", "oceania", "westminster", "maori"],
+  "file": "maps/oceania/newZealand.json",
+  "flag": "flags/oceania/Flag_of_New_Zealand.svg.png",
+  "fillColor": "#551A7D",
+  "lenguages": "English, Māori",
+  "description": "After the 1840 Treaty of Waitangi, New Zealand became a British colony. It evolved into a Dominion in 1907, gaining internal autonomy. Full legal independence was achieved in 1947 with the adoption of the Statute of Westminster, cutting legislative ties with Britain. The Constitution Act 1986 finalized its sovereign status. Today, it is a fully independent nation within the Commonwealth, maintaining a symbolic link to the Monarchy while exercising complete control over its domestic and foreign affairs."
+},
+
+{
+  "id": "australia_1901_present",
+  "name": "Australia",
+  "era": "moderna",
+  "yearStart": 1901,
+  "yearEnd": 2026,
+  "religion": "Christianity",
+  "capital": "Canberra",
+  "currency": "Australian Dollar",
+  "GovernmentType": "Federal parliamentary constitutional monarchy",
+  "keywords": ["australia", "federation", "commonwealth", "independence", "oceania", "statute of westminster", "canberra"],
+  "file": "maps/oceania/Australia.json",
+  "flag": "flags/oceania/Flag_of_Australia_(converted).svg.png",
+  "fillColor": "#7D1A71",
+  "lenguages": "English",
+  "description": "Australia became a federated nation on January 1, 1901, uniting six British colonies under one central government. While it initially remained a Dominion, it gained full legislative independence through the Statute of Westminster (1942) and severed all remaining constitutional ties with the UK via the Australia Act 1986. Today, it is a fully sovereign state and a major global power, maintaining its status as a constitutional monarchy within the Commonwealth of Nations."
+}
+
+
+
+]
