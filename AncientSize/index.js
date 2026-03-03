@@ -4,6 +4,34 @@ import { getTooltipContent } from './utils/formatters.js';
 import { normalizeGeoJSON } from './utils/geoHelpers.js';
 import { filterMaps } from './utils/filterEngine.js';
 import { logFileLoaded, logTotalCount } from './utils/logger.js';
+import { CanvasDrawer } from './utils/canvasDrawer.js';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const map = L.map("map", {
@@ -542,5 +570,56 @@ resetBtn.addEventListener('click', () => {
   applyRotation(currentLayerObj, 0);
 });
 // END YEAR FILTER---------------------------
+
+
+
+
+
+// DRAW AND CURSOR--------------------------------
+
+const drawer = new CanvasDrawer('paintCanvas');
+const brushCursor = document.getElementById('brush-cursor');
+const canvasElement = document.getElementById('paintCanvas');
+const controls = document.getElementById('pencil-controls');
+
+// ctualizar el cursor visual
+const updateCursor = (e) => {
+    if (canvasElement.classList.contains('active')) {
+        brushCursor.style.display = 'block';
+        brushCursor.style.left = `${e.clientX}px`;
+        brushCursor.style.top = `${e.clientY}px`;
+        brushCursor.style.width = `${drawer.lineWidth}px`;
+        brushCursor.style.height = `${drawer.lineWidth}px`;
+    } else {
+        brushCursor.style.display = 'none';
+    }
+};
+
+window.addEventListener('mousemove', updateCursor);
+
+// Toggle del panel
+document.getElementById('btn-toggle-paint').addEventListener('click', () => {
+    const isActive = canvasElement.classList.toggle('active');
+    controls.classList.toggle('hidden');
+    
+    if (isActive) {
+        map.dragging.disable();
+        map.scrollWheelZoom.disable();
+    } else {
+        map.dragging.enable();
+        map.scrollWheelZoom.enable();
+    }
+});
+
+document.getElementById('btn-pencil-mode').addEventListener('click', () => drawer.setMode('pencil'));
+document.getElementById('btn-eraser-mode').addEventListener('click', () => drawer.setMode('eraser'));
+document.getElementById('btn-clear-canvas').addEventListener('click', () => drawer.clear());
+document.getElementById('btn-close-paint').onclick = () => document.getElementById('btn-toggle-paint').click();
+
+document.getElementById('pencil-color').oninput = (e) => drawer.setColor(e.target.value);
+document.getElementById('pencil-width').oninput = (e) => drawer.setLineWidth(e.target.value);
+
+
+
 
 
