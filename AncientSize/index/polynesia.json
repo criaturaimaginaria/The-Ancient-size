@@ -15,7 +15,7 @@
   "GovernmentType": "hereditary monarchy",
   "keywords": ["tahiti", "pomare", "polynesia", "pacific", "france"],
   "file": "maps/asia/southEastAsia/tahitiKingdom.json",
-  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Tahiti.svg.png",
+  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Tahiti.svg",
   "lenguages": "Tahitian",
   "description": "The Kingdom of Tahiti emerged under the Pōmare dynasty in the late 18th century, consolidating control over the island and nearby territories. It engaged in diplomacy with European powers and adopted Christianity. In 1842 France imposed a protectorate, and in 1880 Tahiti was formally annexed, ending its sovereignty."
 },
@@ -34,7 +34,7 @@
   "GovernmentType": "hereditary monarchy",
   "keywords": ["bora bora", "polynesia", "pacific", "france", "society islands"],
   "file": "maps/asia/southEastAsia/boraboraKingdom.json",
-  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Bora_Bora_(1837-1842).svg.png",
+  "flag": "flags/asia/southEastAsia/960px-Flag_of_the_Kingdom_of_Bora_Bora_(1837-1842).svg",
   "lenguages": "Tahitian",
   "description": "The Kingdom of Bora Bora emerged in the late 18th century as a sovereign Polynesian monarchy within the Society Islands. It maintained independence while engaging in limited diplomacy with European powers. Despite earlier recognition of autonomy, France annexed Bora Bora in 1888, ending its sovereignty and incorporating it into French Polynesia."
 },
@@ -53,7 +53,7 @@
   "GovernmentType": "hereditary monarchy",
   "keywords": ["raiatea", "tahaa", "polynesia", "pacific", "france", "society islands"],
   "file": "maps/asia/southEastAsia/RaiateaKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_Raiatea.svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_Raiatea.svg",
   "lenguages": "Tahitian",
   "description": "Raiatea-Tahaa was a sacred and political center of Polynesia, remaining independent after Tahiti became a French protectorate. Its rulers resisted annexation for decades. In 1888 France used military force to suppress resistance and formally annexed the islands, ending the kingdom’s sovereignty and integrating them into French Polynesia."
 },
@@ -71,7 +71,7 @@
   "GovernmentType": "constitutional hereditary monarchy",
   "keywords": ["tonga", "polynesia", "pacific", "britain", "monarchy", "constitution 1875"],
   "file": "maps/asia/southEastAsia/TongaKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_Tonga.svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_Tonga.svg",
   "fillColor":"#0E00A1",
   "lenguages": "Tongan",
   "description": "After the 1875 Constitution promulgated by King George Tupou I, Tonga became a centralized constitutional monarchy with defined laws, parliament and land system. It maintained internal sovereignty while navigating foreign pressure. In 1900 Tonga signed a Treaty of Friendship with Britain, becoming a protected state but not a colony."
@@ -90,7 +90,7 @@
   "GovernmentType": "constitutional monarchy",
   "keywords": ["fiji", "pacific", "melanesia", "cakobau", "britain", "levuka", "fiyi", "viti", "matanitu", "kingdom"],
   "file": "maps/asia/southEastAsia/fiyiKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_the_Kingdom_of_Fiji_(1871-1874).svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_the_Kingdom_of_Fiji_(1871-1874).svg",
   "fillColor": "#00825B",
   "lenguages": "Fijian",
   "description": "Established in 1871 under King Cakobau, the United Kingdom of Fiji unified several chiefdoms into a constitutional monarchy with a parliament dominated by European settlers. Financial instability and internal tensions weakened the state. In 1874 Cakobau ceded sovereignty to Britain, ending Fijian independence and beginning colonial rule."
@@ -109,7 +109,7 @@
   "GovernmentType": "constitutional monarchy",
   "keywords": ["rarotonga", "cook islands", "polynesia", "pacific", "britain", "avarua", "ariki", "kingdom"],
   "file": "maps/asia/southEastAsia/RarotongaKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_Rarotonga_1858-1888.svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_Rarotonga_1858-1888.svg",
   "fillColor": "#820900",
   "lenguages": "Cook Islands Maori",
   "description": "Founded in 1858 under Queen Makea Takau, the Kingdom of Rarotonga unified local ariki into a centralized monarchy influenced by missionaries. It maintained internal autonomy while engaging with foreign powers. In 1888 it became a British protectorate, and in 1893 it was incorporated into the Cook Islands Federation, ending its independent rule."
@@ -128,7 +128,7 @@
   "GovernmentType": "elective monarchy",
   "keywords": ["samoa", "apia", "polynesia", "pacific", "malietoa", "tripartite convention", "germany", "united states", "britain", "kingdom"],
   "file": "maps/asia/southEastAsia/SamoaKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_Samoa_(1879).svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_Samoa_(1879).svg",
   "fillColor": "#6A0D0D",
   "lenguages": "Samoan",
   "description": "The Kingdom of Samoa developed from mid-19th century attempts to centralize power under a Tafaʻifa king, formalized in 1873. Rival chiefly factions and foreign intervention destabilized the monarchy. The 1899 Tripartite Convention between Germany, Britain and the United States partitioned the islands and formally abolished the Samoan monarchy, ending the kingdom."
@@ -147,7 +147,7 @@
   "GovernmentType": "hereditary monarchy",
   "keywords": ["huahine", "society islands", "polynesia", "pacific", "france", "teuruari", "leeward islands", "kingdom"],
   "file": "maps/asia/southEastAsia/HuahineKingdom.json",
-  "flag": "flags/asia/southEastAsia/Flag_of_Huahine.svg.png",
+  "flag": "flags/asia/southEastAsia/Flag_of_Huahine.svg",
   "fillColor": "#A60B00",
   "lenguages": "Tahitian",
   "description": "The Kingdom of Huahine emerged in 1815 under the Teururai dynasty after regional conflicts in the Society Islands. It remained independent despite French expansion in Tahiti. In 1888 it became a French protectorate, and in 1895 France formally annexed the island, ending its sovereignty and integrating it into French Polynesia."

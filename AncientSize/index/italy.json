@@ -138,7 +138,7 @@
   "GovernmentType": "Hereditary duchy (Este dynasty)",
   "keywords": ["modena", "reggio", "este", "italy", "duchy", "holy roman empire"],
   "file": "maps/europe/italy/modena.json",
-  "flag": "flags/europe/italy/Ducado_de_Modena_(antes_de_1830).svg.png",
+  "flag": "flags/europe/italy/Ducado_de_Modena_(antes_de_1830).svg",
   "lenguages": "Italian, Latin",
   "description": "The Duchy of Modena and Reggio was established in 1452 when Borso d’Este was granted the ducal title by the Holy Roman Emperor. Ruled by the House of Este, it was a sovereign state within the Holy Roman Empire, known for its political stability, patronage of the arts, and strategic position in northern Italy. The duchy survived until 1859, when it was annexed during the Italian unification process."
 },
@@ -157,7 +157,7 @@
   "GovernmentType": "Hereditary duchy (Farnese and Bourbon dynasties)",
   "keywords": ["parma", "piacenza", "farnese", "bourbon", "italy", "duchy"],
   "file": "maps/europe/italy/parma.json",
-  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Parma.svg.png",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Parma.svg",
   "lenguages": "Italian, Latin",
   "description": "The Duchy of Parma and Piacenza was created in 1545 by Pope Paul III for his son Pier Luigi Farnese. Ruled by the Farnese and later the Bourbons, it remained independent until annexed in 1859 during the Italian unification."
 },
@@ -195,7 +195,7 @@
   "GovernmentType": "Hereditary duchy (Visconti, Sforza, later Habsburg rule)",
   "keywords": ["milan", "duchy", "visconti", "sforza", "holy roman empire", "italy"],
   "file": "maps/europe/italy/duchyMilan1.json",
-  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg.png",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg",
   "lenguages": "lombardo, milanés",
   "description": "The Duchy of Milan was created in 1395 when Emperor Wenceslaus granted ducal status to Gian Galeazzo Visconti. A major power in northern Italy, it later passed to the Sforza and then to foreign dynasties, ending with Napoleon’s conquest in 1796."
 },
@@ -215,7 +215,7 @@
   "GovernmentType": "Imperial duchy under Spanish and Austrian Habsburg rule",
   "keywords": ["milan", "duchy", "habsburg", "spain", "austria", "italy"],
   "file": "maps/europe/italy/duchyMilan2.json",
-  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg.png",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Milan_(1450).svg",
   "lenguages": "Lombard, Milanese, Latin",
   "description": "After 1545, the Duchy of Milan lost Parma and Piacenza and became a Habsburg-controlled state. Ruled first by Spain and later by Austria, it remained an important strategic territory in northern Italy until its dissolution by Napoleon in 1796."
 },
@@ -282,7 +282,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","ancona", "839", "1137 ", "italy"],
     "file": "maps/europe/maritimeRepublics/ancona.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Ancona.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Ancona.svg",
     "description": "The Republic of Ancona, a small maritime republic on Italy’s Adriatic coast (11th–16th centuries), thrived on trade and shipbuilding, maintaining political autonomy while navigating pressures from Venice, the Papal States, and other regional powers."
   },
 
@@ -296,7 +296,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","noli", "839", "1137 ", "italy"],
     "file": "maps/europe/maritimeRepublics/noli.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Noli.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Noli.svg",
     "description": "The Republic of Noli, a tiny maritime republic in Liguria, Italy (12th–18th centuries), maintained independence through alliances with Genoa, focused on trade and local defense, and was eventually absorbed into the Ligurian Republic under Napoleon."
   },
 
@@ -311,7 +311,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","genoa", "839", "1137 ", "genova", "italy"],
     "file": "maps/europe/maritimeRepublics/genova1.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg",
     "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
   },
 
@@ -325,7 +325,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","genoa", "839", "1137 ", "genova", "italy"],
     "file": "maps/europe/maritimeRepublics/genova2.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Genoa.svg",
     "description": "The Republic of Genoa was a maritime republic from 1099 to 1797, controlling major trade routes in the Mediterranean and Black Seas. It was a powerful commercial and financial center, a rival to Venice, and had a vast network of colonies and trading posts."
   },
 
@@ -340,7 +340,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","corsica", "cora", "italy"],
     "file": "maps/europe/maritimeRepublics/republicaCorsa.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_Corsica.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_Corsica.svg",
     "description": "the republic of corsica was a republic in"
   },
 
@@ -355,7 +355,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower", "italy"],
     "file": "maps/europe/maritimeRepublics/pisa1.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg",
     "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
   },
 
@@ -369,7 +369,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower", "italy"],
     "file": "maps/europe/maritimeRepublics/pisa2.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg",
     "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
   },
 
@@ -383,7 +383,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic","pisa", "tower", "italy"],
     "file": "maps/europe/maritimeRepublics/pisa3.json",
-    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg.png",
+    "flag": "flags/europe/maritimeRepublics/Flag_of_the_Republic_of_Pisa.svg",
     "description": "The Republic of Pisa was an independent maritime republic from the 11th to the 15th century, dominating Mediterranean trade before being surpassed by Genoa. Its power, which peaked in the 11th century, grew from its importance as a port and naval center, but its navy was destroyed in the Battle of Meloria in 1284"
   },
 
@@ -417,7 +417,7 @@
     "GovernmentType":"Initially a duchy, later hereditary monarchy.",
     "keywords": ["italy", "savoy", "ducado", "saboya", "duchy", "italy"],
     "file": "maps/europe/italy/savoyDuchy.json",
-    "flag": "flags/europe/italy/Flag_of_Savoie.svg.png",
+    "flag": "flags/europe/italy/Flag_of_Savoie.svg",
     "lenguages":"Piedmontese",
     "description": "The Duchy of Savoy was created in 1416 when Emperor Sigismund of the Holy Roman Empire elevated the County of Savoy to ducal rank. The ruling House of Savoy gradually expanded its territory on both sides of the Alps, controlling strategic Alpine passes between France and Italy. Over time, the political center shifted eastward, and Turin became the capital, marking a stronger Italian orientation."
   },
@@ -437,7 +437,7 @@
   "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
   "keywords": ["italy", "mantua", "ducado", "mantova", "duchy"],
   "file": "maps/europe/italy/mantuaDuchy.json",
-  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Mantua_(1575–1707).svg.png",
+  "flag": "flags/europe/italy/Flag_of_the_Duchy_of_Mantua_(1575–1707).svg",
   "lenguages": "Mantuan (Lombard)",
   "description": "The Duchy of Mantua was created in 1530 when Emperor Charles V elevated the Marquisate of Mantua to ducal rank under the Gonzaga family. Mantua had previously been ruled as a marquisate since 1433. The Gonzaga transformed the city into a major cultural center of the Italian Renaissance. The duchy remained a hereditary state within the Holy Roman Empire until 1708, when it was abolished after the War of the Spanish Succession and annexed by the Habsburg Monarchy."
 },
@@ -455,7 +455,7 @@
   "GovernmentType": "Initially a marquisate, later a hereditary duchy.",
   "keywords": ["italy", "ferrara", "ducado", "estense", "duchy"],
   "file": "maps/europe/italy/ferraraDuchy.json",
-  "flag": "flags/europe/italy/Coat_of_arms_of_the_House_of_Este_(1471).svg.png",
+  "flag": "flags/europe/italy/Coat_of_arms_of_the_House_of_Este_(1471).svg",
   "lenguages": "Ferrarese (Emilian)",
   "description": "The Duchy of Ferrara was established in 1471 when Pope Paul II elevated the Marquisate of Ferrara to ducal status under the House of Este. Previously ruled as a marquisate, Ferrara became a prominent Renaissance court and cultural center. The duchy remained a hereditary state until 1598, when it reverted to direct Papal control following the extinction of the legitimate Este line."
 },
@@ -474,7 +474,7 @@
   "GovernmentType": "Initially a county, later a hereditary duchy.",
   "keywords": ["italy", "urbino", "ducado", "montefeltro", "duchy"],
   "file": "maps/europe/italy/urbinoDuchy.json",
-  "flag": "flags/europe/italy/Flag_of_Duchy_of_Urbino.svg.png",
+  "flag": "flags/europe/italy/Flag_of_Duchy_of_Urbino.svg",
   "lenguages": "Urbinate (Central Italian)",
   "description": "The Duchy of Urbino was created in 1443 when Pope Eugene IV elevated the County of Urbino to ducal rank under the Montefeltro family. Renowned as a leading Renaissance court, Urbino flourished as a center of art, humanism, and military leadership. The duchy remained a hereditary state until 1631, when it was absorbed into the Papal States following the extinction of the ruling dynasty."
 },
@@ -520,7 +520,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["kingdom", "naples", "1282-1806 & 1815-1816", "italy"],
     "file": "maps/europe/italy/naplesKingdom.json",
-    "flag": "flags/europe/italy/naplesFlag-Trastámara.png",
+    "flag": "flags/europe/italy/Bandera_de_Nápoles_-_Trastámara.svg",
     "description": "The Kingdom of Naples, officially the Kingdom of Sicily, was a state that ruled the part of the Italian Peninsula south of the Papal States between 1282 and 1816."
   },
 
@@ -534,7 +534,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic", "massa", "1473", "duchy", "ducado", "italy"],
     "file": "maps/europe/italy/massaDuchy.json",
-    "flag": "flags/europe/italy/Repubblica_di_Massa-Bandiera.svg.png",
+    "flag": "flags/europe/italy/Repubblica_di_Massa-Bandiera.svg",
     "description": "massa republic"
   },
 
@@ -548,7 +548,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic", "siena", "1125", "italy"],
     "file": "maps/europe/italy/siena.json",
-    "flag": "flags/europe/italy/Flag_of_Siena.png",
+    "flag": "flags/europe/italy/Flag_of_Siena.svg",
     "description": "The Republic of Siena (1125–1555) was an Italian city-state, governed as an oligarchic republic, with an economy based on banking and trade, renowned for its art, culture, and Gothic architecture."
   },
 
@@ -575,7 +575,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["republic", "siena", "1125", "italy"],
     "file": "maps/europe/italy/siciliaKingdom.json",
-    "flag": "flags/europe/italy/Bandiera_del_Regno_di_Sicilia_4.svg.png",
+    "flag": "flags/europe/italy/Bandiera_del_Regno_di_Sicilia_4.svg",
     "description": "In 1282, the Kingdom of Sicily erupted during the Sicilian Vespers, expelling Angevin rule. It transformed into a vibrant Mediterranean power, blending Norman, Arab, and Byzantine influences under Aragonese protection and enduring legacy."
   },
 
@@ -646,7 +646,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian", "italy"],
     "file": "maps/europe/italy/papalStatesRisorgimento.json",
-    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg",
     "description": "The Papal States were a conglomeration of territories on the Italian peninsula under the direct sovereign rule of the pope from 756 to 1870. They were among the major states of Italy from the 8th century until the unification of Italy, which took place between 1859 and 1870, culminating in their demise."
   },
 
@@ -659,7 +659,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian", "italy"],
     "file": "maps/europe/italy/papalStatesRisorgimento2.json",
-    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg",
     "description": "Papal states after losing some territory to the unification of Italy."
   },
 
@@ -672,7 +672,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["kingdom", "papal states", "risorgimn", "christian", "italy"],
     "file": "maps/europe/italy/vaticanCity.json",
-    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg.png",
+    "flag": "flags/europe/italy/Flag_of_the_Papal_States_(1825-1870).svg",
     "description": "Vatican City is the smallest sovereign state in the world, an enclave within Rome ruled by the Pope as the head of the Catholic Church. Established in 1929, it is the center of the Catholic world, home to significant sites like St. Peter's Basilica and the Vatican Museums."
   },
 
@@ -695,7 +695,7 @@
   "GovernmentType": "Kingdom (1861–1946), Republic (1946–Present)",
   "keywords": ["italy", "europe", "somalia", "decolonization", "european union", "republic", "postwar", "mediterranean"],
   "file": "maps/europe/italy/italy1960.json",
-  "flag": "flags/europe/italy/Flag_of_Italy.svg.png",
+  "flag": "flags/europe/italy/Flag_of_Italy.svg",
   "fillColor": "#A10000",
   "lenguages": "Italian",
   "description": "In 1960 Italy ended its last colonial administration when the Trust Territory of Somalia gained independence, concluding its postwar decolonization. After losing its African empire following World War II, Italy focused on economic growth, becoming a founding member of the European Economic Community. Despite political instability and economic challenges, it developed as a parliamentary republic and remains a key member of the European Union."
@@ -714,7 +714,7 @@
   "GovernmentType": "Constitutional monarchy (1964–1974), Republic (1974–Present)",
   "keywords": ["malta", "mediterranean", "independence", "british empire", "republic", "european union", "commonwealth", "valletta"],
   "file": "maps/europe/italy/malta1964.json",
-  "flag": "flags/europe/italy/Flag_of_Malta.svg.png",
+  "flag": "flags/europe/italy/Flag_of_Malta.svg",
   "fillColor": "#962727",
   "lenguages": "Maltese, English",
   "description": "Malta gained independence from the United Kingdom in 1964, initially remaining a constitutional monarchy within the Commonwealth. In 1974 it became a republic. British forces withdrew in 1979, marking full sovereignty. Malta later pursued neutrality and economic modernization, joining the European Union in 2004 and adopting the euro in 2008. Today it is a parliamentary republic and an active EU member in the Mediterranean region."
@@ -733,7 +733,7 @@
   "GovernmentType": "Elective monastic state",
   "keywords": ["order of st john", "knights hospitaller", "malta", "tripoli", "ottoman empire", "napoleon", "mediterranean", "valletta"],
   "file": "maps/europe/italy/malta1551.json",
-  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg.png",
+  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg",
   "fillColor": "#B00000",
   "lenguages": "Italian, Latin",
   "description": "In 1530 Charles V granted Malta and Tripoli to the Order of St. John after their expulsion from Rhodes. Tripoli was lost to the Ottomans in 1551, but Malta remained their stronghold, notably resisting the Great Siege of 1565. The Order ruled as a sovereign military and religious state until 1798, when Napoleon Bonaparte seized Malta during his expedition to Egypt, ending Hospitaller rule."
@@ -752,7 +752,7 @@
   "GovernmentType": "Elective monastic state",
   "keywords": ["order of st john", "knights hospitaller", "malta", "tripoli", "ottoman empire", "charles v", "mediterranean"],
   "file": "maps/europe/italy/malta1530.json",
-  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg.png",
+  "flag": "flags/europe/italy/Proposta_oficial_de_bandera_d'Amposta_2.svg",
   "fillColor": "#7D1A1A",
   "lenguages": "Italian, Latin",
   "description": "In 1530 Charles V granted Malta and Tripoli to the Order of St. John after their expulsion from Rhodes. The Knights established their base in Birgu and governed as a sovereign military-religious state. Tripoli, poorly defended and isolated, was captured by Ottoman forces in 1551, marking the Order’s loss of its North African possession while Malta remained under their control."

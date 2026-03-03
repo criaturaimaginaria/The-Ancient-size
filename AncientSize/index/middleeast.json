@@ -33,7 +33,7 @@
     "GovernmentType":"Feudal monarchy",
     "keywords": ["cyprus", "chipre", "christian", "kingdom"],
     "file": "maps/middleEast/cyprusKingdom.json",
-    "flag": "flags/middleEast/Stemma_reale_di_Giano_di_Cipro.svg.png",
+    "flag": "flags/middleEast/Stemma_reale_di_Giano_di_Cipro.svg",
     "population": "150,000",
     "lenguages":"Cypriot Greek",
     "description": "The Kingdom of Cyprus was created in 1192 when Guy of Lusignan acquired the island after the Third Crusade, establishing a Crusader-style monarchy. Strategic for trade and military control, Cyprus gradually fell under Venetian influence. In 1489, political pressure led Queen Caterina Cornaro to cede the island to Venice, ending the kingdom."
@@ -53,7 +53,7 @@
     "GovernmentType":"Feudal hereditary monarchy",
     "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin"],
     "file": "maps/middleEast/jerusalenKingdom.json",
-    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg",
     "population": "300,000 to 600,000",
     "lenguages":"Latin",
     "description": "The Kingdom of Jerusalem was founded in 1099 after the First Crusade, when crusaders captured the Holy City and established a Latin feudal monarchy in the Levant. Its survival depended on narrow supply routes, European support, and powerful military orders. Between 1186 and 1187, the crushing defeat at Hattin allowed Saladin to reconquer almost all its territory, including Jerusalem."
@@ -128,7 +128,7 @@
   "GovernmentType": "Absolute Monarchy",
   "keywords": ["achaemenid", "cyrus the great", "persia", "babylon", "pasargadae", "mesopotamia", "ionia"],
     "file": "maps/middleEast/AchaemenidEmpire-539.json",
-  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg.png",
+  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg",
   "fillColor": "#942A21",
   "lenguages": "Old Persian, Aramaic, Akkadian",
   "description": "Following Babylon's fall in 539 BC, Cyrus established a superpower spanning from the Indus to the Ionian coast. He governed Greek poleis through tribute and local tyrants while focusing his final years on securing the northeastern frontiers. Although Cyrus died in 530 BC, the Achaemenid dynasty he founded remained the world's dominant force until its final collapse in 330 BC."
@@ -167,7 +167,7 @@
   "GovernmentType": "Constitutional Monarchy (de facto Absolute)",
   "keywords": ["pahlavi", "mohammad reza shah", "white revolution", "opec", "persia","iran"],
   "file": "maps/middleEast/iran1971.json",
-  "flag": "flags/middleEast/State_flag_of_Iran_(1964–1980).svg.png",
+  "flag": "flags/middleEast/State_flag_of_Iran_(1964–1980).svg",
   "fillColor": "#C2AA17",
   "lenguages": "Persian",
   "description": "In 1970, Iran formally waived its claim to Bahrain, but in 1971 it strategically seized the islands of Abu Musa and the Tunbs, establishing its final maritime borders. Under the Shah, Iran became a dominant regional military power in the Persian Gulf. This period ended in 1979 when the Pahlavi dynasty was overthrown during the Islamic Revolution."
@@ -187,7 +187,7 @@
   "GovernmentType": "Theocratic Republic",
   "keywords": ["khomeini", "khamenei", "islamic revolution", "sharia", "tehran","persia","iran"],
   "file": "maps/middleEast/iran1979.json",
-  "flag": "flags/middleEast/Flag_of_Iran.svg.webp",
+  "flag": "flags/middleEast/Flag_of_Iran.svg",
   "fillColor": "#418001",
   "lenguages": "Persian",
   "description": "Established after the 1979 Revolution, this theocratic state maintained its 1971 borders despite the brutal Iran-Iraq War (1980–1988), which ended in a territorial status quo. Iran kept control of the strategic islands in the Strait of Hormuz. Today, it remains a central power in the Middle East, with its geographic limits unchanged since the diplomatic and military movements of the early 1970s."
@@ -206,7 +206,7 @@
   "GovernmentType": "Constitutional Monarchy",
   "keywords": ["bahrain", "al khalifa", "manama", "persian gulf", "dilmun", "independence"],
   "file": "maps/middleEast/bahrain.json",
-  "flag": "flags/middleEast/Flag_of_Bahrain.svg.png",
+  "flag": "flags/middleEast/Flag_of_Bahrain.svg",
   "fillColor": "#AD001D",
   "lenguages": "Arabic",
   "description": "Following the British withdrawal and Iran’s formal waiver of its territorial claims in 1970, Bahrain declared full independence on August 15, 1971. Led by the Al Khalifa dynasty, the island nation transitioned from a British protectorate to a sovereign state. Despite being a small archipelago, it became a major financial hub and strategic ally in the Gulf, maintaining its borders unchanged since its mid-20th-century diplomatic stabilization."

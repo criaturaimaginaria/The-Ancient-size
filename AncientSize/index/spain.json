@@ -12,7 +12,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["asturias", "kingdom", "cristian", "800s", "iberic","spain"],
     "file": "maps/europe/ibericPeninsula/kingdomAsturias.json",
-    "flag": "flags/europe/ibericPeninsula/Flag_of_the_Kingdom_of_Asturias.svg.png",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_the_Kingdom_of_Asturias.svg",
     "description": "The Kingdom of Asturias was a Christian state founded in the early 8th century after the Muslim conquest of the Iberian Peninsula. It began with the victory of Pelayo at the Battle of Covadonga (c. 722) and became the first nucleus of the Christian Reconquista. From the north, it slowly expanded and later evolved into the Kingdom of León."
   },
 
@@ -42,7 +42,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["catolicos", "spain", "castilla", "reyes"],
     "file": "maps/europe/ibericPeninsula/castilla2.json",
-    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg.png",
+    "flag": "flags/europe/ibericPeninsula/Flag_of_Castile.svg",
     "description": "pre spain before conquest granada"
   },
 
@@ -70,7 +70,7 @@
     "religion": "Roman Catholicism",
     "keywords": ["navarra", "kingdom", "catholic", "spain"],
     "file": "maps/europe/ibericPeninsula/navarra.json",
-    "flag": "flags/europe/ibericPeninsula/Bandera_de_Reino_de_Navarra.svg.png",
+    "flag": "flags/europe/ibericPeninsula/Bandera_de_Reino_de_Navarra.svg",
     "description": "reino de navarra"
   },
 
@@ -85,7 +85,7 @@
     "religion": "Islam",
     "keywords": ["granada", "emirate", "islam", "spain"],
     "file": "maps/europe/ibericPeninsula/granada1.json",
-    "flag": "flags/europe/ibericPeninsula/Royal_Standard_of_Nasrid_Dynasty_Kingdom_of_Grenade.svg.png",
+    "flag": "flags/europe/ibericPeninsula/Royal_Standard_of_Nasrid_Dynasty_Kingdom_of_Grenade.svg",
     "description": "granada islam emirate"
   }
 

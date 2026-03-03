@@ -36,6 +36,7 @@
     "yearStart": -900,
     "yearEnd": -146,
     "religion": "Ancient Greek Religion",
+        "flag": "flags/europe/greece/Fictional_flag_of_Sparta.png",
     "keywords": ["sparta", "greek", "500-400 BC", "greece", "900-146 BC"],
     "file": "maps/europe/greece/sparta.json"
   },
@@ -161,7 +162,7 @@
     "religion": "Greek religion, Egyptian religion, Mesopotamian religions, Zoroastrianism etc ",
     "keywords": ["alexandcer the great", "greece", "hellenism", "macedonian","macedonia","empire"],
     "file": "maps/europe/greece/alexanderEmpire.json",
-    "flag": "flags/europe/greece/Flag_of_Greek_Macedonia.svg.png",
+    "flag": "flags/europe/greece/Flag_of_Greek_Macedonia.svg",
     "description": "The Empire of Alexander the Great began in Macedonia in 336 BC and expanded rapidly after conquering key cities such as Troy, Tyre, Gaza, Memphis, and Babylon, reaching as far as India. His empire united Europe, Asia, and Africa. After his death in 323 BC, his generals divided the territory and founded new kingdoms."
   },
 
@@ -209,7 +210,7 @@
     "currency":"Hyperpyron",
     "GovernmentType":"Hereditary absolute monarchy",
     "file": "maps/europe/greece/easterRomanEmpireLast.json",
-    "flag": "flags/europe/greece/Byzantine_imperial_flag,_14th_century_(firesteels_vesion).svg.png",
+    "flag": "flags/europe/greece/Byzantine_imperial_flag,_14th_century_(firesteels_vesion).svg",
     "description": "Between 1451 and 1453, the Eastern Roman Empire entered its final and irreversible crisis. Sultan Mehmed II systematically prepared the destruction of Constantinople by isolating the city, building fortresses along the Bosporus, and deploying massive cannons. Emperor Constantine XI ruled a city reduced to shadows of its former power, short on men, allies, and supplies. After a brutal siege, Ottoman forces breached the walls on May 29, 1453. Constantine died fighting among his soldiers, ending over a thousand years of uninterrupted Roman statehood."
   }
 

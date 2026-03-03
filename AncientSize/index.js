@@ -226,9 +226,21 @@ function renderLayersList() {
     checkbox.checked = mapLayer.visible;
     checkbox.addEventListener("change", () => toggleLayerVisibility(index));
 
-    // layer name
     const label = document.createElement("label");
     label.textContent = mapLayer.name;
+    label.style.cursor = "pointer"; 
+
+    // center the map when click on name
+    label.addEventListener("click", () => {
+    if (mapLayer.layer._geoJSONLayer && typeof mapLayer.layer._geoJSONLayer.getBounds === 'function') {
+        const bounds = mapLayer.layer._geoJSONLayer.getBounds();
+        map.fitBounds(bounds);
+    } else if (mapLayer.layer.getBounds) {
+        map.fitBounds(mapLayer.layer.getBounds());
+    }
+    });
+
+
 
     container.addEventListener("mouseover", () => showLayerInfo(mapLayer.name));
     container.addEventListener("mouseout", hideLayerInfo);
@@ -355,7 +367,6 @@ function showLayerInfo(layerName) {
     areaText = `<p><strong>Area:</strong> ≈ ${areaKm2.toLocaleString(undefined, {maximumFractionDigits: 2})} km²</p> <br>`;
   }
 
-  // Aquí usamos la función que importamos de utils
   tooltipBox.innerHTML = getTooltipContent(info, areaText);
   tooltipBox.style.display = "block";
 }

@@ -11,6 +11,25 @@
     "file": "maps/europe/maritimeRepublics/ragusa.json",
     "flag": "flags/europe/maritimeRepublics/Flag_of_Republic_of_Ragusa.svg",
     "description": "The Republic of Ragusa was a maritime republic centered in modern-day Dubrovnik, Croatia, active from 1358 to 1808. It was an aristocratic, aristocratic state known for its sophisticated diplomacy and trade, and its motto was 'Liberty is not well sold for all the gold in the world'. After reaching its commercial peak in the 15th and 16th centuries, it was conquered by Napoleon's French Empire"
-  }
+  },
+
+  {
+  "id": "croatia_1998_present",
+  "name": "Croatia 1998-Present",
+  "era": "moderna",
+  "yearStart": 1998,
+  "yearEnd": 2026,
+  "religion": "Secular state (predominantly Roman Catholic)",
+  "capital": "Zagreb",
+  "fundationFall": "1991-Present",
+  "currency": "Croatian kuna (1994–2023), Euro (2023–Present)",
+  "GovernmentType": "Parliamentary Republic",
+  "keywords": ["croatia", "balkans", "europe", "postwar", "european union", "nato", "independence", "adriatic"],
+  "file": "maps/europe/balkans/croatia1998.json",
+  "flag": "flags/europe/balkans/Flag_of_Croatia.svg",
+  "fillColor": "#060075",
+  "lenguages": "Croatian",
+  "description": "In 1998 Croatia completed the peaceful reintegration of Eastern Slavonia, establishing its current borders after the War of Independence. Since then, it consolidated democratic institutions and pursued Euro-Atlantic integration. Croatia joined NATO in 2009 and the European Union in 2013. It adopted the euro in 2023 and remains a parliamentary republic in Southeast Europe."
+}
 
 ]

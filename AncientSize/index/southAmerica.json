@@ -13,10 +13,49 @@
   "GovernmentType": "International condominium (Antarctic Treaty System)",
   "keywords": ["antarctica", "south pole", "science", "treaty", "neutral territory", "glaciers", "wildlife", "exploration"],
   "file": "maps/america/sudAmerica/antarctica.json",
-  "flag": "flags/america/sudAmerica/True_South_Antarctic_Flag.svg.png",
+  "flag": "flags/america/sudAmerica/True_South_Antarctic_Flag.svg",
   "fillColor": "#183EAB",
   "lenguages": "English, Russian, Spanish, French (Scientific languages)",
   "description": "Antarctica is the only continent without a native human population or a sovereign government. While seven nations historically claimed territories, the 1959 Antarctic Treaty effectively neutralized these claims, dedicating the entire landmass to peaceful scientific cooperation. It remains a demilitarized zone where international law prohibits nuclear testing and mineral mining. Today, it serves as a global laboratory for climate research and astronomy under a unique framework of international governance."
+},
+
+
+{
+  "id": "suriname_republic",
+  "name": "Republic of Suriname 1975–Present",
+  "era": "contemporanea",
+  "yearStart": 1975,
+  "yearEnd": 2026,
+  "religion": "Christianity, Hinduism, Islam and traditional beliefs",
+  "capital": "Paramaribo",
+  "fundationFall": "1975–Present",
+  "currency": "Surinamese dollar",
+  "GovernmentType": "presidential republic",
+  "keywords": ["suriname", "south america", "paramaribo", "independence", "caribbean"],
+  "file": "maps/america/sudAmerica/suriname.json",
+  "flag": "flags/america/sudAmerica/Flag_of_Suriname.svg",
+    "fillColor": "#8C7400",
+  "lenguages": "Dutch",
+  "description": "Suriname gained independence from the Netherlands in 1975. After a period of military rule in the 1980s, it transitioned to democracy. Its diverse society reflects Indigenous, African, Indian, Javanese, and European heritage. Today, Suriname maintains a resource-based economy and plays an active role in regional South American and Caribbean organizations."
+},
+
+{
+  "id": "guyana_republic",
+  "name": "Guyana 1966–Present",
+  "era": "contemporanea",
+  "yearStart": 1966,
+  "yearEnd": 2026,
+  "religion": "Christianity, Hinduism, Islam and other beliefs",
+  "capital": "Georgetown",
+  "fundationFall": "1966–Present",
+  "currency": "Guyanese dollar",
+  "GovernmentType": "semi-presidential republic",
+  "keywords": ["guyana", "south america", "georgetown", "independence", "caribbean"],
+  "file": "maps/america/sudAmerica/guyana.json",
+  "flag": "flags/america/sudAmerica/Flag_of_Guyana_(3-2).svg",
+      "fillColor": "#BA7F00",
+  "lenguages": "English",
+  "description": "Guyana gained independence from the United Kingdom in 1966 and became a republic in 1970. After decades of political tension and economic challenges, democratic reforms strengthened institutions in the 1990s. In the 21st century, major offshore oil discoveries transformed its economy, positioning Guyana among the fastest-growing countries in the world."
 }
 
 

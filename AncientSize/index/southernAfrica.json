@@ -15,7 +15,7 @@
   "GovernmentType": "Monarchy (1965–1970); Republic (1970–1979)",
   "keywords": ["rhodesia", "southern africa", "UDI", "ian smith", "minority rule", "zimbabwe"],
   "file": "maps/africa/southernAfrica/Rhodesia.json",
-  "flag": "flags/africa/southernAfrica/Flag_of_Rhodesia_(1968–1979).svg.png",
+  "flag": "flags/africa/southernAfrica/Flag_of_Rhodesia_(1968–1979).svg",
   "fillColor":"#D48300",
   "lenguages": "English",
   "description": "Rhodesia was a self-declared independent state in southern Africa from 1965 to 1979, following the Unilateral Declaration of Independence (UDI) from the United Kingdom led by Prime Minister Ian Smith. The government was dominated by the white minority and was not internationally recognized. After years of guerrilla warfare and international sanctions, the state transitioned in 1979 to Zimbabwe-Rhodesia and later became internationally recognized as Zimbabwe in 1980."

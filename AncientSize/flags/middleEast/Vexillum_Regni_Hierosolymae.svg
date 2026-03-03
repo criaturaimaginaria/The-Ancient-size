@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 900 600">
+  <g transform="translate(0 200)">
+    <path fill="#fff" d="M0-200h900v600H0Z" overflow="visible" style="marker:none"/>
+    <g fill="#ffd000" stroke="#000" stroke-width="3">
+      <path d="M427.5 122.5V280h-78.75v45h202.5v-45H472.5V122.5H630v78.75h45V-1.25h-45V77.5H472.5V-80h78.75v-45h-202.5v45h78.75V77.5H270V-1.25h-45v202.5h45V122.5Z" overflow="visible" style="marker:none"/>
+      <path d="M330.75 16.75v36h36v-36h36v-36h-36v-36h-36v36h-36v36zm238.5 0v36h-36v-36h-36v-36h36v-36h36v36h36v36zm-238.5 166.5v-36h36v36h36v36h-36v36h-36v-36h-36v-36zm238.5 0v-36h-36v36h-36v36h36v36h36v-36h36v-36z" overflow="visible" style="marker:none"/>
+    </g>
+  </g>
+</svg>

@@ -13,7 +13,7 @@
   "GovernmentType": "Federal Marxist-Leninist one-party socialist republic",
   "keywords": ["USSR","urss", "Soviet Union", "Stalin", "Lenin", "World War II", "Communism", "Molotov-Ribbentrop Pact", "socialism"],
   "file": "maps/europe/russia/urss1922.json",
-  "flag": "flags/europe/europe/Flag_of_the_Soviet_Union.svg.png",
+  "flag": "flags/europe/europe/Flag_of_the_Soviet_Union.svg",
   "fillColor": "#D40000",
   "lenguages": "Russian (and national languages of the republics)",
   "description": "The USSR was founded in 1922 following the Bolshevik victory in the Civil War. During World War II, on September 17 1939 it invaded eastern Poland. This expansion was enabled by the secret protocol of the Molotov-Ribbentrop Pact with Nazi Germany, which defined spheres of influence in Eastern Europe, allowing Stalin to annex territories to create a strategic buffer and reclaim former imperial lands."
@@ -50,7 +50,7 @@
   "GovernmentType": "Autonomous territory within the Kingdom of Denmark",
   "keywords": ["greenland", "arctic", "denmark", "autonomy", "self-government", "inuit", "naalakkersuisut", "denmark"],
   "file": "maps/europe/greenland.json",
-  "flag": "flags/europe/europe/Flag_of_Greenland.svg.png",
+  "flag": "flags/europe/europe/Flag_of_Greenland.svg",
   "fillColor": "#CC2929",
   "lenguages": "Greenlandic (Kalaallisut), Danish",
   "description": "After centuries of Norse and Danish-Norwegian presence, Greenland became a formal Danish colony in 1814. In 1953, its status changed from colony to a constitutional district. Seeking greater self-determination, Greenland achieved Home Rule in 1979 and expanded Self-Government in 2009. Today, it is an autonomous nation within the Kingdom of Denmark, managing most internal affairs independently while relying on Denmark for defense and foreign policy. Though it possesses the legal right to pursue full independence, it remains economically linked to the Danish realm."
