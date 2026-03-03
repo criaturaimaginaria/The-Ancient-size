@@ -32,7 +32,7 @@
   "GovernmentType": "Federal Marxist-Leninist one-party socialist republic",
   "keywords": ["USSR", "urss","Soviet Union","Cold War","Stalin","Khrushchev","Brezhnev","Gorbachev","Eastern Bloc","Warsaw Pact","Space Race","Communism","Perestroika","Glasnost"],
   "file": "maps/europe/russia/urss1945.json",
-  "flag": "flags/europe/europe/Flag_of_the_Soviet_Union.svg.png",
+  "flag": "flags/europe/europe/Flag_of_the_Soviet_Union.svg",
   "fillColor": "#D40000",
   "lenguages": "Russian (official lingua franca) and national languages of the Soviet republics",
   "description": "After its victory in World War II, the USSR emerged as a superpower and consolidated its borders by incorporating the Baltic states, securing Poland’s frontier along the Curzon Line, annexing territories such as Kaliningrad, and establishing a socialist bloc in Eastern Europe as a strategic buffer. During the Cold War it rivaled the United States, but economic decline and political reforms weakened central control. Between 1989 and 1991, its republics declared independence, and the union formally dissolved on December 25, 1991."
