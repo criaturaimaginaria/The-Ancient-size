@@ -29,6 +29,8 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+
+
 /* ----------ROTATION STYLES---------------- */
 /* Esto asegura que el SVG sepa dónde está su centro al rotar */
 path.leaflet-interactive {

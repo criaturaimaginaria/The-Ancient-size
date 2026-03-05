@@ -8,25 +8,41 @@ import { CanvasDrawer } from './utils/canvasDrawer.js';
 
 // MOTOR TÁCTIL GLOBAL ---
 // MOTOR UNIFICADO (POINTER EVENTS)
+
+
+
 let activeTouchDrag = null;
 let dragAnimationFrame = null;
 
 const endTouchDrag = () => {
   if (activeTouchDrag) {
     activeTouchDrag = null;
-    
-    // 1. Habilitamos el dragging
+
+    // 1. Re-habilitar el dragging de Leaflet
     map.dragging.enable();
 
-    // 2. TRUCO: Forzamos a Leaflet a limpiar cualquier estado residual
+    // 2. LIMPIEZA INTERNA PRO (El "Santo Grial" para este error)
+    // Leaflet guarda un objeto interno llamado _draggable. Si se queda trabado, 
+    // forzamos su reseteo manual.
     if (map.dragging._draggable) {
-      map.dragging._draggable._finishDrag(); // Limpia el estado interno de Leaflet
+      map.dragging._draggable._moving = false;
+      map.dragging._draggable._lastEvent = null;
+      // Forzamos el fin del drag interno si existiera
+      if (typeof map.dragging._draggable._finishDrag === 'function') {
+          map.dragging._draggable._finishDrag();
+      }
     }
+
+    // 3. EVENTO SINTÉTICO DE SEGURIDAD
+    // Enviamos un 'touchend' y 'mouseup' falso al mapa para que 
+    // cualquier listener de Leaflet se de por enterado de que terminó.
+    const stopEvent = new Event('touchend', { bubbles: true });
+    map._container.dispatchEvent(stopEvent);
     
-    // 3. Quitamos manualmente la clase de "arrastrando" por si quedó pegada
-    L.DomUtil.removeClass(map._container, 'leaflet-dragging');
+    const stopEventMouse = new Event('mouseup', { bubbles: true });
+    map._container.dispatchEvent(stopEventMouse);
   }
-  
+
   if (dragAnimationFrame) {
     cancelAnimationFrame(dragAnimationFrame);
     dragAnimationFrame = null;
@@ -193,30 +209,21 @@ function loadMap(file, name, indexFillColor) {
       };
 
 // ... dentro de loadMap, en el MutationObserver ...
+// ... dentro de loadMap, en el MutationObserver ...
 const observer = new MutationObserver(() => {
   const elements = document.getElementsByClassName(mapLayerRecord.layerId);
   for (let el of elements) {
-    // 1. Aseguramos que el elemento sea reactivo
-    el.style.touchAction = 'none';
-    el.style.pointerEvents = 'auto';
-
-    // 2. Usamos pointerdown (esto detecta DEDO y MOUSE por igual)
-    // Lo removemos primero para no duplicar si el observer se dispara varias veces
-    el.onpointerdown = null; 
-el.onpointerdown = (e) => {
+    el.onpointerdown = (e) => {
       if (!e.isPrimary) return;
 
-      // Importante: Capturamos el puntero para este elemento
-      el.setPointerCapture(e.pointerId);
-
-      e.stopPropagation(); // Detenemos la propagación hacia el mapa
-      // NO usamos e.preventDefault() aquí para permitir que el foco se mantenga limpio
+      // DETENEMOS el evento aquí. 
+      // Al hacer esto, el mapa NUNCA recibe el toque, 
+      // así que no necesitamos hacer map.dragging.disable()
+      L.DomEvent.stop(e); 
 
       currentLayerObj = mapLayerRecord;
       rotationControl.style.display = "block";
       rotateSlider.value = mapLayerRecord.rotation;
-
-      map.dragging.disable();
 
       const rect = map._container.getBoundingClientRect();
       const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
