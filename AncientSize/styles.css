@@ -22,7 +22,12 @@
     /* height: -webkit-fill-available;
     width: -webkit-fill-available; */
   }
-
+/* Esto evita que el móvil intente hacer scroll cuando tocas una de tus capas */
+.leaflet-interactive {
+    touch-action: none !important;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
 /* ----------ROTATION STYLES---------------- */
 /* Esto asegura que el SVG sepa dónde está su centro al rotar */
@@ -661,6 +666,9 @@ display: none;
 }
 
   @media screen and (max-width: 768px) {
+    *{
+      /* font-size: 1.5em; */
+    }
 
 .mobileSign{
   display: flex;
@@ -693,6 +701,20 @@ display: none;
   font-weight: 700;
   font-style: normal;
 } 
+
+#layer-controls{
+  font-size: 1.5em;
+      font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 90vw;
+}
+
+#layers-list {
+  margin-top: 3px;
+  font-size: 1.5em;
+}
+
 
 
 }

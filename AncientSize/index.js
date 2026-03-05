@@ -7,55 +7,42 @@ import { logFileLoaded, logTotalCount } from './utils/logger.js';
 import { CanvasDrawer } from './utils/canvasDrawer.js';
 
 // MOTOR TÁCTIL GLOBAL ---
+// MOTOR UNIFICADO (POINTER EVENTS)
 let activeTouchDrag = null;
 let dragAnimationFrame = null;
-
-// movimiento del dedo de todo el documento.
-document.addEventListener('touchmove', (e) => {
-  if (!activeTouchDrag) return;
-  
-  e.preventDefault(); 
-
-  const touch = e.touches[0];
-  const mapContainer = map._container;
-  const rect = mapContainer.getBoundingClientRect();
-  
-  // Calculamos laa coordenada
-  const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
-  const latlng = map.containerPointToLatLng(point);
-
-  const newLat = latlng.lat + activeTouchDrag.offsetLat;
-  const newLng = latlng.lng + activeTouchDrag.offsetLng;
-
-  activeTouchDrag.layer.setCenter([newLat, newLng]);
-}, { passive: false });
 
 const endTouchDrag = () => {
   if (activeTouchDrag) {
     activeTouchDrag = null;
+    
+    // 1. Habilitamos el dragging
     map.dragging.enable();
+
+    // 2. TRUCO: Forzamos a Leaflet a limpiar cualquier estado residual
+    if (map.dragging._draggable) {
+      map.dragging._draggable._finishDrag(); // Limpia el estado interno de Leaflet
+    }
+    
+    // 3. Quitamos manualmente la clase de "arrastrando" por si quedó pegada
+    L.DomUtil.removeClass(map._container, 'leaflet-dragging');
   }
+  
   if (dragAnimationFrame) {
     cancelAnimationFrame(dragAnimationFrame);
     dragAnimationFrame = null;
   }
 };
 
-document.addEventListener('touchmove', (e) => {
+// Escuchamos pointermove en window con captura
+window.addEventListener('pointermove', (e) => {
   if (!activeTouchDrag) return;
-  
-  if (e.touches.length > 1) {
-    endTouchDrag();
-    return;
-  }
 
-  e.preventDefault(); 
+  // Evitar que el navegador haga scroll
+  e.preventDefault();
 
-  const touch = e.touches[0];
   const mapContainer = map._container;
   const rect = mapContainer.getBoundingClientRect();
-  
-  const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
+  const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
   const latlng = map.containerPointToLatLng(point);
 
   const newLat = latlng.lat + activeTouchDrag.offsetLat;
@@ -69,14 +56,15 @@ document.addEventListener('touchmove', (e) => {
       dragAnimationFrame = null;
     });
   }
-}, { passive: false });
+}, { passive: false, capture: true });
 
-document.addEventListener('touchend', (e) => {
-  if (e.touches.length === 0) {
-    endTouchDrag();
-  }
-});
-document.addEventListener('touchcancel', endTouchDrag);
+window.addEventListener('pointerup', (e) => {
+  endTouchDrag();
+}, { capture: true });
+
+window.addEventListener('pointercancel', (e) => {
+  endTouchDrag();
+}, { capture: true });
 
 // --- fnn ---
 
@@ -87,7 +75,7 @@ const map = L.map("map", {
   zoomControl: false,
   zoomDelta: 0.25,
   zoomSnap: 0.25,
-  tap: true 
+  tap: false 
 });
 
 L.control.zoom({ position: "bottomleft" }).addTo(map);
@@ -204,62 +192,45 @@ function loadMap(file, name, indexFillColor) {
         geometry: geojsonData.geometry
       };
 
-      const observer = new MutationObserver(() => {
-        const elements = document.getElementsByClassName(mapLayerRecord.layerId);
-        for (let el of elements) {
-          
-          // MOBILE
-          el.style.touchAction = 'none';
-          el.style.webkitUserDrag = 'none';
-          el.style.webkitUserSelect = 'none';
-          el.setAttribute('draggable', 'false');
-          el.style.pointerEvents = 'auto';
+// ... dentro de loadMap, en el MutationObserver ...
+const observer = new MutationObserver(() => {
+  const elements = document.getElementsByClassName(mapLayerRecord.layerId);
+  for (let el of elements) {
+    // 1. Aseguramos que el elemento sea reactivo
+    el.style.touchAction = 'none';
+    el.style.pointerEvents = 'auto';
 
-          const currentRot = `rotate(${mapLayerRecord.rotation}deg)`;
-          if (el.style.transform !== currentRot) {
-            el.style.transformOrigin = 'center';
-            el.style.transformBox = 'fill-box';
-            el.style.transform = currentRot;
-          }
-          
-          el.onmouseenter = () => showLayerInfoMinimal(name);
-          el.onmouseleave = () => hideLayerInfo();
-          
-          // DESKTOP
-          el.onmousedown = (e) => {
-            currentLayerObj = mapLayerRecord;
-            rotationControl.style.display = "block";
-            rotateSlider.value = mapLayerRecord.rotation;
-          };
+    // 2. Usamos pointerdown (esto detecta DEDO y MOUSE por igual)
+    // Lo removemos primero para no duplicar si el observer se dispara varias veces
+    el.onpointerdown = null; 
+el.onpointerdown = (e) => {
+      if (!e.isPrimary) return;
 
-          // mobile touch Bypass----------
-          el.addEventListener('touchstart', (e) => {
-            if (e.touches.length > 1) return;
-            
-            e.preventDefault();
-            e.stopPropagation();
+      // Importante: Capturamos el puntero para este elemento
+      el.setPointerCapture(e.pointerId);
 
-            currentLayerObj = mapLayerRecord;
-            rotationControl.style.display = "block";
-            rotateSlider.value = mapLayerRecord.rotation;
+      e.stopPropagation(); // Detenemos la propagación hacia el mapa
+      // NO usamos e.preventDefault() aquí para permitir que el foco se mantenga limpio
 
-            map.dragging.disable();
+      currentLayerObj = mapLayerRecord;
+      rotationControl.style.display = "block";
+      rotateSlider.value = mapLayerRecord.rotation;
 
-            const touch = e.touches[0];
-            const rect = map._container.getBoundingClientRect();
-            const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
-            const startLatLng = map.containerPointToLatLng(point);
+      map.dragging.disable();
 
-            const center = mapLayerRecord.layer._currentLayer.getCenter();
-            
-            activeTouchDrag = {
-              layer: mapLayerRecord.layer,
-              offsetLat: center.lat - startLatLng.lat,
-              offsetLng: center.lng - startLatLng.lng
-            };
-          }, { passive: false });
-        }
-      });
+      const rect = map._container.getBoundingClientRect();
+      const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
+      const startLatLng = map.containerPointToLatLng(point);
+      const center = mapLayerRecord.layer._currentLayer.getCenter();
+
+      activeTouchDrag = {
+        layer: mapLayerRecord.layer,
+        offsetLat: center.lat - startLatLng.lat,
+        offsetLng: center.lng - startLatLng.lng
+      };
+    };
+  }
+});
 
       observer.observe(document.getElementById('map'), {
         childList: true,
@@ -269,11 +240,35 @@ function loadMap(file, name, indexFillColor) {
       });
 
       // Evento inicial (Escritorio)
-      layer.on('mousedown', (e) => {
+// Evento inicial unificado (Escritorio y Móvil)
+      layer.on('mousedown touchstart', (e) => {
         L.DomEvent.stopPropagation(e);
+        
+        // Si es táctil y hay más de un dedo, no hacemos nada (permite el zoom del mapa)
+        if (e.originalEvent.touches && e.originalEvent.touches.length > 1) return;
+
         currentLayerObj = mapLayerRecord;
         rotationControl.style.display = "block";
         rotateSlider.value = mapLayerRecord.rotation;
+
+        map.dragging.disable(); // Bloqueamos el movimiento del mapa
+
+        // Obtenemos las coordenadas (ya sea del ratón o del dedo)
+        const ev = e.originalEvent;
+        const touch = ev.touches ? ev.touches[0] : ev;
+        
+        const rect = map._container.getBoundingClientRect();
+        const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
+        const startLatLng = map.containerPointToLatLng(point);
+
+        const center = mapLayerRecord.layer._currentLayer.getCenter();
+        
+        // Iniciamos el motor táctil/drag
+        activeTouchDrag = {
+          layer: mapLayerRecord.layer,
+          offsetLat: center.lat - startLatLng.lat,
+          offsetLng: center.lng - startLatLng.lng
+        };
       });
 
       layer.addTo(map);
