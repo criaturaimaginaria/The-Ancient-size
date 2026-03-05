@@ -112,3 +112,23 @@ path.leaflet-interactive {
 
 /* -----------END ROTATION STYLES---------------- */
 
+
+
+
+
+/* --///////////RESPONSIVE MOBILE DESIGN///////////-- */ 
+
+
+
+  @media screen and (max-width: 768px) {
+.rotation-panel {
+  bottom: 5px;
+  left: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2px 8px 5px 8px;
+
+  width: 40vw;
+  height: 50px;
+}
+
+  }

@@ -122,3 +122,119 @@
   object-fit:contain;
 }
 
+
+
+
+/* --///////////RESPONSIVE MOBILE DESIGN///////////-- */ 
+
+
+
+  @media screen and (max-width: 768px) {
+
+
+
+
+#layer-info-tooltip {
+    font-family: "Averia Serif Libre", serif;
+    position: fixed;
+    top: auto;
+    right: auto;
+    
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom: 5px; 
+
+    width: calc(100vw - 10px); 
+    max-width: 400px; 
+    
+    background: rgba(255, 251, 210, 0.95);
+    border: 1px solid #333333;
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 9999;
+    
+    font-size: 14px; 
+    box-sizing: border-box; 
+  
+    display: none; 
+}
+
+
+#layer-info-tooltip b{
+  font-size: min(3.7vw, 3.7em);
+}
+
+#layer-info-tooltip p{
+  display:inline;
+  font-size: min(2.6vw, 2.6em);
+}
+
+#layer-info-tooltip text{
+  display:inline;
+  font-size: min(2.6vw, 2.6em);
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+
+.flagContainer{
+  margin-top: 6px;
+  margin-bottom: 8px;
+  width: 8em;
+  /* background-color: #2e7d32; */
+  width: fit-content;
+  height: 5em;
+  border-radius: 3px;
+}
+
+
+/* minimal-------------- */
+
+
+
+#layer-info-tooltipMinimal {
+    font-family: "Averia Serif Libre", serif;
+    position: fixed;
+    
+    top: auto;
+    right: auto;
+
+    left: 50%;
+    transform: translateX(-50%); 
+
+    bottom: 3px; 
+
+    width: 95vw;
+    max-width: 400px;
+    max-height: 30vh;
+
+    background: rgba(255, 251, 210, 0.95);
+    border: 1px solid #333333;
+    padding: 10px;
+    border-radius: 8px;
+    display: none; 
+    z-index: 9999;
+    font-size: 14px;
+    
+    box-sizing: border-box; 
+}
+
+
+
+#layer-info-tooltipMinimal b{
+  font-size: min(3.5vw, 3.5em);
+  font-family: "Macondo", cursive;
+}
+
+.flagContainerMinimal img{
+  width: 100%;
+  height: 100%;
+    border-radius: 5px;
+  object-fit:contain;
+}
+
+
+
+
+  }

@@ -480,6 +480,17 @@ input[type="checkbox"] {
 }
 
 
+input[type="checkbox"] {
+  transform: scale(1);
+  margin-right: 5px;  
+  margin-left: 3px;  
+  cursor: pointer;
+  accent-color: #ffb453;
+}
+.delete-layer-btn {
+  font-size: min(3vw, 3em);
+}
+
 
 
 
