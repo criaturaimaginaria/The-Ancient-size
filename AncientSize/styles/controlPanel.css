@@ -1,0 +1,501 @@
+#layer-controls {
+  position: absolute;
+  width: 26em;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#chevron-img {
+  position: absolute;
+  top: 0.8em;
+  right: 1em;
+  width: 1em;
+  height: 1em;
+  transform: rotate(90deg);
+  transform: rotate(270deg);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#chevron-img.open {
+  position: absolute;
+  top: 0.8em;
+  right: 1em;
+  width: 1em;
+  height: 1em;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#layer-controls h3 {
+  font-family: "Averia Serif Libre", serif;
+  font-size: min(1.6vw, 1.6em);
+  margin: 0;
+}
+
+#controls-content {
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+    font-family: "Averia Serif Libre", serif;
+}
+
+#controls-content h4{
+  font-size: min(1.4vw, 1.4em);
+  margin-top: 1em;
+  margin-bottom: 0.15em;
+  padding: 0px;
+}
+
+ #map-controls {
+    margin-top: 1em;
+}
+
+#show-all{
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: min(1.2vw, 1.2em);
+}
+#show-all:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+#show-dateFilter{
+
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: min(1.2vw, 1.2em);
+}
+
+#show-dateFilter:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------year search bar----------- */
+
+
+#year-filter {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+
+.yearFilterContainer {
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+
+  gap: 6px;
+  /* background: #f4f4f4; */
+width: fit-content;
+  /* padding: 6px 10px; */
+  border-radius: 6px;
+
+}
+
+
+#year-minus-1,
+#year-plus-1 {
+  background: #e5e5e5;
+  border: 1px solid #e6e6e6;
+  padding: 4px 10px;
+  font-size: min(1.2vw, 1.2em);
+  line-height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.15s;
+  /* font-family: "Times New Roman", serif; */
+}
+
+#year-minus-1:hover,
+#year-plus-1:hover {
+  background: #d6d6d6;
+  border-color: #9b9b9b;
+}
+
+
+#year-input {
+  
+  width: 25%;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  background: #fafafa;
+  /* font-size: 15px;
+  font-family: "Georgia", serif; */
+  color: #222;
+}
+
+#year-input::-webkit-outer-spin-button,
+#year-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#year-input {
+  -moz-appearance: textfield;
+}
+
+#year-era {
+  padding: 2px 3px;
+  background: #eaeaea;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  /* font-size: 14px; */
+  color: #333;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#year-era:hover {
+  background: #dcdcdc;
+}
+
+
+#show-dateFilter {
+  opacity: 0.65;
+  transition: 0.2s;
+  border: 1px solid #b4b4b4;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#show-dateFilter.active-year-btn {
+  opacity: 1;
+  background-color: #3b3b3b;
+  border-color: #3b3b3b;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+#show-dateFilter.active-year-btn:hover {
+  opacity: 0.85;
+  background-color: #5d5d5d;
+    border-color: #5d5d5d;
+}
+
+
+
+/* ---------------- */
+
+
+.results-list{
+  margin-top: 4px;
+}
+
+#map-search{
+  width: 65%;
+  font-size: min(1.2vw, 1.2em);
+}
+
+#controls-content {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#layer-controls.open #controls-content {
+  max-height: 90vh; 
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.result-item{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding:3px;
+  background-color: #fff;
+  border: none;
+    font-size: min(1.2vw, 1.2em);
+}
+
+.result-item:hover{
+  /* transition: 0.1s ease-in-out; */
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#layers-list {
+  margin-top: 3px;
+  font-size: 0.8em;
+}
+
+.layer-item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 2px;
+  font-size: min(1.2vw, 1.2em);
+}
+
+.layer-item:hover label {
+
+  opacity: 0.8;
+}
+
+.delete-layer-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-layer-btn:hover {
+  opacity: 0.7;
+}
+
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 5px;  
+  margin-left: 3px;  
+  cursor: pointer;
+  accent-color: #ffb453;
+}
+
+
+/* search results----------------- */
+
+#search-results {
+  max-height: 10em;  
+  overflow-y: auto; 
+  scrollbar-width: thin; 
+}
+
+/* same text as result-item, but this styles works when search */
+#search-results button {
+  width: 100%;
+  text-align: left;   
+}
+
+
+#search-results::-webkit-scrollbar {
+  width: 6px;
+}
+#search-results::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.6);
+  border-radius: 3px;
+}
+#search-results::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* ------------------------------------------- */
+
+
+/* -----------layers container----------------- */
+
+.layersContainer{
+  max-height: 10em;  
+  overflow-y: auto; 
+  scrollbar-width: thin; 
+}
+
+.layersContainer::-webkit-scrollbar {
+  width: 6px;
+}
+.layersContainer::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.6);
+  border-radius: 3px;
+}
+.layersContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ------------end layers--------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* --///////////RESPONSIVE MOBILE DESIGN///////////-- */ 
+
+
+
+  @media screen and (max-width: 768px) {
+
+
+#layer-controls h3 {
+  font-size: min(4vw, 4em);
+  margin: 0;
+}
+
+#chevron-img {
+  top: 0.6em;
+  right: 1em;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+#chevron-img.open {
+  top: 0.6em;
+  right: 1em;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+#map-search{
+  width: 55%;
+  font-size: min(3vw, 3em);
+}
+
+#show-all{
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: min(3vw, 3em);
+}
+#show-all:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#show-dateFilter{
+
+  background-color: rgb(64, 64, 64);
+  padding:3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: min(3vw, 3em);
+}
+
+#show-dateFilter:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/* YEAR FILTER--- */
+
+
+.yearFilterContainer {
+  display: flex;
+  gap: 6px;
+  width: fit-content;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+#year-minus-1,
+#year-plus-1 {
+  background: #e5e5e5;
+  border: 1px solid #e6e6e6;
+  padding: 4px 10px;
+  font-size: min(3vw, 3em);
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+
+#year-input {
+  
+  width: 40%;
+  padding: 1px;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  font-size: min(3vw, 3em);
+
+}
+
+#year-era {  
+  font-size: min(3vw, 3em);
+}
+
+/* 
+-----------results------------- */
+
+#search-results {
+  max-height: 5em;  
+}
+
+.result-item{
+    font-size: min(3vw, 3em);
+}
+
+#controls-content h4{
+  font-size: min(3.7vw, 3.7em);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0px;
+}
+
+.layersContainer{
+  max-height: 5em;  
+}
+
+/* #layers-list {
+  margin-top: 3px;
+  font-size: min(3vw, 3em);
+} */
+
+.layer-item {
+  gap: 5px;
+  margin-bottom: 2px;
+  font-size: min(3vw, 3em);
+}
+
+
+
+
+
+    #layer-controls{
+    font-size: 1.5em;
+        font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 90vw;
+    }
+
+    #layers-list {
+    margin-top: 3px;
+    font-size: 1.5em;
+    }
+
+
+
+}
