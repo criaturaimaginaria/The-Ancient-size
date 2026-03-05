@@ -197,27 +197,32 @@ function loadMap(file, name, indexFillColor) {
         geometry: geojsonData.geometry
       };
 
-// ... dentro de loadMap, en el MutationObserver ...
-// ... dentro de loadMap, en el MutationObserver ...
 const observer = new MutationObserver(() => {
   const elements = document.getElementsByClassName(mapLayerRecord.layerId);
   for (let el of elements) {
+    
+    el.onmouseenter = () => showLayerInfoMinimal(name);
+    el.onmouseleave = () => hideLayerInfo();
+
+    // // follow the mouse
+    // el.onmousemove = (e) => {
+    //   tooltipBoxMinimal.style.left = (e.clientX + 15) + "px";
+    //   tooltipBoxMinimal.style.top = (e.clientY + 15) + "px";
+    // };
+    // ----------------------------------------------------
+
     el.onpointerdown = (e) => {
       if (!e.isPrimary) return;
-
-      // DETENEMOS el evento aquí. 
-      // Al hacer esto, el mapa NUNCA recibe el toque, 
-      // así que no necesitamos hacer map.dragging.disable()
       L.DomEvent.stop(e); 
-
+      
       currentLayerObj = mapLayerRecord;
       rotationControl.style.display = "block";
-      rotateSlider.value = mapLayerRecord.rotation;
-
+      
       const rect = map._container.getBoundingClientRect();
       const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
       const startLatLng = map.containerPointToLatLng(point);
-      const center = mapLayerRecord.layer._currentLayer.getCenter();
+      
+      const center = L.latLng(mapLayerRecord.layer._currentLayer.getCenter());
 
       activeTouchDrag = {
         layer: mapLayerRecord.layer,
