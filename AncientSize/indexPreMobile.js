@@ -6,79 +6,32 @@ import { filterMaps } from './utils/filterEngine.js';
 import { logFileLoaded, logTotalCount } from './utils/logger.js';
 import { CanvasDrawer } from './utils/canvasDrawer.js';
 
-// MOTOR TÁCTIL GLOBAL ---
-let activeTouchDrag = null;
-let dragAnimationFrame = null;
 
-// movimiento del dedo de todo el documento.
-document.addEventListener('touchmove', (e) => {
-  if (!activeTouchDrag) return;
-  
-  e.preventDefault(); 
 
-  const touch = e.touches[0];
-  const mapContainer = map._container;
-  const rect = mapContainer.getBoundingClientRect();
-  
-  // Calculamos laa coordenada
-  const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
-  const latlng = map.containerPointToLatLng(point);
 
-  const newLat = latlng.lat + activeTouchDrag.offsetLat;
-  const newLng = latlng.lng + activeTouchDrag.offsetLng;
 
-  activeTouchDrag.layer.setCenter([newLat, newLng]);
-}, { passive: false });
 
-const endTouchDrag = () => {
-  if (activeTouchDrag) {
-    activeTouchDrag = null;
-    map.dragging.enable();
-  }
-  if (dragAnimationFrame) {
-    cancelAnimationFrame(dragAnimationFrame);
-    dragAnimationFrame = null;
-  }
-};
 
-document.addEventListener('touchmove', (e) => {
-  if (!activeTouchDrag) return;
-  
-  if (e.touches.length > 1) {
-    endTouchDrag();
-    return;
-  }
 
-  e.preventDefault(); 
 
-  const touch = e.touches[0];
-  const mapContainer = map._container;
-  const rect = mapContainer.getBoundingClientRect();
-  
-  const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
-  const latlng = map.containerPointToLatLng(point);
 
-  const newLat = latlng.lat + activeTouchDrag.offsetLat;
-  const newLng = latlng.lng + activeTouchDrag.offsetLng;
 
-  if (!dragAnimationFrame) {
-    dragAnimationFrame = requestAnimationFrame(() => {
-      if (activeTouchDrag) {
-        activeTouchDrag.layer.setCenter([newLat, newLng]);
-      }
-      dragAnimationFrame = null;
-    });
-  }
-}, { passive: false });
 
-document.addEventListener('touchend', (e) => {
-  if (e.touches.length === 0) {
-    endTouchDrag();
-  }
-});
-document.addEventListener('touchcancel', endTouchDrag);
 
-// --- fnn ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const map = L.map("map", {
@@ -87,8 +40,9 @@ const map = L.map("map", {
   zoomControl: false,
   zoomDelta: 0.25,
   zoomSnap: 0.25,
-  tap: true 
 });
+
+
 
 L.control.zoom({ position: "bottomleft" }).addTo(map);
 
@@ -100,14 +54,21 @@ new L.tileLayer(
   }
 ).addTo(map);
 
+
+
 let indexData = [];
 let activeLayers = [];
 let currentLayerObj = null;
 const rotationControl = document.getElementById("rotation-control");
 const rotateSlider = document.getElementById("rotate-slider");
+
+// Referencia al contenedor HTML
 const layersList = document.getElementById("layers-list");
 
+// load the map index
+// load the map index (MERGED)
 
+// --- all fetchs and logs ---
 fetch('./index.json')
   .then(res => res.json())
   .then(async (index) => {
@@ -118,14 +79,18 @@ fetch('./index.json')
       mapIndex = index; 
       totalObjetos = index.length;
     } else if (index.parts) {
+      
       const parts = await Promise.all(
         index.parts.map(async (ruta) => {
           try {
             const r = await fetch(ruta);
             const data = await r.json();
+            
+            // LOG INDIVIDUAL: Conteo por cada fichero
             const cantidad = data.length;
             totalObjetos += cantidad;
             logFileLoaded(ruta, data.length);
+            
             return data;
           } catch (err) {
             console.error(`Error cargando el fichero ${ruta}:`, err);
@@ -133,12 +98,15 @@ fetch('./index.json')
           }
         })
       );
+
+      // Unificamos todos los archivos en un solo array
       indexData = parts.flat();
-      mapIndex = indexData; 
+      mapIndex = indexData; // Sincronizamos la variable que usa el filtro de años
     }
 
-    logTotalCount(totalObjetos);
+      logTotalCount(totalObjetos);
 
+      //buscamos a Roma
     const initialMap = indexData.find(item => item.id === "rome2");
     if (initialMap) {
       loadMap(initialMap.file, initialMap.name, initialMap.fillColor);
@@ -146,16 +114,25 @@ fetch('./index.json')
   })
   .catch(err => console.error('Error crítico en el sistema de índices:', err));
 
+
+  const initialMap = indexData.find(item => item.id === "rome2");
+
+
 // search in the index
 const searchInput = document.getElementById("map-search");
 const resultsContainer = document.getElementById("search-results");
 const tooltip = document.getElementById("map-tooltip");
 let showAllActive = false;
 
+
 searchInput.addEventListener("input", function () {
-  showAllActive = false;
+
+showAllActive = false;
+
   const query = this.value.toLowerCase();
   resultsContainer.innerHTML = "";
+
+//   if (query.length < 2) return; // evitar demasiados resultados con 1 letra
 
   const filtered = indexData.filter(map =>
     map.name.toLowerCase().includes(query) ||
@@ -173,6 +150,8 @@ searchInput.addEventListener("input", function () {
   });
 });
 
+
+
 function loadMap(file, name, indexFillColor) {
   const existing = activeLayers.find(m => m.name === name);
   if (existing) {
@@ -184,7 +163,9 @@ function loadMap(file, name, indexFillColor) {
     .then(response => response.json())
     .then(data => {
       const geojsonData = normalizeGeoJSON(data);
+
       const detectedFillColor = indexFillColor || geojsonData?.properties?.fillColor || "#FF0000";
+
       const layerId = "ts-" + Date.now() + Math.floor(Math.random() * 1000);
       
       const layer = new L.trueSize(geojsonData, {
@@ -207,57 +188,23 @@ function loadMap(file, name, indexFillColor) {
       const observer = new MutationObserver(() => {
         const elements = document.getElementsByClassName(mapLayerRecord.layerId);
         for (let el of elements) {
-          
-          // MOBILE
-          el.style.touchAction = 'none';
-          el.style.webkitUserDrag = 'none';
-          el.style.webkitUserSelect = 'none';
-          el.setAttribute('draggable', 'false');
-          el.style.pointerEvents = 'auto';
-
           const currentRot = `rotate(${mapLayerRecord.rotation}deg)`;
           if (el.style.transform !== currentRot) {
             el.style.transformOrigin = 'center';
             el.style.transformBox = 'fill-box';
             el.style.transform = currentRot;
+            el.style.pointerEvents = 'auto';
           }
           
           el.onmouseenter = () => showLayerInfoMinimal(name);
           el.onmouseleave = () => hideLayerInfo();
           
-          // DESKTOP
+          // Re-vinculacioón del click por si Leaflet recrea el DOM
           el.onmousedown = (e) => {
             currentLayerObj = mapLayerRecord;
             rotationControl.style.display = "block";
             rotateSlider.value = mapLayerRecord.rotation;
           };
-
-          // mobile touch Bypass----------
-          el.addEventListener('touchstart', (e) => {
-            if (e.touches.length > 1) return;
-            
-            e.preventDefault();
-            e.stopPropagation();
-
-            currentLayerObj = mapLayerRecord;
-            rotationControl.style.display = "block";
-            rotateSlider.value = mapLayerRecord.rotation;
-
-            map.dragging.disable();
-
-            const touch = e.touches[0];
-            const rect = map._container.getBoundingClientRect();
-            const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
-            const startLatLng = map.containerPointToLatLng(point);
-
-            const center = mapLayerRecord.layer._currentLayer.getCenter();
-            
-            activeTouchDrag = {
-              layer: mapLayerRecord.layer,
-              offsetLat: center.lat - startLatLng.lat,
-              offsetLng: center.lng - startLatLng.lng
-            };
-          }, { passive: false });
         }
       });
 
@@ -268,7 +215,7 @@ function loadMap(file, name, indexFillColor) {
         attributeFilter: ['d', 'class']
       });
 
-      // Evento inicial (Escritorio)
+      // Evento inicial
       layer.on('mousedown', (e) => {
         L.DomEvent.stopPropagation(e);
         currentLayerObj = mapLayerRecord;
@@ -289,13 +236,19 @@ function loadMap(file, name, indexFillColor) {
 }
 
 
+
+
+
+
+
 function renderLayersList() {
-  layersList.innerHTML = ""; 
+  layersList.innerHTML = ""; // clean content 
 
   activeLayers.forEach((mapLayer, index) => {
     const container = document.createElement("div");
     container.classList.add("layer-item");
 
+    // Checkbox para visibilidad
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = mapLayer.visible;
@@ -305,6 +258,7 @@ function renderLayersList() {
     label.textContent = mapLayer.name;
     label.style.cursor = "pointer"; 
 
+    // center the map when click on name
     label.addEventListener("click", () => {
     if (mapLayer.layer._geoJSONLayer && typeof mapLayer.layer._geoJSONLayer.getBounds === 'function') {
         const bounds = mapLayer.layer._geoJSONLayer.getBounds();
@@ -313,6 +267,8 @@ function renderLayersList() {
         map.fitBounds(mapLayer.layer.getBounds());
     }
     });
+
+
 
     container.addEventListener("mouseover", () => showLayerInfo(mapLayer.name));
     container.addEventListener("mouseout", hideLayerInfo);
@@ -341,20 +297,29 @@ function toggleLayerVisibility(index) {
   }
 }
 
+
 function removeLayer(index) {
   const mapLayer = activeLayers[index];
   if (mapLayer.visible) {
     map.removeLayer(mapLayer.layer);
   }
+  // delete array
   activeLayers.splice(index, 1);
+
   renderLayersList();
-  hideLayerInfo();
+  hideLayerInfo()
 }
 
+
+
+// show or hide layer controls
 document.getElementById('toggle-controls').addEventListener('click', function() {
   document.getElementById('layer-controls').classList.toggle('open');
   document.getElementById('chevron-img').classList.toggle('open');
 });
+
+
+
 
 // ---------------------------------
 // references
@@ -364,14 +329,18 @@ const showAllBtn = document.getElementById('show-all');
 
 let mapIndex = [];
 
+
+
 function renderResults(results) {
   const textEmpty = (searchInput.value || '').trim() === '';
 
+  // SI NO HAY TEXTO Y NO HAY SHOW-ALL Y NO HAY FILTRO DE AÑo no muestra nada
   if (textEmpty && !showAllActive && !yearFilterActive) {
     searchResults.innerHTML = '';
     return;
   }
 
+  // dibujar resultados normalmente
   searchResults.innerHTML = '';
   if (!results || results.length === 0) return;
 
@@ -383,6 +352,8 @@ function renderResults(results) {
     searchResults.appendChild(div);
   });
 }
+
+
 
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.toLowerCase();
@@ -400,14 +371,18 @@ const filtered2 = mapIndex.filter(m =>
 
 showAllBtn.addEventListener('click', () => {
   showAllActive = true;
+  // borra texto del buscador
   searchInput.value = '';
   renderResults(mapIndex);
 });
 
+
 // ----------------tool tip-----------------
+
 
 const tooltipBox = document.getElementById("layer-info-tooltip");
 const tooltipBoxMinimal = document.getElementById("layer-info-tooltipMinimal");
+
 
 function showLayerInfo(layerName) {
   const info = indexData.find(item => item.name === layerName);
@@ -424,10 +399,17 @@ function showLayerInfo(layerName) {
   tooltipBox.style.display = "block";
 }
 
+
+
+
 function hideLayerInfo() {
   tooltipBox.style.display = "none";
     tooltipBoxMinimal.style.display = "none";
 }
+
+
+
+
 
 // reload of the flags each time fixed
 const nameEl = document.createElement("b");
@@ -443,6 +425,7 @@ tooltipBoxMinimal.appendChild(nameEl);
 tooltipBoxMinimal.appendChild(br);
 tooltipBoxMinimal.appendChild(flagContainer);
 
+
 function showLayerInfoMinimal(layerName) {
   const info = indexData.find(item => item.name === layerName);
 
@@ -451,8 +434,10 @@ function showLayerInfoMinimal(layerName) {
     return;
   }
 
+  // Setear nombre
   nameEl.textContent = info.name || "";
 
+  // Setear bandera
   if (info.flag) {
     flagImg.src = info.flag;
     flagContainer.style.display = "block";
@@ -465,6 +450,10 @@ function showLayerInfoMinimal(layerName) {
 }
 // -----------------------end geojson hover------------------------------
 
+
+
+
+
 // YEAR FILTER-------------------------------
 
 const showDateFilterBtn = document.getElementById('show-dateFilter');
@@ -474,13 +463,17 @@ const yearEra = document.getElementById('year-era');
 const yMinus1 = document.getElementById('year-minus-1');
 const yPlus1 = document.getElementById('year-plus-1');
 
+
 let yearFilterActive = false;
 
+// convierte lo que escribe el usuario a valor interno (BC = negativo)
 function getSelectedYear() {
   const raw = parseInt(yearInput.value);
   if (isNaN(raw)) return null;
   return yearEra.value === 'BC' ? -Math.abs(raw) : Math.abs(raw);
 }
+
+
 
 function applyCombinedFilters() {
   const query = searchInput.value;
@@ -495,6 +488,9 @@ function applyCombinedFilters() {
   renderResults(results);
 }
 
+
+
+// togglemostrar/ocultar y activar/desactivar (con cambio visual)
 showDateFilterBtn.addEventListener('click', () => {
   const visible = yearFilterBox.style.display === 'block';
   if (visible) {
@@ -509,6 +505,7 @@ showDateFilterBtn.addEventListener('click', () => {
   applyCombinedFilters();
 });
 
+
 searchInput.addEventListener('input', applyCombinedFilters);
 showAllBtn.addEventListener('click', () => {
   searchInput.value = '';
@@ -517,13 +514,16 @@ showAllBtn.addEventListener('click', () => {
   applyCombinedFilters();
 });
 
+
 function updateYear(delta) {
   let cur = parseInt(yearInput.value);
   if (isNaN(cur)) cur = 0;
-  cur = Math.max(0, cur + delta); 
+  cur = Math.max(0, cur + delta); // evitar negativos en input
   yearInput.value = cur;
   applyCombinedFilters();
 }
+
+
 
 enableAutoRepeat(yPlus1, () => updateYear(1));
 enableAutoRepeat(yMinus1, () => updateYear(-1));
@@ -534,10 +534,15 @@ yearEra.addEventListener('change', applyCombinedFilters);
 yearFilterBox.style.display = 'none';
 showDateFilterBtn.classList.remove('active-year-btn');
 
+
 // ---------------- ROTATION CONTROL ----------------
+
+
+
 
 const rotationValue = document.getElementById("rotation-value");
 const resetBtn = document.getElementById("reset-rotation");
+
 
 function applyRotation(record, angle) {
   record.rotation = angle;
@@ -552,16 +557,23 @@ function applyRotation(record, angle) {
 
 rotateSlider.addEventListener('input', function() {
   if (!currentLayerObj) return;
+  
+
   const angle = parseInt(this.value);
   applyRotation(currentLayerObj, angle);
 });
 
 resetBtn.addEventListener('click', () => {
   if (!currentLayerObj) return;
+  
   rotateSlider.value = 0;
   applyRotation(currentLayerObj, 0);
 });
 // END YEAR FILTER---------------------------
+
+
+
+
 
 // DRAW AND CURSOR--------------------------------
 
@@ -570,6 +582,7 @@ const brushCursor = document.getElementById('brush-cursor');
 const canvasElement = document.getElementById('paintCanvas');
 const controls = document.getElementById('pencil-controls');
 
+// ctualizar el cursor visual
 const updateCursor = (e) => {
     if (canvasElement.classList.contains('active')) {
         brushCursor.style.display = 'block';
@@ -584,6 +597,7 @@ const updateCursor = (e) => {
 
 window.addEventListener('mousemove', updateCursor);
 
+// Toggle del panel
 document.getElementById('btn-toggle-paint').addEventListener('click', () => {
     const isActive = canvasElement.classList.toggle('active');
     controls.classList.toggle('hidden');
@@ -604,3 +618,8 @@ document.getElementById('btn-close-paint').onclick = () => document.getElementBy
 
 document.getElementById('pencil-color').oninput = (e) => drawer.setColor(e.target.value);
 document.getElementById('pencil-width').oninput = (e) => drawer.setLineWidth(e.target.value);
+
+
+
+
+

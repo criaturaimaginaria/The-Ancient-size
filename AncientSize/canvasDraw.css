@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 1005; 
-    cursor: none; /* Cambiado a none para que solo veas el círculo de referencia */
+    cursor: none; 
     display: none; 
     pointer-events: none; 
 }
@@ -15,16 +15,16 @@
     pointer-events: all;
 }
 
-/* Estilo del círculo de referencia */
+
 #brush-cursor {
     position: fixed;
-    pointer-events: none; /* Importante: para que no interfiera con el click */
+    pointer-events: none; 
     border: 1px solid rgba(0,0,0,0.5);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.4);
-    z-index: 1006; /* Un nivel por encima del canvas */
+    z-index: 1006; 
     display: none;
-    transform: translate(-50%, -50%); /* Centra el círculo en la punta del mouse */
+    transform: translate(-50%, -50%); 
 }
 
 #pencil-panel {
@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background: white; /* Añadido para que se vea sobre el mapa */
+    background: white; 
     padding: 5px;
     border-radius: 5px;
 }

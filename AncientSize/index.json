@@ -18,7 +18,8 @@
     "index/nordAfrica.json",
     "index/centralAmerica.json",
     "index/southernAfrica.json",
-    "index/balkans.json"
+    "index/balkans.json",
+    "index/structures.json"
 
   ]
 }

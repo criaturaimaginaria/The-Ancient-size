@@ -1,0 +1,17 @@
+[
+{
+  "id": "pyramids_giza_ancient",
+  "name": "Great Pyramids of Giza",
+  "era": "Ancient Egypt (Old Kingdom)",
+  "yearStart": -2580,
+  "yearEnd": 2026,
+  "foundationFall": "2580 BC-Present",
+  "governmentType": "Pharaonic Monarchy",
+  "keywords": ["pyramids", "giza", "egypt", "pharaoh", "khufu", "monument", "archaeology", "wonder"],
+  "file": "maps/structures/gizaPyramid.json",
+  "fillColor": "#050066",
+  "languages": "Ancient Egyptian",
+  "description": "The Pyramids of Giza were built around 2600–2500 BCE as royal tombs for the pharaohs Khufu, Khafre, and Menkaure during Egypt’s Old Kingdom."
+}
+
+]
