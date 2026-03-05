@@ -6,10 +6,9 @@ import { filterMaps } from './utils/filterEngine.js';
 import { logFileLoaded, logTotalCount } from './utils/logger.js';
 import { CanvasDrawer } from './utils/canvasDrawer.js';
 
-// MOTOR TÁCTIL GLOBAL ---
-// MOTOR UNIFICADO (POINTER EVENTS)
 
 
+// MOTOR TÁCTIL GLOBAL (mobile) ---
 
 let activeTouchDrag = null;
 let dragAnimationFrame = null;
@@ -17,25 +16,17 @@ let dragAnimationFrame = null;
 const endTouchDrag = () => {
   if (activeTouchDrag) {
     activeTouchDrag = null;
-
-    // 1. Re-habilitar el dragging de Leaflet
     map.dragging.enable();
 
-    // 2. LIMPIEZA INTERNA PRO (El "Santo Grial" para este error)
-    // Leaflet guarda un objeto interno llamado _draggable. Si se queda trabado, 
-    // forzamos su reseteo manual.
+    // foecx manual reset
     if (map.dragging._draggable) {
       map.dragging._draggable._moving = false;
       map.dragging._draggable._lastEvent = null;
-      // Forzamos el fin del drag interno si existiera
       if (typeof map.dragging._draggable._finishDrag === 'function') {
           map.dragging._draggable._finishDrag();
       }
     }
 
-    // 3. EVENTO SINTÉTICO DE SEGURIDAD
-    // Enviamos un 'touchend' y 'mouseup' falso al mapa para que 
-    // cualquier listener de Leaflet se de por enterado de que terminó.
     const stopEvent = new Event('touchend', { bubbles: true });
     map._container.dispatchEvent(stopEvent);
     
@@ -49,11 +40,9 @@ const endTouchDrag = () => {
   }
 };
 
-// Escuchamos pointermove en window con captura
 window.addEventListener('pointermove', (e) => {
   if (!activeTouchDrag) return;
 
-  // Evitar que el navegador haga scroll
   e.preventDefault();
 
   const mapContainer = map._container;
@@ -246,21 +235,17 @@ const observer = new MutationObserver(() => {
         attributeFilter: ['d', 'class']
       });
 
-      // Evento inicial (Escritorio)
-// Evento inicial unificado (Escritorio y Móvil)
       layer.on('mousedown touchstart', (e) => {
         L.DomEvent.stopPropagation(e);
         
-        // Si es táctil y hay más de un dedo, no hacemos nada (permite el zoom del mapa)
         if (e.originalEvent.touches && e.originalEvent.touches.length > 1) return;
 
         currentLayerObj = mapLayerRecord;
         rotationControl.style.display = "block";
         rotateSlider.value = mapLayerRecord.rotation;
 
-        map.dragging.disable(); // Bloqueamos el movimiento del mapa
+        map.dragging.disable();
 
-        // Obtenemos las coordenadas (ya sea del ratón o del dedo)
         const ev = e.originalEvent;
         const touch = ev.touches ? ev.touches[0] : ev;
         
@@ -270,7 +255,6 @@ const observer = new MutationObserver(() => {
 
         const center = mapLayerRecord.layer._currentLayer.getCenter();
         
-        // Iniciamos el motor táctil/drag
         activeTouchDrag = {
           layer: mapLayerRecord.layer,
           offsetLat: center.lat - startLatLng.lat,
