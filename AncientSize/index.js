@@ -79,8 +79,14 @@ const map = L.map("map", {
   center: [42, 20],
   zoom: 2.13,
   zoomControl: false,
-  zoomDelta: 0.25,
-  zoomSnap: 0.25,
+  zoomDelta: 0.50,
+  zoomSnap: 0,
+
+  zoomSnap: 0,
+  zoomAnimation: true,
+  wheelPxPerZoomLevel: 90,
+
+
   tap: false 
 });
 
