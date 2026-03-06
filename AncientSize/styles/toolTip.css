@@ -138,28 +138,28 @@
 #layer-info-tooltip {
     font-family: "Averia Serif Libre", serif;
     position: fixed;
+    
     top: auto;
     right: auto;
-    
+
     left: 50%;
     transform: translateX(-50%); 
-    bottom: 5px; 
 
-    /* width: calc(100vw - 10px); 
-    max-width: 400px;  */
-        width: 95vw;
+    bottom: 3px; 
+
+    width: 95vw;
     max-width: 400px;
-    
+    /* max-height: 30vh; */
+
     background: rgba(255, 251, 210, 0.95);
     border: 1px solid #333333;
     padding: 10px;
     border-radius: 8px;
-    z-index: 9999;
-    
-    font-size: 14px; 
-    box-sizing: border-box; 
-  
     display: none; 
+    z-index: 9999;
+    font-size: 14px;
+    
+    box-sizing: border-box; 
 }
 
 
