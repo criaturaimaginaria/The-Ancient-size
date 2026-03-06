@@ -377,7 +377,7 @@ input[type="checkbox"] {
 
 #show-all{
   background-color: rgb(64, 64, 64);
-  padding:3px;
+  padding:5px;
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
@@ -394,7 +394,7 @@ input[type="checkbox"] {
 #show-dateFilter{
 
   background-color: rgb(64, 64, 64);
-  padding:3px;
+  padding:5px;
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
@@ -450,9 +450,22 @@ input[type="checkbox"] {
 -----------results------------- */
 
 #search-results {
-  max-height: 5em;  
+  max-height: 5em;
+  overflow-y: auto;
 }
 
+#search-results::-webkit-scrollbar {
+  width: 20px;
+}
+
+#search-results::-webkit-scrollbar-thumb {
+  background: rgba(150,150,150,0.6);
+  border-radius: 4px;
+}
+
+#search-results::-webkit-scrollbar-track {
+  background: transparent;
+}
 .result-item{
     font-size: min(3vw, 3em);
 }

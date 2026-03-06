@@ -104,11 +104,12 @@
 }
 
 .flagContainerMinimal{
+  position: relative;
   margin-top: 6px;
   margin-bottom: 8px;
   /* width: 6em; */
   left: 0px;
-  /* background-color: #2e7d32; */
+  background-color: #2e7d32;
   width:fit-content;
   height: 4em;
   border-radius: 4px;
@@ -144,12 +145,14 @@
     transform: translateX(-50%); 
     bottom: 5px; 
 
-    width: calc(100vw - 10px); 
-    max-width: 400px; 
+    /* width: calc(100vw - 10px); 
+    max-width: 400px;  */
+        width: 95vw;
+    max-width: 400px;
     
     background: rgba(255, 251, 210, 0.95);
     border: 1px solid #333333;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     z-index: 9999;
     
@@ -189,6 +192,24 @@
 }
 
 
+
+@supports (-webkit-touch-callout: none) {
+  .flagContainer{
+  display:block;
+  clear: both;
+}
+.flagContainer img{
+  height: 100%;
+  width: auto;
+  display:block;
+}
+
+  /* .flagContainer{
+    width: auto;
+    display: block;
+  } */
+}
+
 /* minimal-------------- */
 
 
@@ -227,12 +248,26 @@
   font-family: "Macondo", cursive;
 }
 
+.flagContainerMinimal{
+  margin-top: 6px;
+  margin-bottom: 8px;
+  position: relative;
+  left: 0px;
+  width:fit-content;
+  height: 4em;
+  border-radius: 4px;
+}
+
+
+
 .flagContainerMinimal img{
   width: 100%;
   height: 100%;
     border-radius: 5px;
+      /* left: 0px; */
   object-fit:contain;
 }
+
 
 
 

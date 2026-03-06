@@ -17,3 +17,42 @@ modal.addEventListener('click', (event) => {
   }
 });
 
+
+
+
+
+
+
+// -------- Copy bitcoin address on click --------
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const btcAddress = document.querySelector(".bitcoin-address");
+
+  if (!btcAddress) return;
+
+  btcAddress.addEventListener("click", function () {
+
+    const text = btcAddress.textContent.trim();
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+    } 
+    else {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    btcAddress.classList.add("copied");
+
+    setTimeout(function () {
+      btcAddress.classList.remove("copied");
+    }, 900);
+
+  });
+
+});
