@@ -561,11 +561,19 @@ resetBtn.addEventListener('click', () => {
 // END YEAR FILTER---------------------------
 
 // DRAW AND CURSOR--------------------------------
+// DRAW AND CURSOR--------------------------------
+
+const widthPopup = document.getElementById('width-popup');
+const pencilBtn = document.getElementById('btn-pencil-mode');
+const eraserBtn = document.getElementById('btn-eraser-mode');
+const panel = document.getElementById('pencil-panel');
 
 const drawer = new CanvasDrawer('paintCanvas');
 const brushCursor = document.getElementById('brush-cursor');
 const canvasElement = document.getElementById('paintCanvas');
 const controls = document.getElementById('pencil-controls');
+
+const toggleBtn = document.getElementById('btn-toggle-paint');
 
 const updateCursor = (e) => {
     if (canvasElement.classList.contains('active')) {
@@ -581,10 +589,17 @@ const updateCursor = (e) => {
 
 window.addEventListener('mousemove', updateCursor);
 
-document.getElementById('btn-toggle-paint').addEventListener('click', () => {
+
+// ACTIVAR / DESACTIVAR MODO DIBUJO
+
+toggleBtn.addEventListener('click', () => {
+
     const isActive = canvasElement.classList.toggle('active');
     controls.classList.toggle('hidden');
-    
+    toggleBtn.classList.toggle('hidden');
+
+    widthPopup.classList.add('hidden');
+
     if (isActive) {
         map.dragging.disable();
         map.scrollWheelZoom.disable();
@@ -592,17 +607,65 @@ document.getElementById('btn-toggle-paint').addEventListener('click', () => {
         map.dragging.enable();
         map.scrollWheelZoom.enable();
     }
+
 });
 
-document.getElementById('btn-pencil-mode').addEventListener('click', () => drawer.setMode('pencil'));
-document.getElementById('btn-eraser-mode').addEventListener('click', () => drawer.setMode('eraser'));
+
+// BOTONES
+
 document.getElementById('btn-clear-canvas').addEventListener('click', () => drawer.clear());
-document.getElementById('btn-close-paint').onclick = () => document.getElementById('btn-toggle-paint').click();
+
+document.getElementById('btn-close-paint').onclick = () => {
+
+    widthPopup.classList.add('hidden');
+    document.getElementById('btn-toggle-paint').click();
+
+};
+
+
+// COLOR Y GROSOR
 
 document.getElementById('pencil-color').oninput = (e) => drawer.setColor(e.target.value);
+
 document.getElementById('pencil-width').oninput = (e) => drawer.setLineWidth(e.target.value);
 
 
-// puto el que lee
-// whoever reads this is gay
-// chi legge è gay
+// MODOS HERRAMIENTA
+
+pencilBtn.addEventListener('click', () => {
+
+    drawer.setMode('pencil');
+
+    pencilBtn.classList.add('active');
+    eraserBtn.classList.remove('active');
+
+    const rect = panel.getBoundingClientRect();
+
+    widthPopup.style.left = `${rect.right + 6}px`;
+    widthPopup.style.top = `${rect.top}px`;
+    widthPopup.style.height = `${rect.height}px`;
+
+    widthPopup.classList.toggle('hidden');
+
+});
+
+
+eraserBtn.addEventListener('click', () => {
+
+    drawer.setMode('eraser');
+
+    eraserBtn.classList.add('active');
+    pencilBtn.classList.remove('active');
+
+    widthPopup.classList.add('hidden');
+
+});
+
+
+// OCULTAR POPUP CUANDO EMPEZÁS A DIBUJAR
+
+canvasElement.addEventListener('mousedown', () => {
+
+    widthPopup.classList.add('hidden');
+
+});

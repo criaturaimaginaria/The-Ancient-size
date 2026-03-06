@@ -68,3 +68,15 @@ export class CanvasDrawer {
     
     setLineWidth(width) { this.lineWidth = width; }
 }
+
+
+
+
+
+
+
+
+
+
+// ----active status to pencil and lapiz
+

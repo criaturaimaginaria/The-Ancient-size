@@ -157,9 +157,9 @@
   <button onclick="changeBaseMap('satellite')">Satellite</button>
 </div>
 
-      <!-- <canvas id="paintCanvas"></canvas>
+      <canvas id="paintCanvas"></canvas>
           <div id="brush-cursor"></div>
-          <div id="pencil-panel">
+          <!-- <div id="pencil-panel">
               <button id="btn-toggle-paint" class="main-btn">✏️</button>
               <div id="pencil-controls" class="hidden">
                   <input type="color" id="pencil-color" value="#000000" title="Color">
@@ -170,9 +170,44 @@
                   <button id="btn-eraser-mode" title="Goma">🧽</button>
                   <button id="btn-clear-canvas" title="Borrar Todo">🗑️</button>
                   
-                  <button id="btn-close-paint" title="Cerrar y Bloquear">❌</button>
+                  <button id="btn-close-paint" title="Cerrar y Bloquear">Close</button>
               </div>
           </div> -->
+
+<div id="pencil-panel">
+
+    <button id="btn-toggle-paint" class="main-btn">
+        <img src="./assets/pencil-svgrepo-com.svg" >
+    </button>
+
+    <div id="pencil-controls" class="hidden">
+
+        <input type="color" id="pencil-color" value="#000000" title="Color">
+
+        <button id="btn-pencil-mode" >
+            <img src="./assets/pencil-svgrepo-com.svg">
+        </button>
+
+        <button id="btn-eraser-mode" >
+            <img src="./assets/rubber-svgrepo-com.svg">
+        </button>
+
+        <button id="btn-clear-canvas" >
+            <img src="./assets/rubbish-bin-svgrepo-com.svg">
+        </button>
+
+        <button id="btn-close-paint" >
+            <img src="./assets/cross-mark-svgrepo-com.svg">
+        </button>
+
+    </div>
+</div>
+
+<!-- slider flotante -->
+<div id="width-popup" class="hidden">
+    <input type="range" id="pencil-width" min="1" max="50" value="5">
+</div>
+
     </div>
 
     <script type="module" src="./utils/modalHandler.js"></script>
