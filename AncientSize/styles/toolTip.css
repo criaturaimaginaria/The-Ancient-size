@@ -204,10 +204,7 @@
   display:block;
 }
 
-  /* .flagContainer{
-    width: auto;
-    display: block;
-  } */
+
 }
 
 /* minimal-------------- */
@@ -268,6 +265,20 @@
   object-fit:contain;
 }
 
+
+@supports (-webkit-touch-callout: none) {
+  .flagContainerMinimal{
+  display:block;
+  clear: both;
+}
+.flagContainerMinimal img{
+  height: 100%;
+  width: auto;
+  display:block;
+}
+
+
+}
 
 
 
