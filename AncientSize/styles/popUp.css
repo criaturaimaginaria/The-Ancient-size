@@ -35,6 +35,11 @@
   font-style: normal;
 }
 
+.sign a{
+    color: #FF9812;
+    font-weight: 900;
+}
+
 .sign b{
   font-family: "Averia Serif Libre", serif;
   font-weight: 700;
@@ -79,7 +84,7 @@
 .sign {
   margin-top: 12vh;
   background-color: #e1e1e1;
-  width: 73%;
+  width: 77%;
   padding: 1em;
   border-radius: 10px;
   height: fit-content;

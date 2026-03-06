@@ -73,7 +73,7 @@
     "GovernmentType":"Feudal hereditary monarchy",
     "keywords": ["jerusalen", "gerusalemme", "christian", "kingdom","baldwin", "kingdom"],
     "file": "maps/middleEast/jerusalenkingdomLast.json",
-    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg.png",
+    "flag": "flags/middleEast/Vexillum_Regni_Hierosolymae.svg",
 
     "lenguages":"Latin",
     "description": "The Kingdom of Jerusalem slowly withered as the Mamluks cut down its coastal enclaves one by one. In 1291, Acre, the last great Crusader stronghold, fell after a desperate defense, its walls shattered and its defenders pushed into the sea. With Acre’s collapse, the Crusader kingdom vanished from the Middle East, ending nearly two centuries of Latin rule."
@@ -147,7 +147,7 @@
   "GovernmentType": "Absolute Monarchy (Satrapal System)",
   "keywords": ["darius the great", "xerxes i", "satrapies", "royal road", "persian wars", "achaemenid"],
     "file": "maps/middleEast/AchaemenidEmpire513_480.json",
-  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg.png",
+  "flag": "flags/middleEast/Standard_of_Cyrus_the_Great.svg",
   "fillColor": "#BD8A0B",
   "languages": "Old Persian, Elamite, Babylonian, Aramaic (Lingua Franca)",
  "description": "In 513 BC, Darius I crossed the Danube, bringing Thrace and Macedonia under Persian control and establishing a transcontinental empire. For decades, the Satrapy system and Royal Road ensured stability from the Indus to Libya. However, 480 BC was a turning point. Following defeats at Salamis and Plataea, Xerxes I's invasion of Greece failed. The empire lost its European territories and Aegean hegemony to a Greek alliance led by Athens and Sparta, marking the beginning of its territorial retreat in the Mediterranean."
