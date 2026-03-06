@@ -601,3 +601,8 @@ document.getElementById('btn-close-paint').onclick = () => document.getElementBy
 
 document.getElementById('pencil-color').oninput = (e) => drawer.setColor(e.target.value);
 document.getElementById('pencil-width').oninput = (e) => drawer.setLineWidth(e.target.value);
+
+
+// puto el que lee
+// whoever reads this is gay
+// chi legge è gay
