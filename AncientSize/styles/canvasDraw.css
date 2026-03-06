@@ -118,7 +118,7 @@
     justify-content:center;
 
     background:white;
-    border:1px solid rgba(0,0,0,0.08);
+    border:0px solid rgba(0,0,0,0.08);
     border-radius:7px;
 
     cursor:pointer;
@@ -129,6 +129,7 @@
 #pencil-panel button:hover{
     background:#f5f5f5;
     transform:translateY(-1px);
+        border:1px solid rgba(0,0,0,0.08);
 }
 
 #pencil-panel button img{
