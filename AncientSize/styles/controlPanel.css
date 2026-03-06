@@ -336,9 +336,20 @@ input[type="checkbox"] {
 
 
 
+/* trash button----------------- */ */
 
+.delete-layer-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
 
-
+.delete-layer-icon {
+  width: 16px;
+  height: 16px;
+    opacity: 0.75;
+}
 
 
 

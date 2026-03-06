@@ -309,9 +309,18 @@ function renderLayersList() {
     container.addEventListener("mouseout", hideLayerInfo);
 
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "🗑️";
+    // deleteButton.textContent = "🗑️";
     deleteButton.classList.add("delete-layer-btn");
     deleteButton.title = "Eliminar capa";
+
+    const icon = document.createElement("img");
+    icon.src = "./assets/rubbish-bin-svgrepo-com.svg";
+    icon.alt = "Delete";
+    icon.classList.add("delete-layer-icon");
+
+    deleteButton.appendChild(icon);
+
+
     deleteButton.addEventListener("click", () => removeLayer(index));
 
     container.appendChild(checkbox);
