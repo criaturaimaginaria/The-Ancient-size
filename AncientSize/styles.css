@@ -59,18 +59,17 @@
   text-decoration: none;
 }
 
-.mobileSign{
+/* .mobileSign{
 display: none;
-}
+} */
 
 
 
   @media screen and (max-width: 768px) {
-
+/* 
 .mobileSign{
   display: flex;
   justify-content:center ;
-  /* align-items: center; */
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -87,8 +86,7 @@ display: none;
   padding: 1em;
   border-radius: 10px;
   height: fit-content;
-
-    font-family: "Averia Serif Libre", serif;
+  font-family: "Averia Serif Libre", serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -97,7 +95,7 @@ display: none;
   font-family: "Averia Serif Libre", serif;
   font-weight: 700;
   font-style: normal;
-} 
+}  */
 
 
 .contributeContainer{

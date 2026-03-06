@@ -1,0 +1,102 @@
+
+.desktopSign {
+  display: none; 
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  background: #222222ac;
+  z-index: 1001;
+}
+
+.desktopSign.is-visible {
+  display: flex;
+}
+
+
+.click-trigger {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.sign {
+  margin-top: 12vh;
+  background-color: #e1e1e1;
+  width: 65%;
+  padding: 1em;
+  border-radius: 10px;
+  height: fit-content;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sign b{
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.support-section{
+
+}
+
+.bitcoin-address{
+    margin-top: 0px;
+        margin-top: -3em;
+    background-color: #ebebeb8f;
+    padding: 6px;
+    border-radius: 3px;
+      font-size: min(0.9vw, 0.9em);
+}
+
+
+
+
+
+/* 
+------------bitcoin adress------------ */
+  
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 768px) {
+
+
+
+.sign {
+  margin-top: 12vh;
+  background-color: #e1e1e1;
+  width: 73%;
+  padding: 1em;
+  border-radius: 10px;
+  height: fit-content;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.bitcoin-address{
+    margin-top: 0px;
+        margin-top: -3em;
+    background-color: #ebebeb8f;
+    padding: 6px;
+    border-radius: 3px;
+      font-size: min(1.8vw, 1.8em);
+}
+
+
+  }

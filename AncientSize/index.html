@@ -22,12 +22,7 @@
     <script src="Leaflet.TrueSize.umd.js"></script>
 
     <link href="styles.css" rel="stylesheet" />
-    <link href="./styles/controlPanel.css" rel="stylesheet" />
-    <link href="./styles/canvasDraw.css" rel="stylesheet" />
-    <link href="./styles/fonts.css" rel="stylesheet" />
-    <link href="./styles/toolTip.css" rel="stylesheet" />
-    <link href="./styles/rotation.css" rel="stylesheet" />
-    <link href="./styles/globe.css" rel="stylesheet" />
+    <link href="stylesList.css" rel="stylesheet" />
 
     <script>
       hljs.initHighlightingOnLoad();
@@ -81,18 +76,48 @@
 
           <div class="contributeContainer">
             <p>
-              Contribute by creating more maps using
-              <a
+              Contribute by creating more maps 
+              <span id="btn-open-sign" class="click-trigger">(click me)</span>
+              <!-- <a
                 href="https://geojson.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                >geojson.io</a
-              >, you can send me the JSON data of your map to
+                >geojson.io</a> -->
+              , you can send me the JSON data of your map to
               ancienttruesize@gmail.com
             </p>
           </div>
         </div>
       </div>
+
+
+    <div class="desktopSign" id="desktopSign">
+      <div class="sign" id="signContent">
+        <b>Buongiorno explorer!</b> <br />
+        <p>
+            If you want to contribute to the project with more maps, you can draw them using tools like 
+            <a href="https://geojson.io" target="_blank" rel="noopener noreferrer">geojson.io</a> or
+            <a href="https://mapshaper.org/" target="_blank" rel="noopener noreferrer">mapshaper.org</a>.
+            To start with a simple map, I recommend using geojson.io, though mapshaper offers more tools and 
+            is more complete.
+        </p>
+
+        <p>
+           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Here</a> is a YouTube tutorial on how to draw and export your map data:
+        </p>
+        
+        <p >
+            After that, we just write a description (no more than 80 words), 
+            the title with the time period the map represents, the capital, etc.
+        </p>
+
+        <div class="support-section">
+          <p>This is my Bitcoin address in case you’d like to support the project :)</p>
+          <code class="bitcoin-address">bc1pjgvpl2mmq3awzcerr2untgql8gngp58cqfryr7j7a6cq63jgyt2qccx8t0</code>
+        </div>
+
+      </div>
+    </div>
 
       <!-- <div class="mobileSign">
         <div class="sign">
@@ -141,6 +166,7 @@
           </div> -->
     </div>
 
+    <script type="module" src="./utils/modalHandler.js"></script>
     <script type="module" src="index.js"></script>
     <!-- <script type="module" src="main.js"></script> -->
   </body>
