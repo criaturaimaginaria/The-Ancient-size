@@ -1,0 +1,44 @@
+#basemap-controls{
+  position: fixed;
+  bottom: 9px;
+  left:268px;
+  z-index: 1000;
+
+  display: flex;
+  gap: 6px;
+  /* background-color: aqua; */
+}
+
+#basemap-controls button{
+
+  font-size: min(1.1vw, 0.8em);
+color: #333;
+  padding: 4px 8px;
+
+  background: rgba(255, 255, 255, 0.202);
+  border: 0px solid #888;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+#basemap-controls button:hover{
+
+  background: #333;
+  color: white;
+
+  transform: scale(1.06);
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+#basemap-controls button:active{
+
+  transform: scale(0.95);
+
+}

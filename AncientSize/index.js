@@ -5,6 +5,7 @@ import { normalizeGeoJSON } from './utils/geoHelpers.js';
 import { filterMaps } from './utils/filterEngine.js';
 import { logFileLoaded, logTotalCount } from './utils/logger.js';
 import { CanvasDrawer } from './utils/canvasDrawer.js';
+import { initBaseMapControls } from './utils/baseMapControls.js';
 
 
 
@@ -83,15 +84,11 @@ const map = L.map("map", {
   tap: false 
 });
 
+initBaseMapControls(map);
+
 L.control.zoom({ position: "bottomleft" }).addTo(map);
 
-new L.tileLayer(
-  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-  {
-    attribution: `attribution: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>`,
-    detectRetina: true,
-  }
-).addTo(map);
+
 
 let indexData = [];
 let activeLayers = [];
