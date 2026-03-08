@@ -28,11 +28,21 @@ const endTouchDrag = () => {
       }
     }
 
+// Evento táctil con propiedades mockeadas para que Leaflet no de NaN
     const stopEvent = new Event('touchend', { bubbles: true });
+    stopEvent.touches = [];
+    stopEvent.changedTouches = [{ clientX: 0, clientY: 0 }];
     map._container.dispatchEvent(stopEvent);
     
-    const stopEventMouse = new Event('mouseup', { bubbles: true });
+    // Evento de mouse usando MouseEvent nativo con coordenadas en 0
+    const stopEventMouse = new MouseEvent('mouseup', { 
+        bubbles: true, 
+        clientX: 0, 
+        clientY: 0 
+    });
     map._container.dispatchEvent(stopEventMouse);
+
+
   }
 
   if (dragAnimationFrame) {

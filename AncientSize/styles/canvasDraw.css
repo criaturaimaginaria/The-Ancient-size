@@ -192,8 +192,9 @@
 #width-popup input{
 
     writing-mode: bt-lr;
-    -webkit-appearance: slider-vertical;
 
+writing-mode: vertical-rl;
+direction: rtl;
     width:10px;
     height:100%;
         background: transparent;
@@ -217,8 +218,10 @@
 
 #width-popup input[type="range"] {
     /* 1. Mantenemos el estilo vertical nativo */
-    -webkit-appearance: slider-vertical; 
+   
     writing-mode: bt-lr;
+    writing-mode: vertical-rl;
+direction: rtl;
 
     /* 2. LA MAGIA: Esto cambia el color del círculo y la barra de un solo golpe */
     accent-color: #333; 
