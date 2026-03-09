@@ -210,6 +210,63 @@
   "fillColor": "#AD001D",
   "lenguages": "Arabic",
   "description": "Following the British withdrawal and Iran’s formal waiver of its territorial claims in 1970, Bahrain declared full independence on August 15, 1971. Led by the Al Khalifa dynasty, the island nation transitioned from a British protectorate to a sovereign state. Despite being a small archipelago, it became a major financial hub and strategic ally in the Gulf, maintaining its borders unchanged since its mid-20th-century diplomatic stabilization."
+},
+
+{
+  "id": "saudi_arabia_1932_2026",
+  "name": "Kingdom of Saudi Arabia (2000–Present)",
+  "era": "Modern",
+  "yearStart": 1932,
+  "yearEnd": 2026,
+  "fundationFall": "1932–Present",
+  "religion": "Islam (Sunni)",
+  "capital": "Riyadh",
+  "currency": "Saudi Riyal",
+  "GovernmentType": "Absolute Monarchy",
+  "keywords": ["saudi arabia", "riyadh", "house of saud", "jeddah", "mecca", "neom"],
+  "file": "maps/middleEast/saudiArabia2000.json",
+  "flag": "flags/middleEast/Flag_of_Saudi_Arabia.svg",
+  "fillColor": "#005911",
+  "lenguages": "Arabic",
+  "description": "Established in 1932 after the unification of Nejd and Hejaz, the Kingdom finalized its modern shape through major border treaties. It dissolved Neutral Zones with Kuwait (1970) and Iraq (1981), dividing territories equally. The last significant change occurred in 2000 with the Treaty of Jeddah, which permanently settled the long-disputed southern frontier with Yemen, securing the nation’s current territorial integrity."
+},
+
+{
+  "id": "state_of_qatar_1971_2026",
+  "name": "Qatar (2001–Present",
+  "era": "Modern",
+  "yearStart": 1971,
+  "yearEnd": 2026,
+  "fundationFall": "1971–Present",
+  "religion": "Islam (Sunni)",
+  "capital": "Doha",
+  "currency": "Qatari Riyal",
+  "GovernmentType": "Semi-constitutional Monarchy",
+  "keywords": ["qatar", "doha", "al thani", "persian gulf", "natural gas", "independence"],
+  "file": "maps/middleEast/qatar.json",
+  "flag": "flags/middleEast/Flag_of_Qatar.svg",
+  "fillColor": "#7D0034",
+  "lenguages": "Arabic",
+  "description": "Since its 1971 independence from British protection, Qatar has transformed from a pearl-diving economy into a global energy powerhouse. Under the Al Thani dynasty, it leveraged the world's largest gas fields to drive rapid modernization. In 2001 after a World Court ruling settled border disputes with Bahrain, allowing the peninsula to focus on its role as a key international mediator and cultural hub."
+},
+
+{
+  "id": "united_arab_emirates_1971_2026",
+  "name": "United Arab Emirates (1974–Present)",
+  "era": "Modern",
+  "yearStart": 1974,
+  "yearEnd": 2026,
+  "fundationFall": "1971–Present",
+  "religion": "Islam (Sunni majority)",
+  "capital": "Abu Dhabi",
+  "currency": "UAE Dirham",
+  "GovernmentType": "Federal Elective Monarchy",
+  "keywords": ["uae", "abu dhabi", "dubai", "emirates", "oil", "burj khalifa"],
+  "file": "maps/middleEast/uae.json",
+  "flag": "flags/middleEast/Flag_of_the_United_Arab_Emirates.svg",
+  "fillColor": "#4D000C",
+  "lenguages": "Arabic",
+  "description": "Formed in 1971 after the British withdrawal, the UAE is a unique federation of seven monarchies that transformed from desert sheikhdoms into a global hub of innovation and luxury. Led by Abu Dhabi and Dubai, the nation stabilized its borders through a 1974 treaty with Saudi Arabia. Today, it stands as a major financial power, famous for its visionary architecture and for successfully diversifying its economy beyond oil."
 }
 
 
