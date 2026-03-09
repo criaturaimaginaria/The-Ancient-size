@@ -226,6 +226,10 @@ const observer = new MutationObserver(() => {
       
       currentLayerObj = mapLayerRecord;
       rotationControl.style.display = "block";
+
+      rotateSlider.value = mapLayerRecord.rotation;
+      const rotationValue = document.getElementById("rotation-value");
+      if (rotationValue) rotationValue.textContent = mapLayerRecord.rotation ;
       
       const rect = map._container.getBoundingClientRect();
       const point = L.point(e.clientX - rect.left, e.clientY - rect.top);
@@ -256,7 +260,11 @@ const observer = new MutationObserver(() => {
 
         currentLayerObj = mapLayerRecord;
         rotationControl.style.display = "block";
+
         rotateSlider.value = mapLayerRecord.rotation;
+        const rotationValue = document.getElementById("rotation-value");
+        if (rotationValue) rotationValue.textContent = mapLayerRecord.rotation;
+        // rotateSlider.value = mapLayerRecord.rotation;
 
         map.dragging.disable();
 
@@ -602,7 +610,7 @@ function applyRotation(record, angle, anchorCenter = null) {
   if (!record || !record.layer || !record.layer._currentLayer) return;
   
   record.rotation = angle;
-  if (rotationValue) rotationValue.textContent = angle + "°";
+  if (rotationValue) rotationValue.textContent = angle ;
 
   // posicion geografica guardada
   const currentPos = anchorCenter || record.layer._currentLayer.getCenter();
