@@ -9,7 +9,7 @@ import { initBaseMapControls } from './utils/baseMapControls.js';
 
 
 
-// MOTOR TÁCTIL GLOBAL (mobile) ---
+// motor (mobile) ---
 
 let activeTouchDrag = null;
 let dragAnimationFrame = null;
@@ -19,7 +19,6 @@ const endTouchDrag = () => {
     activeTouchDrag = null;
     map.dragging.enable();
 
-    // foecx manual reset
     if (map.dragging._draggable) {
       map.dragging._draggable._moving = false;
       map.dragging._draggable._lastEvent = null;
@@ -28,13 +27,11 @@ const endTouchDrag = () => {
       }
     }
 
-// Evento táctil con propiedades mockeadas para que Leaflet no de NaN
     const stopEvent = new Event('touchend', { bubbles: true });
     stopEvent.touches = [];
     stopEvent.changedTouches = [{ clientX: 0, clientY: 0 }];
     map._container.dispatchEvent(stopEvent);
     
-    // Evento de mouse usando MouseEvent nativo con coordenadas en 0
     const stopEventMouse = new MouseEvent('mouseup', { 
         bubbles: true, 
         clientX: 0, 
@@ -81,8 +78,7 @@ window.addEventListener('pointerup', (e) => {
 window.addEventListener('pointercancel', (e) => {
   endTouchDrag();
 }, { capture: true });
-
-// --- fnn ---
+///////-------------////---------------
 
 
 const map = L.map("map", {
@@ -552,32 +548,143 @@ showDateFilterBtn.classList.remove('active-year-btn');
 const rotationValue = document.getElementById("rotation-value");
 const resetBtn = document.getElementById("reset-rotation");
 
-function applyRotation(record, angle) {
-  record.rotation = angle;
-  const elements = document.getElementsByClassName(record.layerId);
-  for (let el of elements) {
-    el.style.transformOrigin = 'center';
-    el.style.transformBox = 'fill-box'; 
-    el.style.transform = `rotate(${angle}deg)`;
-  }
-  rotationValue.textContent = angle;
+const R_EARTH = 6378137;
+
+function latLngToMercator(lng, lat) {
+  const x = R_EARTH * lng * (Math.PI / 180);
+  const y = R_EARTH * Math.log(Math.tan((Math.PI / 4) + (lat * Math.PI / 360)));
+  return [x, y];
 }
+
+function mercatorToLatLng(x, y) {
+  const lng = (x / R_EARTH) * (180 / Math.PI);
+  const lat = (2 * Math.atan(Math.exp(y / R_EARTH)) - (Math.PI / 2)) * (180 / Math.PI);
+  return [lng, lat];
+}
+
+
+function rotateBaseGeometry(baseGeometry, angleDeg) {
+  const angleRad = -angleDeg * (Math.PI / 180);
+  const cosT = Math.cos(angleRad);
+  const sinT = Math.sin(angleRad);
+  
+  const newGeom = JSON.parse(JSON.stringify(baseGeometry));
+  
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+  function findBounds(coords) {
+    if (typeof coords[0] === 'number') {
+      const m = latLngToMercator(coords[0], coords[1]);
+      minX = Math.min(minX, m[0]); maxX = Math.max(maxX, m[0]);
+      minY = Math.min(minY, m[1]); maxY = Math.max(maxY, m[1]);
+    } else { coords.forEach(findBounds); }
+  }
+  findBounds(newGeom.coordinates);
+  
+  const cx = (minX + maxX) / 2;
+  const cy = (minY + maxY) / 2;
+
+  function rotateRecursive(coords) {
+    if (typeof coords[0] === 'number') {
+      const m = latLngToMercator(coords[0], coords[1]);
+      const x = m[0] - cx;
+      const y = m[1] - cy;
+      const nx = (x * cosT - y * sinT) + cx;
+      const ny = (x * sinT + y * cosT) + cy;
+      const final = mercatorToLatLng(nx, ny);
+      coords[0] = final[0];
+      coords[1] = final[1];
+    } else { coords.forEach(rotateRecursive); }
+  }
+  rotateRecursive(newGeom.coordinates);
+  return newGeom;
+}
+function applyRotation(record, angle, anchorCenter = null) {
+  if (!record || !record.layer || !record.layer._currentLayer) return;
+  
+  record.rotation = angle;
+  if (rotationValue) rotationValue.textContent = angle + "°";
+
+  // posicion geografica guardada
+  const currentPos = anchorCenter || record.layer._currentLayer.getCenter();
+  
+  // rotate geometry
+  const rotatedGeometry = rotateBaseGeometry(record.geometry, angle);
+  const rotatedGeoJSON = {
+    type: "Feature",
+    properties: {},
+    geometry: rotatedGeometry
+  };
+
+  // recover original layer color
+  const layerColor = record.layer.options.fillColor || "#FF0000";
+
+  // 4. create a new layer with the rotated geometry using trueSize llibrary
+  const newLayer = new L.trueSize(rotatedGeoJSON, {
+    color: layerColor,
+    fillColor: layerColor,
+    weight: 1.3,
+    opacity: 1.5,
+    className: record.layerId 
+  });
+
+  // let the map where we left it
+  newLayer.addTo(map);
+  newLayer.setCenter([currentPos.lat, currentPos.lng]);
+
+  // removing previous layer so there is no duplications
+  map.removeLayer(record.layer);
+  record.layer = newLayer;
+
+  newLayer.on('mousedown touchstart', (e) => {
+    L.DomEvent.stopPropagation(e);
+    if (e.originalEvent.touches && e.originalEvent.touches.length > 1) return;
+    
+    currentLayerObj = record;
+    rotationControl.style.display = "block";
+    rotateSlider.value = record.rotation;
+    map.dragging.disable();
+
+    const ev = e.originalEvent;
+    const touch = ev.touches ? ev.touches[0] : ev;
+    const rect = map._container.getBoundingClientRect();
+    const point = L.point(touch.clientX - rect.left, touch.clientY - rect.top);
+    const startLatLng = map.containerPointToLatLng(point);
+    const center = record.layer._currentLayer.getCenter();
+    
+    activeTouchDrag = {
+      layer: record.layer,
+      offsetLat: center.lat - startLatLng.lat,
+      offsetLng: center.lng - startLatLng.lng
+    };
+  });
+}
+
+let sliderAnchorCenter = null;
+
+rotateSlider.addEventListener('pointerdown', () => {
+  if (currentLayerObj && currentLayerObj.layer && currentLayerObj.layer._currentLayer) {
+    sliderAnchorCenter = currentLayerObj.layer._currentLayer.getCenter();
+  }
+});
+
+rotateSlider.addEventListener('pointerup', () => { sliderAnchorCenter = null; });
+rotateSlider.addEventListener('pointercancel', () => { sliderAnchorCenter = null; });
+
 
 rotateSlider.addEventListener('input', function() {
   if (!currentLayerObj) return;
   const angle = parseInt(this.value);
-  applyRotation(currentLayerObj, angle);
+  applyRotation(currentLayerObj, angle, sliderAnchorCenter);
 });
 
 resetBtn.addEventListener('click', () => {
   if (!currentLayerObj) return;
   rotateSlider.value = 0;
-  applyRotation(currentLayerObj, 0);
+  applyRotation(currentLayerObj, 0); 
 });
-// END YEAR FILTER---------------------------
+// END ROTATION CONTROL---------------------------
 
-// DRAW AND CURSOR--------------------------------
-// DRAW AND CURSOR--------------------------------
+
 
 const widthPopup = document.getElementById('width-popup');
 const pencilBtn = document.getElementById('btn-pencil-mode');
