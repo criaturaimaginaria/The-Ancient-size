@@ -25,3 +25,16 @@
   font-family: "Averia Serif Libre", serif;
   font-weight: 300;
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+  .popup-box {
+    margin-top: 0vh;
+    width: calc(100% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+}
