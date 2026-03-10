@@ -6,6 +6,7 @@ import { filterMaps } from './utils/filterEngine.js';
 import { logFileLoaded, logTotalCount } from './utils/logger.js';
 import { CanvasDrawer } from './utils/canvasDrawer.js';
 import { initBaseMapControls } from './utils/baseMapControls.js';
+import { PopupManager } from "./utils/popupManager.js";
 
 
 
@@ -177,10 +178,10 @@ searchInput.addEventListener("input", function () {
 
 function loadMap(file, name, indexFillColor) {
   const existing = activeLayers.find(m => m.name === name);
-  if (existing) {
-    alert(`the map "${name}" is already loaded`);
-    return;
-  }
+if (existing) {
+  PopupManager.show(`The map "${name}" is already loaded`);
+  return;
+}
 
   fetch(file)
     .then(response => response.json())

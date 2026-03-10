@@ -1,0 +1,27 @@
+.popup-overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;   /* centra verticalmente */
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background: #222222ac;
+  z-index: 1050;
+}
+
+.popup-overlay.is-visible {
+  display: flex;
+}
+
+.popup-box {
+  margin-top: -12vh;
+  background-color: #e1e1e1;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 10px;
+  height: fit-content;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 300;
+}
