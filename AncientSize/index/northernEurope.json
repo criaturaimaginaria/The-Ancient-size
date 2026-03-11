@@ -1,0 +1,45 @@
+[
+
+
+
+{
+  "id": "iceland_commonwealth_930_1262",
+  "name": "Icelandic Commonwealth (930-1262 AD)",
+  "era": "medieval",
+  "yearStart": 930,
+  "yearEnd": 1262,
+  "religion": "Norse Paganism / Christianity (after 1000)",
+  "capital": "Þingvellir (Assembly site)",
+  "fundationFall": "930-1262",
+  "currency": "Vatmal (Wool cloth) / Silver",
+  "GovernmentType": "Non-hierarchical confederation of clans",
+  "keywords": ["iceland", "althing", "viking", "commonwealth", "goðar", "sagas", "norse"],
+  "file": "maps/europe/northernEurope/Iceland930.json",
+  "fillColor": "#520861",
+  "lenguages": "Old Norse",
+  "description": "Founded in 930 by Norse settlers, the Commonwealth was a unique political experiment without a king. Governance relied on the Althing, where 'Goðar' (chiefs) legislated and settled disputes. This era saw the settlement of the island and the later adoption of Christianity in 1000. However, internal power struggles during the Age of the Sturlungs weakened the social fabric. In 1262, the Old Covenant was signed, ending Icelandic sovereignty and placing the nation under the Norwegian Crown, marking the start of centuries of foreign rule."
+},
+
+{
+  "id": "iceland_modern_1918_2026",
+  "name": "Iceland (1918-present)",
+  "era": "moderna",
+  "yearStart": 1918,
+  "yearEnd": 2026,
+  "religion": "Christianity (Lutheran)",
+  "capital": "Reykjavík",
+  "fundationFall": "1918-1940, 1940-1945 (British/US Occupation), 1944-present",
+  "currency": "Icelandic Króna",
+  "GovernmentType": "Constitutional Monarchy (1918-1944), Parliamentary Republic (1944-present)",
+  "keywords": ["iceland", "independence", "althing", "republic", "cod wars", "nato", "reykjavik"],
+  "file": "maps/europe/northernEurope/Iceland930.json",
+  "flag": "flags/europe/northernEurope/Flag_of_Iceland.svg",
+  "fillColor": "#610846",
+  "lenguages": "Icelandic",
+  "description": "Iceland regained sovereignty in 1918 as a kingdom in personal union with Denmark. During WWII, after Denmark’s fall, the island was strategically occupied by British and later U.S. forces to secure the Atlantic. This period accelerated the move to full independence, leading to the foundation of a Republic in 1944. Since then, Iceland has transformed from a poor fishing society into a prosperous democracy, navigating the Cold War, the Cod Wars with Britain, and the 2008 financial crisis while preserving its ancient Althing traditions."
+}
+
+
+
+
+]
