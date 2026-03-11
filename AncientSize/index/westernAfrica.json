@@ -1,0 +1,61 @@
+[
+
+
+{
+  "id": "liberia_1911_present",
+  "name": "Liberia 1911-Present",
+  "era": "moderna",
+  "yearStart": 1911,
+  "yearEnd": 2026,
+  "religion": "Secular state (predominantly Christian)",
+  "capital": "Monrovia",
+  "fundationFall": "1847-Present",
+  "currency": "Liberian dollar (LRD)",
+  "GovernmentType": "Unitary Presidential Republic",
+  "keywords": ["liberia", "africa", "west africa", "monrovia", "independence", "1911 treaty", "republic"],
+  "file": "maps/africa/westernAfrica/liberia1911.json",
+  "flag": "flags/africa/westernAfrica/Flag_of_Liberia.svg",
+  "fillColor": "#00205B",
+  "lenguages": "English",
+  "description": "In 1911, Liberia finalized its modern borders through treaties with France and Britain, ceding territory to Sierra Leone and French Guinea to preserve its independence. This stabilization ended decades of colonial encroachment. As Africa's first republic, it maintained its sovereignty throughout the colonial era. Despite 20th-century internal conflicts, the 1911 boundaries remain the definitive territorial extent of the nation today."
+},
+
+{
+  "id": "liberia_1907_1911",
+  "name": "Liberia 1907-1911",
+  "era": "moderna",
+  "yearStart": 1907,
+  "yearEnd": 1911,
+  "religion": "Secular state (predominantly Christian)",
+  "capital": "Monrovia",
+  "fundationFall": "1847-Present",
+  "currency": "British Pound / Liberian Dollar",
+  "GovernmentType": "Unitary Presidential Republic",
+  "keywords": ["liberia", "colonial era", "border dispute", "france", "britain", "sovereignty", "west africa"],
+  "file": "maps/africa/westernAfrica/liberia1907.json",
+  "flag": "flags/africa/westernAfrica/Flag_of_Liberia.svg",
+  "fillColor": "#00205B",
+  "lenguages": "English",
+  "description": "During 1907-1911, Liberia faced intense diplomatic pressure from France and Britain. In 1907, a treaty with France fixed the northern border along the Cavalla River, resulting in significant territorial loss. Subsequent negotiations with Britain led to the 1911 exchange of Kanre-Lahun for the Morro River strip. These agreements finalized the republic's modern shape, sacrificing vast hinterland claims to secure international recognition and prevent total colonial annexation during the Scramble for Africa."
+},
+
+{
+  "id": "liberia_1857_1874",
+  "name": "Republic of Liberia (1857-1874)",
+  "era": "moderna",
+  "yearStart": 1857,
+  "yearEnd": 1874,
+  "religion": "Protestant Christianity",
+  "capital": "Monrovia",
+  "fundationFall": "1847-Present",
+  "currency": "Liberian Dollar",
+  "GovernmentType": "Presidential Republic",
+  "keywords": ["liberia", "maryland", "usa", "acs", "hinterland", "settlers", "sovereignty"],
+  "file": "maps/africa/westernAfrica/liberia1857.json",
+  "flag": "flags/africa/westernAfrica/Flag_of_Liberia.svg",
+  "fillColor": "#00205B",
+  "lenguages": "English",
+"description": "Liberia was founded in the early 19th century by the American Colonization Society, which established private American colonies to resettle freed Black people from the United States. One of these, the Republic of Maryland, declared independence in 1854 but soon faced conflict with local groups. After a war in 1857, it requested protection and was annexed by Liberia as Maryland County."
+}
+
+]
