@@ -56,6 +56,25 @@
   "fillColor": "#00205B",
   "lenguages": "English",
 "description": "Liberia was founded in the early 19th century by the American Colonization Society, which established private American colonies to resettle freed Black people from the United States. One of these, the Republic of Maryland, declared independence in 1854 but soon faced conflict with local groups. After a war in 1857, it requested protection and was annexed by Liberia as Maryland County."
+},
+
+{
+  "id": "maryland_in_liberia_1857_1874",
+  "name": "Maryland in Liberia (1854-1857)",
+  "era": "moderna",
+  "yearStart": 1854,
+  "yearEnd": 1857,
+  "religion": "Protestant Christianity",
+  "capital": "Harper",
+  "fundationFall": "1854-1857",
+  "currency": "United States Dollar",
+  "GovernmentType": "republic",
+  "keywords": ["maryland in liberia", "republic of maryland", "usa", "acs", "colonization", "settlers", "west africa"],
+  "file": "maps/africa/westernAfrica/maryLandRepublic.json",
+  "flag": "flags/africa/westernAfrica/Flag_of_the_Republic_of_Maryland.svg",
+  "fillColor": "#7A1E1E",
+  "lenguages": "English",
+  "description": "Maryland in Liberia was a small settler republic founded by the Maryland-in-Africa State Colonization Society to resettle freed Black Americans. It declared independence in 1854 as the Republic of Maryland but soon faced conflict with local peoples. After a war in 1857, it requested protection from Liberia and was annexed, becoming Maryland County within the Republic of Liberia."
 }
 
 ]
