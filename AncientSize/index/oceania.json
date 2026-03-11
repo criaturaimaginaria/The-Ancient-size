@@ -228,6 +228,62 @@
   "fillColor": "#990202",
   "lenguages": "Tongan, English",
   "description": "Tonga is unique as the only Pacific nation never to have fully lost its sovereignty. After being a British protected state since 1900, it regained full control of its foreign affairs on June 4, 1970. As a deeply traditional constitutional monarchy, Tonga has recently transitioned toward a more representative democracy, shifting executive powers from the King to the Legislative Assembly, while preserving the Tuʻi Tonga royal lineage as the core of its national identity."
+},
+
+{
+  "id": "kingdom_of_mangareva",
+  "name": "Kingdom of Mangareva (1750-1881)",
+  "era": "moderna/pre-colonial",
+  "yearStart": 1750,
+  "yearEnd": 1881,
+  "religion": "Polytheism / Catholicism",
+  "capital": "Rikitea",
+  "fundationFall": "Indigenous Monarchy - French Annexation",
+  "currency": "Trade-based / French Franc",
+  "GovernmentType": "Absolute Monarchy (Akariki)",
+  "keywords": ["mangareva", "gambier islands", "akariki", "rikitea", "french polynesia", "theocracy"],
+  "file": "maps/oceania/mangareva.json",
+  "flag": "flags/oceania/Flag_of_the_Kingdom_of_Mangareva_1832-1843.svg",
+  "fillColor": "#43024C",
+  "lenguages": "Mangarevan, French",
+  "description": "Mangareva was a sovereign Polynesian kingdom ruled by the 'Akariki' dynasty for centuries. In the mid-19th century, it became a powerful Catholic theocracy under King Maputeoa and French missionaries, leading to the construction of massive stone monuments and Saint Michael's Cathedral. Its independence ended in 1881 when it was formally annexed by France, eventually becoming part of French Polynesia."
+},
+
+{
+  "id": "kingdom_of_rapa_nui_pre1888",
+  "name": "Kingdom of Rapa Nui (1000-1888)",
+  "era": "pre-colonial/monarchy",
+  "yearStart": 1000,
+  "yearEnd": 1888,
+  "religion": "Rapa Nui Mythology / Birdman Cult",
+  "capital": "Hanga Roa (Anakena traditionally)",
+  "fundationFall": "Around 1000 to 1888 AD",
+  "currency": "barter",
+  "GovernmentType": "Absolute Monarchy",
+  "keywords": ["rapa nui", "easter island", "ariki mau", "moai", "tangata manu", "polynesia", "hotu matu'a","pascua"],
+  "file": "maps/oceania/Kingdom_Rapa_Nui.json",
+  "flag": "flags/oceania/Easter_Island_flag_1876_to_1888.svg",
+  "fillColor": "#18002E",
+  "lenguages": "Rapa Nui",
+  "description": "The Kingdom of Rapa Nui was a sovereign Polynesian entity ruled by the 'Ariki Mau' or supreme kings, descendants of the founder Hotu Matu'a. Its political history is divided between the era of Moai construction and the later Birdman cult. Despite suffering devastating slave raids and population collapse in the 1860s, it maintained its independence until King Atamu Tekena signed the 'Agreement of Wills' in 1888, incorporating the island into the Republic of Chile."
+},
+
+
+{
+  "id": "kingdom_of_rapa_iti_pre1881",
+  "name": "Kingdom of Rapa Iti (1200-1881)",
+  "era": "pre-colonial/chiefdom",
+  "yearStart": 1200,
+  "yearEnd": 1881,
+  "religion": "Polynesian Mythology / Christianity (late)",
+  "capital": "Ahurei",
+  "fundationFall": "Around 1000 to 1888 AD",
+  "GovernmentType": "Paramount Chiefdom / Monarchy",
+  "keywords": ["rapa iti", "austral islands", "pare", "ahurei", "polynesia", "fortifications"],
+  "file": "maps/oceania/Rapa_Iti.json",
+  "fillColor": "#556B2F",
+  "lenguages": "Rapa, French",
+  "description": "Rapa Iti was a sovereign entity characterized by a unique system of fortified hilltop villages known as 'Pare.' Its political history was defined by intense inter-clan competition for resources until it unified under paramount chiefs. Following a severe population decline due to external contact, the island's independence ended in 1881 when France annexed it to secure its strategic harbor, integrating it into what is now the Austral Islands of French Polynesia."
 }
 
 
