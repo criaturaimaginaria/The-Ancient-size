@@ -97,6 +97,25 @@
 },
 
 {
+  "id": "fiji_1970_present",
+  "name": "Fiji (1970-present)",
+  "era": "moderna",
+  "yearStart": 1970,
+  "yearEnd": 2026,
+  "religion": "Christianity, Hinduism",
+  "capital": "Suva",
+  "fundationFall": "1970-present",
+  "currency": "Fijian Dollar",
+  "GovernmentType": "parliamentary republic",
+  "keywords": ["fiji", "suva", "viti levu", "independence", "republic", "melanesia", "cakobau"],
+  "file": "maps/asia/southEastAsia/fiyiKingdom.json",
+  "flag": "flags/oceania/Flag_of_Fiji.svg",
+  "fillColor": "#006A70",
+  "lenguages": "English, iTaukei (Fijian), Fiji Hindi",
+  "description": "Fiji gained independence from the United Kingdom on October 10, 1970. Originally a Kingdom under Seru Epenisa Cakobau before colonial rule, it remained a Dominion until 1987, when a series of military coups led to the declaration of a republic and its temporary withdrawal from the Commonwealth. Despite subsequent political instability and further coups, Fiji has transitioned back to a parliamentary democracy, balancing its diverse indigenous and Indo-Fijian heritage."
+},
+
+{
   "id": "rarotonga_kingdom_1858_1893",
   "name": "Kingdom of Rarotonga 1858-1888",
   "era": "moderna",
@@ -132,6 +151,25 @@
   "fillColor": "#6A0D0D",
   "lenguages": "Samoan",
   "description": "The Kingdom of Samoa developed from mid-19th century attempts to centralize power under a Tafaʻifa king, formalized in 1873. Rival chiefly factions and foreign intervention destabilized the monarchy. The 1899 Tripartite Convention between Germany, Britain and the United States partitioned the islands and formally abolished the Samoan monarchy, ending the kingdom."
+},
+
+{
+  "id": "samoa_1962_present",
+  "name": "Samoa (1962-present)",
+  "era": "moderna",
+  "yearStart": 1962,
+  "yearEnd": 2026,
+  "religion": "Christianity",
+  "capital": "Apia",
+  "fundationFall": "1962-present",
+  "currency": "Samoan Tālā",
+  "GovernmentType": "parliamentary republic",
+  "keywords": ["samoa", "apia", "independence", "polynesia", "mau movement", "western samoa"],
+  "file": "maps/asia/southEastAsia/SamoaKingdom.json",
+  "flag": "flags/oceania/Flag_of_Samoa.svg",
+  "fillColor": "#17458F",
+  "lenguages": "Samoan, English",
+  "description": "Samoa became the first small island state in the Pacific to achieve independence on January 1, 1962, ending decades of New Zealand administration. Formerly known as Western Samoa, the nation officially dropped the 'Western' from its name in 1997. It operates as a parliamentary democracy that uniquely integrates 'Fa'amatai'—the traditional chief system—into its political framework, maintaining a stable balance between ancestral customs and modern governance."
 },
 
 {
