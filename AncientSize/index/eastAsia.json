@@ -19,6 +19,24 @@
   "fillColor": "#C40000",
   "lenguages": "Tuvan",
   "description": "The Tuvan People's Republic, also known as Tannu Tuva, was a partially recognized socialist state that existed between 1921 and 1944 in Central Asia. It was recognized only by the Soviet Union and Mongolia. The state was heavily influenced by the USSR and gradually adopted Marxist-Leninist policies under the leadership of Salchak Toka. In 1944, Tuva was annexed by the Soviet Union and incorporated as the Tuvan Autonomous Oblast within the Russian SFSR."
+},
+
+{
+  "id": "yamato_state_458_657",
+  "name": "Yamato State (458–657 AD)",
+  "era": "ancient",
+  "yearStart": 458,
+  "yearEnd": 657,
+  "religion": "Shinto and early Buddhism",
+  "capital": "Asuka region",
+  "fundationFall": "250-710 AD",
+  "currency": "Barter economy",
+  "GovernmentType": "Hereditary monarchy (early imperial court)",
+  "keywords": ["yamato", "early japan", "kofun period", "asuka period", "imperial court", "taika reforms"],
+  "file": "maps/asia/eastAsia/japan/yamato.json",
+  "fillColor": "#C40000",
+  "lenguages": "Old Japanese",
+  "description": "The Yamato state was the early political center of Japan, ruled by the imperial court based in the Asuka region. By the 5th century it dominated much of central Honshu through alliances with powerful clans. Between 458 and the mid-7th century the court gradually strengthened its authority, adopting continental ideas from China and Korea and promoting Buddhism. Competition among aristocratic families led to reforms aimed at centralization. Around 645 the Taika Reforms began restructuring government and land control, while Yamato authority expanded northward into frontier regions, integrating new territories under the emerging Japanese state."
 }
 
 

@@ -22,6 +22,26 @@
 },
 
 {
+  "id": "zimbabwe_1980_present",
+  "name": "Zimbabwe 1980-Present",
+  "era": "contemporanea",
+  "yearStart": 1980,
+  "yearEnd": 2026,
+  "religion": "Christianity (majority), traditional beliefs",
+  "capital": "Harare",
+  "population": "16,000,000",
+  "fundationFall": "1980 AD – Present",
+  "currency": "Zimbabwean dollar (various issues) / multicurrency",
+  "GovernmentType": "Presidential republic",
+  "keywords": ["zimbabwe", "southern africa", "post-colonial state", "robert mugabe", "independence", "africa"],
+  "file": "maps/africa/southernAfrica/Rhodesia.json",
+  "flag": "flags/africa/southernAfrica/Flag_of_Zimbabwe.svg",
+  "fillColor":"#2E8B57",
+  "lenguages": "English, Shona, Ndebele",
+  "description": "Zimbabwe became independent in 1980 after the end of white-minority rule in Rhodesia and the Lancaster House Agreement. In 1979, Rhodesia briefly became Zimbabwe Rhodesia, a transitional state with limited recognition before British-administered elections. The country then emerged as the Republic of Zimbabwe, initially led by Robert Mugabe. Since independence it has experienced political turmoil, land reforms, economic crises, and periods of hyperinflation while remaining a sovereign state in southern Africa."
+},
+
+{
   "id": "imerina_1540_1897",
   "name": "Imerina Kingdom (1540-1787)",
   "era": "modern",
