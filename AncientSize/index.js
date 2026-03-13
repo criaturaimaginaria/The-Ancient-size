@@ -10,6 +10,7 @@ import { initMobileTouchEngine, dragState } from './utils/mobileTouchEngine.js';
 import { rotateBaseGeometry } from './utils/rotationMath.js';
 import { showLayerInfo, hideLayerInfo, showLayerInfoMinimal } from './utils/tooltipController.js';
 import { initPaintUI } from './utils/paintUI.js';
+import { registerLoadAllMaps } from './utils/devLoader.js';
 
 const map = L.map("map", {
   center: [42, 20],
@@ -68,6 +69,9 @@ fetch('./index.json')
     }
 
     logTotalCount(totalObjetos);
+
+    registerLoadAllMaps(loadMap, mapIndex);
+
     const initialMap = indexData.find(item => item.id === "rome2");
     if (initialMap) {
       loadMap(initialMap.file, initialMap.name, initialMap.fillColor);
