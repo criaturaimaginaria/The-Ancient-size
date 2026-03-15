@@ -17,6 +17,44 @@
   "flag": "flags/centralAmerica/Flag_of_the_Federal_Republic_of_Central_America.svg",
   "lenguages": "Spanish",
   "description": "The Federal Republic of Central America was formed in 1823 after seceding from the First Mexican Empire, uniting former Central American provinces into a liberal federal state. Deep internal divisions, regional rivalries, and conflicts between liberal and conservative forces led to civil wars and the gradual withdrawal of its member states, resulting in the federation’s legal dissolution by 1841."
+},
+
+{
+  "id": "trin_tob1",
+  "name": "Trinidad and Tobago 1962–Present",
+  "era": "Post-Colonial Caribbean",
+  "fundationFall": "1962–Present",
+  "yearStart": 1962,
+  "yearEnd": 2026,
+  "capital": "Port of Spain",
+  "religion": "Christianity (majority), Hinduism, Islam",
+  "currency": "Trinidad and Tobago dollar",
+  "GovernmentType": "Unitary parliamentary republic",
+  "keywords": ["caribbean", "commonwealth", "oil economy", "post-colonial", "republic"],
+  "file": "maps/america/centroAmerica/trinidad_tobago.json",
+  "flag": "flags/america/centroAmerica/Flag_of_Trinidad_and_Tobago.svg",
+    "fillColor": "#2787F5",
+  "lenguages": "English",
+  "description": "Trinidad and Tobago gained independence from the United Kingdom in 1962. The country initially remained a Commonwealth realm before becoming a republic in 1976. Its economy developed around oil and natural gas resources, making it one of the most industrialized Caribbean states. The nation maintains a stable parliamentary system and plays an important economic and cultural role in the Caribbean."
+},
+
+{
+  "id": "barbados1",
+  "name": "Republic of Barbados 1966–Present",
+  "era": "Post-Colonial Caribbean",
+  "fundationFall": "1966–Present",
+  "yearStart": 1966,
+  "yearEnd": null,
+  "capital": "Bridgetown",
+  "religion": "Christianity (majority)",
+  "currency": "Barbadian dollar",
+  "GovernmentType": "Unitary parliamentary republic",
+  "keywords": ["caribbean", "commonwealth", "post-colonial", "republic", "british heritage"],
+  "file": "maps/america/centroAmerica/barbados.json",
+  "flag": "flags/america/centroAmerica/Flag_of_Barbados.svg",
+    "fillColor": "#C40000",
+  "lenguages": "English",
+  "description": "Barbados gained independence from the United Kingdom in 1966 after more than three centuries of British colonial rule. It remained a Commonwealth realm until 2021, when it became a parliamentary republic. Known for political stability and a strong tourism and services economy, Barbados plays a prominent diplomatic and cultural role in the Caribbean."
 }
 
 

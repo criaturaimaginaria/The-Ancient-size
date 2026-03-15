@@ -45,16 +45,29 @@ fetch('./index.json')
   .then(async (index) => {
     let totalObjetos = 0;
 
+    const currentYear = new Date().getFullYear();
+
+    const parseYearEnd = (item) => {
+      if (item.yearEnd === null) {
+        item.yearEnd = currentYear;
+      }
+      return item;
+    };
+
     if (Array.isArray(index)) {
-      indexData = index;
-      mapIndex = index; 
-      totalObjetos = index.length;
+      // indexData = index;
+      // mapIndex = index; 
+      // totalObjetos = index.length;
+      indexData = index.map(parseYearEnd);
+      mapIndex = indexData; 
+      totalObjetos = indexData.length;
     } else if (index.parts) {
       const parts = await Promise.all(
         index.parts.map(async (ruta) => {
           try {
             const r = await fetch(ruta);
             const data = await r.json();
+            const processedData = data.map(parseYearEnd);
             totalObjetos += data.length;
             logFileLoaded(ruta, data.length);
             return data;
