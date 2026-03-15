@@ -43,7 +43,7 @@
   "name": "Greenland",
   "era": "moderna",
   "yearStart": 982,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "religion": "Lutheran (Church of Denmark)",
   "capital": "Nuuk",
   "currency": "Danish Krone",

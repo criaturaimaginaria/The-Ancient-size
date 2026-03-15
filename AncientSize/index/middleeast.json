@@ -175,11 +175,11 @@
 
 
 {
-  "id": "islamic_republic_iran_1979_2026",
+  "id": "islamic_republic_iran_1979_null",
   "name": "Islamic Republic of Iran 1979–Present",
   "era": "Modern",
   "yearStart": 1979,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "fundationFall": "1979–Present",
   "religion": "Shia Islam (Theocracy)",
   "capital": "Tehran",
@@ -194,11 +194,11 @@
 },
 
 {
-  "id": "kingdom_of_bahrain_1971_2026",
+  "id": "kingdom_of_bahrain_1971_null",
   "name": "Kingdom of Bahrain 1971–Present",
   "era": "Modern",
   "yearStart": 1971,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "fundationFall": "1971–Present",
   "religion": "Islam (Shia majority, Sunni ruling family)",
   "capital": "Manama",
@@ -213,11 +213,11 @@
 },
 
 {
-  "id": "saudi_arabia_1932_2026",
+  "id": "saudi_arabia_1932_null",
   "name": "Kingdom of Saudi Arabia (2000–Present)",
   "era": "Modern",
   "yearStart": 1932,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "fundationFall": "1932–Present",
   "religion": "Islam (Sunni)",
   "capital": "Riyadh",
@@ -232,11 +232,11 @@
 },
 
 {
-  "id": "state_of_qatar_1971_2026",
+  "id": "state_of_qatar_1971_null",
   "name": "Qatar (2001–Present",
   "era": "Modern",
   "yearStart": 1971,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "fundationFall": "1971–Present",
   "religion": "Islam (Sunni)",
   "capital": "Doha",
@@ -251,11 +251,11 @@
 },
 
 {
-  "id": "united_arab_emirates_1971_2026",
+  "id": "united_arab_emirates_1971_null",
   "name": "United Arab Emirates (1974–Present)",
   "era": "Modern",
   "yearStart": 1974,
-  "yearEnd": 2026,
+  "yearEnd": null,
   "fundationFall": "1971–Present",
   "religion": "Islam (Sunni majority)",
   "capital": "Abu Dhabi",

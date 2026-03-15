@@ -1,0 +1,24 @@
+[
+
+
+{
+  "id": "singapore1",
+  "name": "Republic of Singapore 1965–Present",
+  "era": "Modern Southeast Asia",
+  "fundationFall": "1965–Present",
+  "yearStart": 1965,
+  "yearEnd": null,
+  "capital": "Singapore",
+  "religion": "Buddhism, Christianity, Islam, Taoism, Hinduism",
+  "currency": "Singapore dollar",
+  "GovernmentType": "Parliamentary republic (1965–Present)",
+  "keywords": ["asia", "city-state", "trade hub", "republic"],
+  "file": "maps/asia/southEastAsia/singapore.json",
+  "flag": "flags/asia/southEastAsia/Flag_of_Singapore.svg",
+  "fillColor": "#EF3340",
+  "lenguages": "English, Malay, Mandarin, Tamil",
+  "description": "Singapore became an independent state in 1965 after separating from Malaysia. Originally a British colonial trading port, it briefly joined the Federation of Malaysia in 1963 before political tensions led to its expulsion. Since independence Singapore has developed into a highly urbanized city-state and major global center for finance, trade, and technology."
+}
+
+
+]
