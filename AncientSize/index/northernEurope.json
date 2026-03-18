@@ -152,7 +152,7 @@
 
 {
   "id": "mumhain1",
-  "name": "Kingdom of Mumhain (400–859 AD)",
+  "name": "Kingdom of Munster (400–859 AD)",
   "era": "Early Medieval Ireland",
   "fundationFall": "400–1118 AD",
   "yearStart": 400,
@@ -171,7 +171,7 @@
 
 {
   "id": "mumhain2",
-  "name": "Kingdom of Mumhain (969–1117 AD)",
+  "name": "Kingdom of Munster (969–1117 AD)",
   "era": "Medieval Ireland",
   "fundationFall": "400–1117 AD",
   "yearStart": 969,
@@ -186,6 +186,80 @@
   "fillColor": "#C8102E",
   "lenguages": "Old Irish, later Middle Irish",
   "description": "The Kingdom of Mumhain, or Munster, remained one of the major Gaelic overkingdoms of southern Ireland during the late early medieval period. In 969 the Munster forces reconquered Luimneach (Limerick), a Norse coastal settlement that had developed into an important Viking trading center. Although Gaelic kings ruled most of the interior, several Norse city-states continued to exist along the coasts, maintaining trade networks across the Irish Sea. During this period Munster rose to great power under the Dál gCais dynasty. In 1117 the kingdom was formally divided into the separate kingdoms of Thomond and Desmond."
+},
+
+{
+  "id": "desmond1",
+  "name": "Kingdom of Desmond (1118–1178 AD)",
+  "era": "Medieval Ireland",
+  "fundationFall": "1118–1596 AD",
+  "yearStart": 1118,
+  "yearEnd": 1178,
+  "religion": "Christianity (Roman Catholic)",
+  "currency": "Barter / early Irish coinage",
+  "GovernmentType": "kingdom",
+  "keywords": ["ireland", "desmond", "munster", "gaelic", "medieval","Deasmhumhain"],
+  "file": "maps/europe/northernEurope/desmond1118.json",
+  "flag": "flags/europe/northernEurope/Arms_of_McCarthy.svg",
+  "fillColor": "#8B0000",
+  "lenguages": "Irish",
+  "description": "The Kingdom of Desmond was formed in 1118 after the partition of Munster, ruled by the MacCarthy dynasty. It emerged as a southern Gaelic kingdom, consolidating power in the region while competing with Thomond. The division weakened Munster’s unity. By the late 12th century, the arrival of the Normans began reshaping the political landscape, marking the start of external influence over Desmond."
+},
+
+{
+  "id": "desmond2",
+  "name": "Kingdom of Desmond (1220–1596 AD)",
+  "era": "Medieval Ireland",
+  "fundationFall": "1118–1596 AD",
+  "yearStart": 1220,
+  "yearEnd": 1596,
+  "religion": "Christianity (Roman Catholic)",
+  "currency": "Barter / later medieval coinage",
+  "GovernmentType": "Gaelic kingdom",
+  "keywords": ["ireland", "desmond", "munster", "gaelic", "norman influence"],
+  "file": "maps/europe/northernEurope/desmond1220.json",
+  "flag": "flags/europe/northernEurope/Arms_of_McCarthy.svg",
+  "fillColor": "#8B0000",
+  "lenguages": "Irish",
+  "description": "From the 13th to the late 16th century, the Kingdom of Desmond remained largely stable under the MacCarthy dynasty, despite growing Norman and later English pressure. It coexisted with Anglo-Norman lordships in Munster. Over time, English expansion intensified, leading to conflict. The Desmond Rebellions in the late 1500s ended in defeat, and in 1596 the kingdom was dissolved and absorbed into direct English rule."
+},
+
+{
+  "id": "thomond1",
+  "name": "Kingdom of Thomond (1118–1198 AD)",
+  "era": "Medieval Ireland",
+  "fundationFall": "1118–1543 AD",
+  "yearStart": 1118,
+  "yearEnd": 1198,
+  "capital": "Killaloe",
+  "religion": "Christianity (Roman Catholic)",
+  "currency": "Barter / early Irish coinage",
+  "GovernmentType": "Gaelic kingdom",
+  "keywords": ["ireland", "thomond", "munster", "gaelic", "medieval", "Tuadh-Mhumhain"],
+  "file": "maps/europe/northernEurope/thomond1118.json",
+  "flag": "flags/europe/northernEurope/OBrienClan.png",
+  "fillColor": "#006400",
+  "lenguages": "Irish",
+  "description": "The Kingdom of Thomond emerged in 1118 after the division of Munster, ruled by the O'Brien dynasty. It initially controlled much of northern Munster and upheld the legacy of the former Munster kings. However, internal conflicts and succession disputes weakened its stability. The arrival of the Anglo-Normans in the late 12th century led to military defeats and territorial losses. By 1198, Thomond had lost most of its lands, retreating to a reduced core territory in the west."
+},
+
+{
+  "id": "thomond2",
+  "name": "Kingdom of Thomond (1198–1543 AD)",
+  "era": "Medieval Ireland",
+  "fundationFall": "1118–1543",
+  "yearStart": 1198,
+  "yearEnd": 1543,
+  "capital": "Ennis / Killaloe",
+  "religion": "Christianity (Roman Catholic)",
+  "currency": "Barter / later medieval coinage",
+  "GovernmentType": "Gaelic kingdom",
+  "keywords": ["ireland", "thomond", "gaelic", "medieval", "o'brien"],
+  "file": "maps/europe/northernEurope/thomond1198.json",
+  "flag": "flags/europe/northernEurope/OBrienClan.png",
+  "fillColor": "#006400",
+  "lenguages": "Irish",
+  "description": "After losing Limerick and much of its territory to the Anglo-Normans in the late 12th century, Thomond was reduced to a smaller western kingdom. Ruled by the O'Brien dynasty, it maintained relative autonomy for centuries, preserving Gaelic traditions despite external pressure. Over time, English influence expanded through alliances and military pressure. In 1543, Thomond was formally dissolved when its ruler submitted to the English Crown, becoming part of the Kingdom of Ireland."
 },
 
 {
